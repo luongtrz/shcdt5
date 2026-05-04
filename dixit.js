@@ -15,6 +15,8 @@
     if (!rounds.length) return;
     const r = rounds[currentRound];
     document.getElementById('round-num').textContent = currentRound + 1;
+    const revealArea = document.getElementById('character-reveal');
+    if (revealArea) revealArea.style.display = 'none';
     board.innerHTML = '';
     r.keywords.forEach((kw, i) => {
       const points = POINTS[i];
@@ -95,6 +97,17 @@
   };
   window.resetCards = () => {
     render();
+  };
+  window.revealCharacter = () => {
+    if (!rounds.length) return;
+    const r = rounds[currentRound];
+    const revealArea = document.getElementById('character-reveal');
+    const nameEl = document.getElementById('character-name');
+    if (revealArea && nameEl && r.character) {
+      nameEl.textContent = r.character;
+      revealArea.style.display = 'block';
+      revealArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
   };
   window.changeScore = (team, delta) => {
     if (window.ScoreManager) {

@@ -3,6 +3,7 @@
     "rounds": [
       {
         "label": "ROUND 01",
+        "character": "Đ/c Nguyễn Văn Backend",
         "keywords": [
           { "type": "K1 · Nhận xét chung", "text": "Người luôn xuất hiện sau ánh đèn." },
           { "type": "K2 · Ưu điểm", "text": "Lắng nghe nhiều hơn nói." },
@@ -13,6 +14,7 @@
       },
       {
         "label": "ROUND 02",
+        "character": "Đ/c Trần Thị Secret",
         "keywords": [
           { "type": "K1 · Nhận xét chung", "text": "Một ngọn nến trong góc thư viện." },
           { "type": "K2 · Ưu điểm", "text": "Kỷ luật. Ghi chép từng buổi sinh hoạt." },
@@ -23,6 +25,7 @@
       },
       {
         "label": "ROUND 03",
+        "character": "Đ/c Lê Văn Connector",
         "keywords": [
           { "type": "K1 · Nhận xét chung", "text": "Người nhớ ngày sinh nhật của cả lớp." },
           { "type": "K2 · Ưu điểm", "text": "Ấm áp. Kết nối những con người xa lạ." },

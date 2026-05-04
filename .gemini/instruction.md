@@ -114,3 +114,11 @@
    - Triển khai hàm `revealCharacter()` để hiển thị tên nhân vật.
    - Cập nhật hàm `render()` để xóa trạng thái hiển thị tên nhân vật khi chuyển vòng hoặc reset.
 5. **Git**: Thực hiện commit toàn bộ thay đổi.
+
+### Kết quả thực hiện (2026-05-04)
+- Đã thêm trường `character` vào `uploads/dixit.json` cho cả 3 vòng chơi.
+- Đã bổ sung text `reveal` vào `uploads/index-texts.json`.
+- Đã thêm nút bấm "Lộ diện nhân vật" và khu vực hiển thị tên nhân vật vào `index.html`.
+- Đã triển khai logic `revealCharacter()` trong `dixit.js` để hiển thị tên và cuộn tới vùng hiển thị.
+- Đã đảm bảo tên nhân vật biến mất khi chuyển vòng hoặc reset.
+- Đã thực hiện commit toàn bộ thay đổi.

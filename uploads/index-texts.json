@@ -4,6 +4,7 @@
   },
   "controls": {
     "roundNext": "Round tiếp →",
+    "reveal": "Lộ diện nhân vật",
     "reset": "Reset",
     "start": "Bắt đầu",
     "stop": "Dừng",
