@@ -15,3 +15,9 @@
 - Với các phần được đánh dấu là "tiêu đề slide trò chơi", ta không xóa hardcode text của chúng trong `index.html`.
 - Xóa text hardcode trong `index.html` đối với những phần đã chuyển sang JSON, chỉ giữ lại thẻ HTML với các thuộc tính `data-i18n`.
 - Git add và commit.
+
+**4. Kết quả thực hiện (Ngày 04/05/2026):**
+- Đã trích xuất thành công toàn bộ text từ `index.html` sang `uploads/index-texts.json`.
+- Đã bỏ qua các thẻ tiêu đề trò chơi (`hd1.gameBoard.heading` và từ `hd2.round1.questionHtml` đến `hd2.round5.questionHtml`).
+- Làm sạch file `index.html` (loại bỏ text cứng bên trong thẻ HTML cho những phần đã được chuyển sang JSON) và format lại code bằng Prettier.
+- Đã thực hiện `git init` (nếu chưa có), `git add .` và `git commit` từ thư mục gốc để lưu lại toàn bộ lịch sử chỉnh sửa.
