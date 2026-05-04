@@ -94,3 +94,23 @@
 - Đã loại bỏ tất cả các thẻ DIV trang trí liên quan đến `party-frame` (bao gồm các góc và ngôi sao) trong file `index.html`.
 - Giao diện hiện tại đã thoáng đãng hơn, không còn khung viền bao quanh các slide.
 - Đã thực hiện commit toàn bộ thay đổi từ root directory.
+
+---
+
+## Thêm nút "Lộ diện nhân vật" trong Game DIXIT (2026-05-04)
+
+### Mục tiêu
+- Thêm một nút bấm "Lộ diện nhân vật" vào slide chơi game DIXIT (Hoạt động 01).
+- Khi bấm nút, hiển thị tên nhân vật tương ứng với vòng chơi hiện tại.
+- Dữ liệu tên nhân vật được lấy từ file `uploads/dixit.json`.
+
+### Kế hoạch thực hiện
+1. **Dữ liệu (`uploads/dixit.json`)**: Cấu trúc lại để mỗi vòng chơi (`round`) có thêm trường `character` chứa tên nhân vật.
+2. **Ngôn ngữ (`uploads/index-texts.json`)**: Thêm key `controls.reveal` cho nút bấm mới.
+3. **Giao diện (`index.html`)**:
+   - Thêm nút bấm vào nhóm điều khiển (cạnh nút Round tiếp).
+   - Thêm một khu vực hiển thị tên nhân vật (mặc định ẩn).
+4. **Logic (`dixit.js`)**:
+   - Triển khai hàm `revealCharacter()` để hiển thị tên nhân vật.
+   - Cập nhật hàm `render()` để xóa trạng thái hiển thị tên nhân vật khi chuyển vòng hoặc reset.
+5. **Git**: Thực hiện commit toàn bộ thay đổi.
