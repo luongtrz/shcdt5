@@ -608,6 +608,20 @@
         "titleHtml": "<span style=\"font-family: var(--font-sans); font-weight: 800;\">Tọa đàm</span> <em style=\"font-family: var(--font-serif); font-style: italic; color: var(--gold);\">Đối thoại</em>",
         "subtitle": "Đảng viên sinh viên rèn đức, luyện tài, trưởng thành.",
         "screenLabel": "31.5 HD3 Background Tọa đàm"
+      },
+      "sharing": {
+        "cornerLeft": "HOẠT ĐỘNG 03 · CHIA SẺ",
+        "cornerRight": "HỒ SƠ ẨN DANH",
+        "eyebrow": "Diễn giả chia sẻ",
+        "badge": "Học tập và làm theo tư tưởng, đạo đức Hồ Chí Minh",
+        "title": "Hành trình \"Tự soi, Tự sửa\"",
+        "items": [
+          "Ba lĩnh vực cốt lõi.",
+          "Một tinh thần tự soi triệt để.",
+          "Bài học từ chính hành trình bản thân."
+        ],
+        "slogan": "Tĩnh để Soi · Động để Sáng",
+        "screenLabel": "31.6 HD3 Khách mời chia sẻ"
       }
     },
     "criteria": {

@@ -240,7 +240,9 @@
 - Đã thực hiện commit toàn bộ thay đổi.
 
 ### Kết quả thực hiện (2026-05-04)
-- Đã tách riêng và làm nổi bật slogan "Tĩnh để Soi · Động để Sáng" với kích thước lớn (48px), font Serif Italic và hiệu ứng phát sáng vàng.
-- Cập nhật eyebrow thành "SINH HOẠT CHUYÊN ĐỀ THÁNG 5" để giữ cấu trúc slide trang trọng.
-- Duy trì bố cục 4 người (3 khách mời + 1 MC) đồng bộ.
+- Đã tạo slide mới "31.6 HD3 Khách mời chia sẻ" ngay sau slide background tọa đàm.
+- Slide chia sẻ bao gồm nội dung: Ba lĩnh vực cốt lõi, tinh thần tự soi và bài học kinh nghiệm bản thân.
+- Đã tích hợp slogan "Tĩnh để Soi · Động để Sáng" nổi bật trên cả slide Background và slide Chia sẻ.
+- Thêm thông điệp "Học tập và làm theo tư tưởng, đạo đức Hồ Chí Minh" vào phần badge trên đầu các slide tọa đàm để tăng tính trang trọng.
+- Duy trì bố cục 4 người (diễn giả + MC) đồng bộ.
 - Đã thực hiện commit toàn bộ thay đổi.

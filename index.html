@@ -3267,6 +3267,7 @@
       <div class="slide-pad" style="padding-top: 130px; justify-content: flex-start; align-items: center; text-align: center; position: relative; z-index: 5;">
         <!-- Title area -->
         <div class="anim-fade-up d-1" style="margin-bottom: 20px;">
+          <div data-i18n="cover.badge" style="color: var(--white); opacity: 0.6; font-size: 14px; letter-spacing: 0.1em; margin-bottom: 12px; font-weight: 600; text-transform: uppercase;"></div>
           <div class="eyebrow" data-i18n="hd3.background.eyebrow" style="color: var(--gold); margin-bottom: 16px; letter-spacing: 0.5em; font-size: 18px; opacity: 0.8;"></div>
           <h1 style="margin: 0; line-height: 1; font-size: 110px; letter-spacing: -0.02em;">
             <span data-i18n-html="hd3.background.titleHtml" style="color: var(--white); display: block;"></span>
@@ -3341,6 +3342,100 @@
         <!-- Subtitle at bottom -->
         <div class="anim-fade-up d-6" data-i18n="hd3.background.subtitle" 
           style="margin-top: 40px; max-width: 900px; opacity: 0.7; font-size: 24px; font-family: var(--font-serif); font-style: italic;"></div>
+      </div>
+    </section>
+
+    <!-- ====== 31.6 HD3 CHIA SẺ HỒ SƠ ====== -->
+    <section data-screen-label="HD3 Sharing" data-i18n-attr="data-screen-label:hd3.sharing.screenLabel"
+      style="background: var(--red); color: var(--white); position: relative; overflow: hidden; padding: 0">
+      
+      <!-- Top/Bottom Gold Bars -->
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 20px; background: var(--gold); z-index: 10;"></div>
+      <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 20px; background: var(--gold); z-index: 10;"></div>
+
+      <!-- Large Spinning Star -->
+      <div class="loop-spin" style="
+            position: absolute;
+            left: -200px;
+            bottom: -200px;
+            width: 1000px;
+            height: 1000px;
+            opacity: 0.1;
+            z-index: 0;
+            transform: rotate(180deg);
+          ">
+        <div style="
+              width: 100%;
+              height: 100%;
+              background: var(--gold);
+              clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            "></div>
+      </div>
+
+      <!-- Metadata Header -->
+      <div class="anim-fade-down d-2" style="
+            position: absolute;
+            top: 60px;
+            left: 80px;
+            right: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            opacity: 0.8;
+            z-index: 10;
+          ">
+        <span data-i18n="hd3.sharing.cornerLeft"></span>
+        <span data-i18n="hd3.sharing.cornerRight"></span>
+      </div>
+
+      <div class="slide-pad" style="justify-content: center; align-items: center; text-align: center; position: relative; z-index: 5;">
+        <div class="anim-fade-up d-1">
+          <div data-i18n="hd3.sharing.badge" style="color: var(--white); opacity: 0.6; font-size: 14px; letter-spacing: 0.1em; margin-bottom: 16px; font-weight: 600; text-transform: uppercase;"></div>
+          <div class="eyebrow" data-i18n="hd3.sharing.eyebrow" style="color: var(--gold); margin-bottom: 24px; letter-spacing: 0.4em;"></div>
+          <h1 class="title-display" data-i18n="hd3.sharing.title" style="margin: 0 0 60px; font-size: 100px; color: var(--white);"></h1>
+          
+          <div style="
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                align-items: center;
+                margin-bottom: 80px;
+              ">
+            <div class="anim-fade-up d-3" style="display: flex; align-items: center; gap: 24px;">
+              <div style="width: 12px; height: 12px; background: var(--gold); transform: rotate(45deg);"></div>
+              <div style="font-size: 42px; font-weight: 700; color: var(--white);" data-i18n="hd3.sharing.items.0"></div>
+            </div>
+            <div class="anim-fade-up d-4" style="display: flex; align-items: center; gap: 24px;">
+              <div style="width: 12px; height: 12px; background: var(--gold); transform: rotate(45deg);"></div>
+              <div style="font-size: 42px; font-weight: 700; color: var(--white);" data-i18n="hd3.sharing.items.1"></div>
+            </div>
+            <div class="anim-fade-up d-5" style="display: flex; align-items: center; gap: 24px;">
+              <div style="width: 12px; height: 12px; background: var(--gold); transform: rotate(45deg);"></div>
+              <div style="font-size: 42px; font-weight: 700; color: var(--white);" data-i18n="hd3.sharing.items.2"></div>
+            </div>
+          </div>
+
+          <!-- Slogan Highlight -->
+          <div class="anim-fade-up d-6" style="
+                padding: 40px 80px;
+                background: rgba(0,0,0,0.2);
+                border: 2px solid var(--gold);
+                display: inline-block;
+                backdrop-filter: blur(10px);
+              ">
+            <div data-i18n="hd3.sharing.slogan" style="
+                  font-family: var(--font-serif);
+                  font-style: italic;
+                  font-size: 54px;
+                  color: var(--gold);
+                  text-shadow: 0 4px 20px rgba(255, 210, 0, 0.5);
+                  letter-spacing: 0.1em;
+                "></div>
+          </div>
+        </div>
       </div>
     </section>
 
