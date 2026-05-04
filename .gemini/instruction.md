@@ -122,3 +122,19 @@
 - Đã triển khai logic `revealCharacter()` trong `dixit.js` để hiển thị tên và cuộn tới vùng hiển thị.
 - Đã đảm bảo tên nhân vật biến mất khi chuyển vòng hoặc reset.
 - Đã thực hiện commit toàn bộ thay đổi.
+
+---
+
+## Nâng cấp Giao diện Điểm số trên Thẻ bài DIXIT (2026-05-04)
+
+### Mục tiêu
+- Tăng kích thước chữ hiển thị điểm số (ví dụ: +30 ĐIỂM) trên mặt sau của thẻ bài DIXIT.
+- Thay đổi font chữ sang loại dễ đọc hơn (hiện tại đang dùng JetBrains Mono cỡ nhỏ khó quan sát).
+
+### Kế hoạch thực hiện
+1. **Logic (`dixit.js`)**:
+   - Tìm đến đoạn mã khởi tạo giao diện mặt sau của thẻ bài (`flip-back`).
+   - Thay đổi font-family từ `'JetBrains Mono', monospace` sang `var(--font-sans)` hoặc `var(--font-serif)`.
+   - Tăng font-size từ `14px` lên khoảng `26px` - `28px`.
+   - Điều chỉnh font-weight và opacity để tăng độ tương phản.
+2. **Git**: Thực hiện commit toàn bộ thay đổi.
