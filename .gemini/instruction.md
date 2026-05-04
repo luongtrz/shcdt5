@@ -170,3 +170,22 @@
 - Đã bổ sung các key ngôn ngữ tương ứng trong `uploads/index-texts.json`.
 - Sử dụng các lớp animation có sẵn để đảm bảo slide hiển thị mượt mà.
 - Đã thực hiện commit toàn bộ thay đổi.
+
+---
+
+## Cập nhật Slide Background Tọa đàm theo phong cách Slide Cover (2026-05-04)
+
+### Mục tiêu
+- Cập nhật slide "Background Toa Dam" (`31.5`) để có giao diện tương tự như slide Cover (slide đầu tiên).
+- Thêm hình ảnh và thông tin của 3 khách mời (diễn giả chính) vào slide.
+- Duy trì tiêu chí Đảng Cộng sản (Đỏ-Vàng) và kết hợp 2 font chữ.
+
+### Kế hoạch thực hiện
+1. **Giao diện (`index.html`)**:
+   - Thay đổi nền slide thành màu đỏ (`var(--red)`).
+   - Thêm dòng metadata ở phía trên (giống slide Cover) với thông tin về chuyên đề và hoạt động.
+   - Bố trí lại tiêu đề ở phần trên của slide.
+   - Thêm một container chứa 3 thẻ khách mời (`g1`, `g2`, `g3`) ở phía dưới tiêu đề.
+   - Sử dụng layout card tương tự như slide 29 nhưng tinh chỉnh để phù hợp với nền đỏ (ví dụ: dùng border vàng hoặc nền trắng nhẹ).
+2. **Ngôn ngữ (`uploads/index-texts.json`)**: Đảm bảo các key cho metadata và thông tin khách mời được sử dụng đúng.
+3. **Git**: Thực hiện commit toàn bộ thay đổi.
