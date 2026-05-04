@@ -533,7 +533,6 @@
     },
     "guests": {
       "cornerLeft": "HOẠT ĐỘNG 03 · TỌA ĐÀM",
-      "cornerRight": "3 KHÁCH MỜI",
       "eyebrow": "Thành phần diễn giả",
       "cards": {
         "g1": {
@@ -613,13 +612,9 @@
         "cornerLeft": "HOẠT ĐỘNG 03 · CHIA SẺ",
         "cornerRight": "HỒ SƠ ẨN DANH",
         "eyebrow": "Diễn giả chia sẻ",
-        "badge": "Học tập và làm theo tư tưởng, đạo đức Hồ Chí Minh",
-        "titleHtml": "Hành trình<br><em style=\"font-style:italic; color: var(--gold);\">Tự soi, Tự sửa.</em>",
-        "items": [
-          "Ba lĩnh vực cốt lõi.",
-          "Một tinh thần tự soi triệt để.",
-          "Bài học từ chính hành trình bản thân."
-        ],
+        "badge": "",
+        "titleHtml": "",
+        "items": [],
         "sloganHtml": "<table style=\"border-collapse: collapse; margin: 0 auto; font-family: var(--font-serif); white-space: nowrap; line-height: 1.1;\"><tr><td style=\"text-align: right; color: white; font-size: 150px; font-weight: 900; padding-right: 40px; vertical-align: middle;\">Tĩnh để</td><td style=\"text-align: left; font-size: 150px; font-weight: 900; font-style: italic; color: var(--gold); text-shadow: 0 10px 40px rgba(0,0,0,0.5); vertical-align: middle;\">Soi</td><td></td></tr><tr><td></td><td style=\"text-align: left; color: white; font-size: 150px; font-weight: 900; padding-right: 40px; vertical-align: middle;\">Động để</td><td style=\"text-align: left; font-size: 150px; font-weight: 900; font-style: italic; color: var(--gold); text-shadow: 0 10px 40px rgba(0,0,0,0.5); vertical-align: middle;\">Sáng</td></tr></table>",
         "screenLabel": "31.6 HD3 Khách mời chia sẻ"
       }
