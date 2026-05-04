@@ -13,7 +13,7 @@
     const pauseBtn = card.querySelector('.timer-pause');
     const resetBtn = card.querySelector('.timer-reset');
     const progressRing = card.querySelector('.timer-progress');
-    const circumference = progressRing ? 628 : 0;
+    const circumference = progressRing ? 880 : 0;
 
     let remaining = duration;
     let intervalId = null;
