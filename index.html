@@ -4585,6 +4585,54 @@
   <script src="feud.js"></script>
   <script src="timers.js"></script>
   <script src="qr.js"></script>
+  <div class="nav-controls" style="
+        position: fixed;
+        bottom: 50px;
+        right: 60px;
+        display: flex;
+        gap: 20px;
+        z-index: 10000;
+        pointer-events: none;
+      ">
+    <button id="btn-prev" style="
+          pointer-events: auto;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          border: 2px solid rgba(255, 210, 0, 0.4);
+          background: rgba(0, 0, 0, 0.3);
+          backdrop-filter: blur(10px);
+          color: var(--gold);
+          font-size: 32px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        " onmouseover="this.style.background='rgba(255, 210, 0, 0.2)'; this.style.borderColor='var(--gold)';" onmouseout="this.style.background='rgba(0, 0, 0, 0.3)'; this.style.borderColor='rgba(255, 210, 0, 0.4)';" onclick="document.querySelector('deck-stage').prev()">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button id="btn-next" style="
+          pointer-events: auto;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          border: 2px solid rgba(255, 210, 0, 0.4);
+          background: rgba(0, 0, 0, 0.3);
+          backdrop-filter: blur(10px);
+          color: var(--gold);
+          font-size: 32px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        " onmouseover="this.style.background='rgba(255, 210, 0, 0.2)'; this.style.borderColor='var(--gold)';" onmouseout="this.style.background='rgba(0, 0, 0, 0.3)'; this.style.borderColor='rgba(255, 210, 0, 0.4)';" onclick="document.querySelector('deck-stage').next()">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+  </div>
 </body>
 
 </html>
