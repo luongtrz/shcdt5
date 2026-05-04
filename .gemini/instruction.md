@@ -244,5 +244,8 @@
 - Slide chia sẻ bao gồm nội dung: Ba lĩnh vực cốt lõi, tinh thần tự soi và bài học kinh nghiệm bản thân.
 - Đã tích hợp slogan "Tĩnh để Soi · Động để Sáng" nổi bật trên cả slide Background và slide Chia sẻ.
 - Đã cập nhật phông chữ cho thông điệp "Học tập và làm theo tư tưởng, đạo đức Hồ Chí Minh" sang phông Serif Italic (`var(--font-serif)`), màu vàng gold và tăng kích thước để đồng bộ với các thành phần tiêu đề.
-- Chỉnh sửa eyebrow thành font Sans với độ mờ nhẹ để nhường sự nổi bật cho thông điệp chính.
+- Đã cập nhật bố cục tiêu đề của slide Background (31.5) và Sharing (31.6) đồng nhất với slide Cover (01).
+- Chuyển sang phong cách căn lề trái (text-align: left) với biểu tượng ngôi sao vàng (`loop-pulse`) đặt cạnh Badge Hồ Chí Minh.
+- Tăng kích thước tiêu đề (160px cho Background, 140px cho Sharing), sử dụng phông Serif Bold (`font-weight: 900`) và cấu trúc 2 dòng với phần nhấn mạnh bằng chữ nghiêng màu vàng (`em`).
+- Đồng bộ hóa dữ liệu `titleHtml` trong `index-texts.json` để thống nhất cách hiển thị với slide đầu tiên.
 - Đã thực hiện commit toàn bộ thay đổi.
