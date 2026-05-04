@@ -23,11 +23,11 @@
     if (el) {
       // Animation effect
       el.style.transform = 'scale(1.2)';
-      el.style.color = 'var(--red)';
+      el.style.color = 'var(--white)';
       el.textContent = value;
       setTimeout(() => {
         el.style.transform = 'scale(1)';
-        el.style.color = 'var(--ink)';
+        el.style.color = 'var(--gold)';
       }, 300);
     }
   }
