@@ -22,14 +22,14 @@
           position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
           transform: rotateY(180deg);
           background: var(--white); border: 3px solid var(--ink);
-          display: grid; grid-template-columns: 110px 1fr 140px; align-items:center;
+          display: grid; grid-template-columns: 80px 1fr 110px; align-items:center;
           box-shadow: 0 15px 45px rgba(0,0,0,0.1);
           border-radius: 4px;
           overflow: hidden;
         ">
-          <div style="background: var(--ink); color: var(--gold); font-family: var(--font-serif); font-weight:900; font-size: 64px; height:100%; display:flex; align-items:center; justify-content:center; border-right: 2px solid var(--line);">${rank}</div>
-          <div style="padding: 0 32px; font-family: var(--font-sans); font-size: 38px; font-weight:700; color: var(--ink); line-height:1.2; letter-spacing: -0.01em;">${text}</div>
-          <div style="background: linear-gradient(to bottom, var(--gold), #e6be00); height:100%; display:flex; align-items:center; justify-content:center; font-family: var(--font-serif); font-weight:900; font-size: 48px; color: var(--ink); border-left: 2px solid var(--line); shadow: inset 2px 0 10px rgba(0,0,0,0.05);">${points}</div>
+          <div style="background: var(--ink); color: var(--gold); font-family: var(--font-serif); font-weight:900; font-size: 52px; height:100%; display:flex; align-items:center; justify-content:center; border-right: 2px solid var(--line);">${rank}</div>
+          <div style="padding: 0 24px; font-family: var(--font-sans); font-size: 30px; font-weight:700; color: var(--ink); line-height:1.15; letter-spacing: -0.01em; display: flex; align-items: center; height: 100%;">${text}</div>
+          <div style="background: linear-gradient(to bottom, var(--gold), #e6be00); height:100%; display:flex; align-items:center; justify-content:center; font-family: var(--font-serif); font-weight:900; font-size: 42px; color: var(--ink); border-left: 2px solid var(--line); shadow: inset 2px 0 10px rgba(0,0,0,0.05);">${points}</div>
         </div>
       </div>
     `;
