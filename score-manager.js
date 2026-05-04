@@ -47,6 +47,8 @@
         flex-direction: column;
         gap: 12px;
         font-family: var(--font-sans);
+        cursor: move;
+        user-select: none;
       }
       .score-toggle {
         background: var(--red);
@@ -215,6 +217,49 @@
     const panel = document.getElementById('score-panel-box');
     const toggleBtn = document.getElementById('score-toggle-btn');
     
+    // Position Persistence
+    const savedPos = localStorage.getItem('score_dashboard_pos');
+    if (savedPos) {
+      const { top, left } = JSON.parse(savedPos);
+      dashboard.style.top = top;
+      dashboard.style.left = left;
+      dashboard.style.right = 'auto'; // Disable default right
+    }
+
+    // Drag and Drop Logic
+    let isDragging = false;
+    let offset = { x: 0, y: 0 };
+
+    dashboard.addEventListener('mousedown', (e) => {
+      if (e.target.closest('.btn-score') || e.target.closest('.btn-reset-scores')) return;
+      isDragging = true;
+      const rect = dashboard.getBoundingClientRect();
+      offset.x = e.clientX - rect.left;
+      offset.y = e.clientY - rect.top;
+      dashboard.style.transition = 'none';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const left = e.clientX - offset.x;
+      const top = e.clientY - offset.y;
+      
+      dashboard.style.left = `${left}px`;
+      dashboard.style.top = `${top}px`;
+      dashboard.style.right = 'auto';
+    });
+
+    document.addEventListener('mouseup', () => {
+      if (isDragging) {
+        isDragging = false;
+        dashboard.style.transition = 'all 0.3s';
+        localStorage.setItem('score_dashboard_pos', JSON.stringify({
+          top: dashboard.style.top,
+          left: dashboard.style.left
+        }));
+      }
+    });
+
     function togglePanel(show) {
       if (show === undefined) show = panel.style.display !== 'flex';
       panel.style.display = show ? 'flex' : 'none';
@@ -223,7 +268,10 @@
 
     toggleBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      togglePanel();
+      // If was dragging, don't toggle
+      if (Math.abs(offset.x - (e.clientX - dashboard.getBoundingClientRect().left)) < 2) {
+         togglePanel();
+      }
     });
 
     // Close panel when clicking outside
