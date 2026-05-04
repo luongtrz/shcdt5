@@ -144,3 +144,23 @@
 - Đã tăng kích thước chữ điểm số từ `14px` lên `26px` để dễ quan sát từ xa.
 - Điều chỉnh khoảng cách lề (`margin-top`) để bố cục cân đối hơn sau khi tăng size chữ.
 - Đã thực hiện commit toàn bộ thay đổi.
+
+---
+
+## Tạo slide Background Tọa đàm phong cách Đảng Cộng sản (2026-05-04)
+
+### Mục tiêu
+- Tạo một slide mới dùng làm background cho buổi tọa đàm (Hoạt động 03).
+- Thiết kế theo tiêu chí Đảng Cộng sản: màu đỏ và vàng chủ đạo.
+- Kết hợp 2 bộ font chính của dự án (`var(--font-sans)` và `var(--font-serif)`).
+- Tạo ấn tượng sang trọng, uy nghiêm nhưng vẫn hiện đại.
+
+### Kế hoạch thực hiện
+1. **Ngôn ngữ (`uploads/index-texts.json`)**: Thêm các key cho slide mới (tiêu đề, nội dung dẫn dắt).
+2. **Giao diện (`index.html`)**:
+   - Thêm một thẻ `<section>` mới với `data-screen-label="Background Toa Dam"`.
+   - Sử dụng background gradient đỏ đậm (deep red) sang đen.
+   - Thêm họa tiết ngôi sao vàng (biểu tượng Đảng) làm backdrop ẩn dưới nền.
+   - Thiết kế tiêu đề kết hợp font Serif (cho các từ khóa quan trọng) và font Sans (cho lời dẫn).
+   - Thêm các hiệu ứng animation nhẹ nhàng để slide trông sống động.
+3. **Git**: Thực hiện commit toàn bộ thay đổi.
