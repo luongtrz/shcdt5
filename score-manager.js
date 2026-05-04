@@ -71,23 +71,41 @@
       }
       .score-panel {
         display: none;
-        width: 400px;
-        padding: 24px;
-        border-radius: 24px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        padding: 40px;
+        border-radius: 32px;
         background: var(--red);
         color: var(--gold);
-        border: 3px solid var(--gold);
-        box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+        border: 4px solid var(--gold);
+        box-shadow: 0 50px 100px rgba(0,0,0,0.5);
         flex-direction: column;
-        gap: 20px;
+        gap: 32px;
+        z-index: 10001;
       }
-      .score-panel.active {
+      .score-backdrop {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        z-index: 10000;
+      }
+      .score-panel.active, .score-backdrop.active {
         display: flex;
-        animation: slideInScore 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       }
-      @keyframes slideInScore {
-        from { opacity: 0; transform: translateY(-20px); }
-        to { opacity: 1; transform: translateY(0); }
+      .score-backdrop.active { display: block; }
+
+      .score-panel.active {
+        animation: modalFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      @keyframes modalFadeIn {
+        from { opacity: 0; transform: translate(-50%, -60%) scale(0.9); }
+        to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
       }
       .team-row {
         display: flex;
@@ -172,18 +190,20 @@
     dashboard.className = 'score-dashboard';
     
     dashboard.innerHTML = `
-      <button class="score-toggle" id="score-toggle-btn">
-        <span style="display:flex; gap: 8px;">
-          <span>ĐỘI A: <span id="summary-a">${scores.a}</span></span>
+      <button class="score-toggle" id="score-toggle-btn" title="Click để quản lý điểm số">
+        <span style="display:flex; gap: 12px; align-items:center;">
+          <span style="font-size: 18px; margin-right: 8px">🏆</span>
+          <span>A: <span id="summary-a">${scores.a}</span></span>
           <span style="opacity: 0.3">|</span>
-          <span>ĐỘI B: <span id="summary-b">${scores.b}</span></span>
+          <span>B: <span id="summary-b">${scores.b}</span></span>
           <span style="opacity: 0.3">|</span>
-          <span>ĐỘI C: <span id="summary-c">${scores.c}</span></span>
+          <span>C: <span id="summary-c">${scores.c}</span></span>
         </span>
       </button>
+      <div class="score-backdrop" id="score-modal-backdrop"></div>
       <div class="score-panel" id="score-panel-box">
         <div class="score-panel-header">
-          <div class="score-panel-title">Bảng Tổng Điểm</div>
+          <div class="score-panel-title">Quản lý Điểm số</div>
           <button class="btn-reset-scores" id="btn-reset-all">Reset All</button>
         </div>
         ${TEAMS.map(team => `
@@ -205,16 +225,28 @@
 
     // Event Listeners
     const panel = document.getElementById('score-panel-box');
+    const backdrop = document.getElementById('score-modal-backdrop');
     const toggleBtn = document.getElementById('score-toggle-btn');
     
-    toggleBtn.addEventListener('click', () => {
-      panel.classList.toggle('active');
-    });
-
-    // Close panel when clicking outside
-    document.addEventListener('mousedown', (e) => {
-      if (!dashboard.contains(e.target)) {
+    function toggleModal(show) {
+      if (show) {
+        panel.classList.add('active');
+        backdrop.classList.add('active');
+      } else {
         panel.classList.remove('active');
+        backdrop.classList.remove('active');
+      }
+    }
+
+    toggleBtn.addEventListener('click', () => toggleModal(true));
+    backdrop.addEventListener('click', () => toggleModal(false));
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') toggleModal(false);
+      if (e.key === 's' && (e.ctrlKey || e.metaKey)) {
+        e.preventDefault();
+        toggleModal(true);
       }
     });
 
