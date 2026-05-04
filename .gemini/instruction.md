@@ -231,3 +231,10 @@
    - Thêm thẻ thứ 4 hiển thị thông tin MC (lấy từ `hd3.guests.cards.mc`).
    - Thêm dòng slogan "Tĩnh để Soi, Động để Sáng" vào vị trí phù hợp (ví dụ: ngay dưới tiêu đề hoặc thay thế vị trí eyebrow).
 2. **Git**: Thực hiện commit toàn bộ thay đổi.
+
+### Kết quả thực hiện (2026-05-04)
+- Đã bổ sung MC (thành viên thứ 4) vào lưới hiển thị khách mời trên slide background tọa đàm.
+- Cập nhật bố cục lưới từ 3 cột thành 4 cột để cân đối không gian.
+- Làm nổi bật slogan "Tĩnh để Soi · Động để Sáng" ở vị trí eyebrow với kích thước lớn hơn và hiệu ứng phát sáng nhẹ.
+- Tinh chỉnh kích thước chữ trong thẻ khách mời để phù hợp với bố cục 4 người.
+- Đã thực hiện commit toàn bộ thay đổi.
