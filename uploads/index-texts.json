@@ -604,7 +604,7 @@
       "headingHtml": "Đối thoại<br><em style=\"color: var(--gold); font-style:italic; font-family: var(--font-serif);\">phản biện.</em>",
       "background": {
         "eyebrow": "SINH HOẠT CHUYÊN ĐỀ THÁNG 5",
-        "slogan": "Tĩnh để Soi · Động để Sáng",
+        "sloganHtml": "<div style=\"display: grid; grid-template-columns: auto auto; text-align: left; line-height: 1.2;\"><div style=\"text-align: right; padding-right: 16px;\">Tĩnh để</div><div>Soi</div><div></div><div>Động để Sáng</div></div>",
         "titleHtml": "Tọa đàm<br><em style=\"font-style:italic; color: var(--gold);\">Đối thoại.</em>",
         "subtitle": "Đảng viên sinh viên rèn đức, luyện tài, trưởng thành.",
         "screenLabel": "31.5 HD3 Background Tọa đàm"
@@ -620,7 +620,7 @@
           "Một tinh thần tự soi triệt để.",
           "Bài học từ chính hành trình bản thân."
         ],
-        "slogan": "Tĩnh để Soi · Động để Sáng",
+        "sloganHtml": "<div style=\"display: grid; grid-template-columns: auto auto; text-align: left; line-height: 1.2;\"><div style=\"text-align: right; padding-right: 16px;\">Tĩnh để</div><div>Soi</div><div></div><div>Động để Sáng</div></div>",
         "screenLabel": "31.6 HD3 Khách mời chia sẻ"
       }
     },
