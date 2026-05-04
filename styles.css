@@ -65,6 +65,11 @@ deck-stage > section {
   pointer-events: none;
   z-index: 100;
   border: 16px solid var(--red);
+  transform-origin: center;
+}
+
+[data-deck-active] .party-frame {
+  animation: a-scale-in 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
 .party-frame::after {
@@ -73,6 +78,10 @@ deck-stage > section {
   inset: 10px;
   border: 2px solid var(--gold);
   opacity: 0.8;
+}
+
+[data-deck-active] .party-frame::after {
+  animation: a-fade 1.5s ease both 0.4s;
 }
 
 .party-frame .corner-star {
@@ -85,10 +94,14 @@ deck-stage > section {
   filter: drop-shadow(0 0 10px rgba(255, 210, 0, 0.4));
 }
 
-.party-frame .corner-star.tl { top: -20px; left: -20px; }
-.party-frame .corner-star.tr { top: -20px; right: -20px; }
-.party-frame .corner-star.bl { bottom: -20px; left: -20px; }
-.party-frame .corner-star.br { bottom: -20px; right: -20px; }
+[data-deck-active] .party-frame .corner-star {
+  animation: a-spin-in 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.party-frame .corner-star.tl { top: -20px; left: -20px; animation-delay: 0.6s !important; }
+.party-frame .corner-star.tr { top: -20px; right: -20px; animation-delay: 0.7s !important; }
+.party-frame .corner-star.bl { bottom: -20px; left: -20px; animation-delay: 0.8s !important; }
+.party-frame .corner-star.br { bottom: -20px; right: -20px; animation-delay: 0.9s !important; }
 
 /* ============= TYPOGRAPHY ============= */
 .eyebrow {
