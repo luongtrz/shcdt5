@@ -1,0 +1,279 @@
+(function () {
+  const TEAMS = ['a', 'b', 'c'];
+  const INITIAL_SCORES = { a: 0, b: 0, c: 0 };
+
+  function loadScores() {
+    const saved = localStorage.getItem('shcd_scores');
+    if (saved) {
+      try {
+        return JSON.parse(saved);
+      } catch (e) {
+        return { ...INITIAL_SCORES };
+      }
+    }
+    return { ...INITIAL_SCORES };
+  }
+
+  function saveScores(scores) {
+    localStorage.setItem('shcd_scores', JSON.stringify(scores));
+  }
+
+  function updateScoreDisplay(team, value) {
+    const el = document.getElementById(`score-val-${team}`);
+    if (el) {
+      // Animation effect
+      el.style.transform = 'scale(1.2)';
+      el.style.color = 'var(--red)';
+      el.textContent = value;
+      setTimeout(() => {
+        el.style.transform = 'scale(1)';
+        el.style.color = 'var(--ink)';
+      }, 300);
+    }
+  }
+
+  function initUI() {
+    const scores = loadScores();
+
+    // Injected Styles
+    const style = document.createElement('style');
+    style.textContent = `
+      .score-dashboard {
+        position: fixed;
+        top: 24px;
+        right: 24px;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-family: var(--font-sans);
+      }
+      .score-toggle {
+        background: var(--ink);
+        color: var(--white);
+        border: none;
+        padding: 12px 24px;
+        border-radius: 40px;
+        cursor: pointer;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-size: 14px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        transition: all 0.3s;
+      }
+      .score-toggle:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+      }
+      .score-panel {
+        display: none;
+        width: 380px;
+        padding: 24px;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        flex-direction: column;
+        gap: 20px;
+      }
+      .score-panel.active {
+        display: flex;
+        animation: slideInScore 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      @keyframes slideInScore {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .team-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+      }
+      .team-info {
+        display: flex;
+        flex-direction: column;
+      }
+      .team-name {
+        font-weight: 800;
+        font-size: 18px;
+        color: var(--ink);
+        text-transform: uppercase;
+      }
+      .team-score {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 1;
+        transition: all 0.3s;
+      }
+      .score-btns {
+        display: flex;
+        gap: 8px;
+      }
+      .btn-score {
+        width: 60px;
+        height: 50px;
+        border: 2px solid var(--ink);
+        background: var(--white);
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 800;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: all 0.1s;
+      }
+      .btn-score:hover {
+        background: var(--ink);
+        color: var(--white);
+      }
+      .btn-score:active {
+        transform: translateY(2px);
+      }
+      .btn-score.plus { color: #2ecc71; }
+      .btn-score.minus { color: var(--red); }
+      
+      .score-panel-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+      .score-panel-title {
+        font-weight: 900;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .btn-reset-scores {
+        background: transparent;
+        border: 1px solid var(--red);
+        color: var(--red);
+        font-size: 10px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        opacity: 0.5;
+      }
+      .btn-reset-scores:hover { opacity: 1; }
+    `;
+    document.head.appendChild(style);
+
+    // HTML Structure
+    const dashboard = document.createElement('div');
+    dashboard.className = 'score-dashboard';
+    
+    dashboard.innerHTML = `
+      <button class="score-toggle" id="score-toggle-btn">
+        <span style="display:flex; gap: 8px;">
+          <span>ĐỘI A: <span id="summary-a">${scores.a}</span></span>
+          <span style="opacity: 0.3">|</span>
+          <span>ĐỘI B: <span id="summary-b">${scores.b}</span></span>
+          <span style="opacity: 0.3">|</span>
+          <span>ĐỘI C: <span id="summary-c">${scores.c}</span></span>
+        </span>
+      </button>
+      <div class="score-panel" id="score-panel-box">
+        <div class="score-panel-header">
+          <div class="score-panel-title">Bảng Tổng Điểm</div>
+          <button class="btn-reset-scores" id="btn-reset-all">Reset All</button>
+        </div>
+        ${TEAMS.map(team => `
+          <div class="team-row">
+            <div class="team-info">
+              <div class="team-name">Đội ${team.toUpperCase()}</div>
+              <div class="team-score" id="score-val-${team}">${scores[team]}</div>
+            </div>
+            <div class="score-btns">
+              <button class="btn-score plus" data-team="${team}" data-val="10">+10</button>
+              <button class="btn-score plus" data-team="${team}" data-val="5">+5</button>
+              <button class="btn-score minus" data-team="${team}" data-val="-5">-5</button>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+    document.body.appendChild(dashboard);
+
+    // Event Listeners
+    const panel = document.getElementById('score-panel-box');
+    const toggleBtn = document.getElementById('score-toggle-btn');
+    
+    toggleBtn.addEventListener('click', () => {
+      panel.classList.toggle('active');
+    });
+
+    // Close panel when clicking outside
+    document.addEventListener('mousedown', (e) => {
+      if (!dashboard.contains(e.target)) {
+        panel.classList.remove('active');
+      }
+    });
+
+    const currentScores = { ...scores };
+
+    dashboard.querySelectorAll('.btn-score').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const team = btn.dataset.team;
+        const val = parseInt(btn.dataset.val);
+        currentScores[team] += val;
+        
+        saveScores(currentScores);
+        updateScoreDisplay(team, currentScores[team]);
+        document.getElementById(`summary-${team}`).textContent = currentScores[team];
+        
+        // Sync with any other elements on page that might display scores (legacy)
+        const legacyScore = document.getElementById('score-' + team);
+        if (legacyScore) legacyScore.textContent = currentScores[team];
+      });
+    });
+
+    document.getElementById('btn-reset-all').addEventListener('click', () => {
+      if (confirm('Bạn có chắc muốn reset toàn bộ điểm số về 0?')) {
+        TEAMS.forEach(team => {
+          currentScores[team] = 0;
+          updateScoreDisplay(team, 0);
+          document.getElementById(`summary-${team}`).textContent = 0;
+          const legacyScore = document.getElementById('score-' + team);
+          if (legacyScore) legacyScore.textContent = 0;
+        });
+        saveScores(currentScores);
+      }
+    });
+
+    // Sync legacy score displays (if any)
+    TEAMS.forEach(team => {
+      const legacyScore = document.getElementById('score-' + team);
+      if (legacyScore) legacyScore.textContent = currentScores[team];
+    });
+
+    // Public API
+    window.ScoreManager = {
+      addPoints: (team, val) => {
+        const t = team.toLowerCase();
+        if (TEAMS.includes(t)) {
+          currentScores[t] += val;
+          saveScores(currentScores);
+          updateScoreDisplay(t, currentScores[t]);
+          document.getElementById(`summary-${t}`).textContent = currentScores[t];
+          const legacyScore = document.getElementById('score-' + t);
+          if (legacyScore) legacyScore.textContent = currentScores[t];
+        }
+      },
+      getScores: () => ({ ...currentScores })
+    };
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initUI);
+  } else {
+    initUI();
+  }
+})();

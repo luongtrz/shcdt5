@@ -97,8 +97,12 @@
     render();
   };
   window.changeScore = (team, delta) => {
-    scores[team] = scores[team] + delta;
-    document.getElementById('score-' + team).textContent = scores[team];
+    if (window.ScoreManager) {
+      window.ScoreManager.addPoints(team, delta);
+    } else {
+      scores[team] = scores[team] + delta;
+      document.getElementById('score-' + team).textContent = scores[team];
+    }
   };
 
   fetch('uploads/dixit.json')
