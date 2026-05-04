@@ -250,5 +250,5 @@
 - **Profile Diễn giả**: Chuyển sang ảnh chân dung hình tròn với viền Gold phát sáng, đặt trong các thẻ Glassmorphism (làm mờ nền) cực kỳ chuyên nghiệp.
 - **Typography**: Tiêu đề được thiết kế theo tỷ lệ Poster (180px-190px), sử dụng phông Serif Bold kết hợp đổ bóng mềm mại.
 - **Slogan Trung tâm**: Đưa slogan "Tĩnh để Soi · Động để Sáng" ra vị trí chính giữa slide với kích thước cực lớn (140px) và hiệu ứng phát sáng vàng mạnh mẽ.
-- Trên slide Chia sẻ, slogan được đặt ở giữa với độ mờ nhẹ (watermark) để làm nền cho các nội dung chính, tạo sự chiều sâu và đồng bộ.
+- **Sửa lỗi hiển thị Text**: Đã khắc phục lỗi "hot reload không thấy text" do sai cấu trúc đường dẫn JSON (`hd3.background` -> `hd3.part3.background`). Bây giờ toàn bộ tiêu đề và slogan sẽ hiển thị chính xác theo dữ liệu cấu hình.
 - Đã thực hiện commit toàn bộ thay đổi.

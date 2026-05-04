@@ -533,7 +533,7 @@
     },
     "guests": {
       "cornerLeft": "HOẠT ĐỘNG 03 · TỌA ĐÀM",
-      "cornerRight": "4 KHÁCH MỜI",
+      "cornerRight": "3 KHÁCH MỜI",
       "eyebrow": "Thành phần diễn giả",
       "cards": {
         "g1": {
@@ -558,7 +558,7 @@
           "photo": "[ ẢNH MC NGỌC KHANH ]",
           "badge": "MC",
           "name": "Đ/c Ngọc Khanh",
-          "role": "MC · Điều phối tọa đàm"
+          "role": "MC"
         }
       },
       "titleHtml": "<em style=\"color:var(--red); font-style:italic;\">Ba lĩnh vực.</em><br>Một tinh thần tự soi.",
