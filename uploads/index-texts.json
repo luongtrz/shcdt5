@@ -29,7 +29,23 @@
       "eyebrow": "Hoạt động 1 · DIXIT chuyển thể",
       "subtitle": "Hidden DIXIT · Bug Bounty Edition",
       "headingHtml": "Người ấy<br><em style=\"color: var(--gold);\">là ai?</em>",
-      "descHtml": "BTC đưa ra <strong style=\"color:var(--gold);\">5 từ khoá</strong> miêu tả khuyết điểm/ưu điểm của một đảng viên giấu mặt. Các đội cạnh trĐ/c dự đoán — sau khi lộ diện, tập thể cùng đề xuất giải pháp <strong style=\"color:var(--gold);\">\"Patch Bug\"</strong>."
+      "descHtml": "BTC đưa ra <strong style=\"color:var(--gold);\">5 từ khoá</strong> miêu tả khuyết điểm/ưu điểm của một đảng viên giấu mặt. Các đội cạnh tranh dự đoán — sau khi lộ diện, tập thể cùng đề xuất giải pháp <strong style=\"color:var(--gold);\">\"Patch Bug\"</strong>."
+    },
+    "coreIdea": {
+      "cornerLeft": "HOẠT ĐỘNG 01 · Ý TƯỞNG CỐT LÕI",
+      "cornerRight": "LUẬT CHƠI DIXIT",
+      "eyebrow": "Triết lý trò chơi",
+      "heading": "Ý TƯỞNG CỐT LÕI",
+      "section1": {
+        "title": "Cơ chế \"Tự soi\"",
+        "mechanism": "<strong>Cơ chế:</strong> Một đội đưa ra 5 từ khóa (Keywords) mô tả ẩn dụ 1 Đảng viên giấu mặt. Bao gồm cả ưu & nhược.",
+        "mission": "<strong>Nhiệm vụ:</strong> 2 đội còn lại cạnh tranh dự đoán thành viên. Sau đó, sẽ góp ý những giải pháp để giúp nhân vật vượt qua trở ngại."
+      },
+      "section2": {
+        "title": "Luật chơi Dixit",
+        "rules": "Từ khóa không được quá dễ đoán nhưng cũng không được quá ... ẩn dụ. Phải “tinh tế\" để đạt điểm tối ưu.",
+        "mechanism": "Cơ chế \"phản biện\" để tránh đưa ra từ khóa quá \"ảo\"."
+      }
     },
     "overview": {
       "cornerLeft": "HOẠT ĐỘNG 01 · TỔNG QUAN",
