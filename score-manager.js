@@ -49,9 +49,9 @@
         font-family: var(--font-sans);
       }
       .score-toggle {
-        background: var(--ink);
-        color: var(--white);
-        border: none;
+        background: var(--red);
+        color: var(--gold);
+        border: 2px solid var(--gold);
         padding: 12px 24px;
         border-radius: 40px;
         cursor: pointer;
@@ -59,7 +59,7 @@
         letter-spacing: 0.1em;
         text-transform: uppercase;
         font-size: 14px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        box-shadow: 0 10px 20px rgba(200, 16, 46, 0.3);
         display: flex;
         align-items: center;
         gap: 12px;
@@ -71,14 +71,13 @@
       }
       .score-panel {
         display: none;
-        width: 380px;
+        width: 400px;
         padding: 24px;
         border-radius: 24px;
-        background: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        background: var(--red);
+        color: var(--gold);
+        border: 3px solid var(--gold);
+        box-shadow: 0 30px 60px rgba(0,0,0,0.4);
         flex-direction: column;
         gap: 20px;
       }
@@ -95,7 +94,7 @@
         align-items: center;
         justify-content: space-between;
         padding-bottom: 16px;
-        border-bottom: 1px solid rgba(0,0,0,0.05);
+        border-bottom: 1px solid rgba(255, 210, 0, 0.2);
       }
       .team-info {
         display: flex;
@@ -104,7 +103,7 @@
       .team-name {
         font-weight: 800;
         font-size: 18px;
-        color: var(--ink);
+        color: var(--gold);
         text-transform: uppercase;
       }
       .team-score {
@@ -112,6 +111,7 @@
         font-weight: 800;
         font-size: 42px;
         line-height: 1;
+        color: var(--gold);
         transition: all 0.3s;
       }
       .score-btns {
@@ -121,8 +121,9 @@
       .btn-score {
         width: 60px;
         height: 50px;
-        border: 2px solid var(--ink);
-        background: var(--white);
+        border: 2px solid var(--gold);
+        background: var(--red);
+        color: var(--gold);
         font-family: 'JetBrains Mono', monospace;
         font-weight: 800;
         font-size: 16px;
@@ -131,14 +132,14 @@
         transition: all 0.1s;
       }
       .btn-score:hover {
-        background: var(--ink);
-        color: var(--white);
+        background: var(--gold);
+        color: var(--red);
       }
       .btn-score:active {
         transform: translateY(2px);
       }
-      .btn-score.plus { color: #2ecc71; }
-      .btn-score.minus { color: var(--red); }
+      .btn-score.plus { color: var(--gold); }
+      .btn-score.minus { color: var(--gold); opacity: 0.8; }
       
       .score-panel-header {
         display: flex;
@@ -154,13 +155,13 @@
       }
       .btn-reset-scores {
         background: transparent;
-        border: 1px solid var(--red);
-        color: var(--red);
+        border: 1px solid var(--gold);
+        color: var(--gold);
         font-size: 10px;
         padding: 4px 8px;
         border-radius: 4px;
         cursor: pointer;
-        opacity: 0.5;
+        opacity: 0.6;
       }
       .btn-reset-scores:hover { opacity: 1; }
     `;

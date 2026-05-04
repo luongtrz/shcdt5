@@ -1338,19 +1338,20 @@
               grid-template-columns: 1fr 1fr 1fr;
               gap: 24px;
             ">
-          <div style="border: 2px solid var(--ink); padding: 20px">
-            <div class="mono-tag" style="color: var(--red); font-weight: 700" data-i18n="controls.teamA"></div>
+          <div style="border: 3px solid var(--gold); padding: 24px; background: var(--red); color: var(--gold); border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <div class="mono-tag" style="color: var(--gold); font-weight: 800" data-i18n="controls.teamA"></div>
             <div style="
                   display: flex;
                   align-items: baseline;
-                  gap: 12px;
-                  margin-top: 4px;
+                  gap: 16px;
+                  margin-top: 8px;
                 ">
               <span id="score-a" style="
                     font-family: var(--font-serif);
                     font-weight: 900;
-                    font-size: 56px;
+                    font-size: 64px;
                     line-height: 1;
+                    color: var(--gold);
                   ">0</span>
               <button onclick="changeScore('a', 5)" data-i18n="controls.plus5" style="
                     padding: 6px 12px;
