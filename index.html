@@ -2784,25 +2784,34 @@
 
     <!-- ====== 29 HD3 KHÁCH MỜI ====== -->
     <section data-screen-label="29 HD3 Khach moi" data-i18n-attr="data-screen-label:screenLabels.hd3Guests"
-      id="guest-slide">
-      <div class="chrome-corner tl" data-i18n="hd3.guests.cornerLeft"></div>
-      <div class="chrome-corner tr" data-i18n="hd3.guests.cornerRight"></div>
-
+      id="guest-slide" style="background: #f8f6f2; position: relative; overflow: hidden;">
+      
+      <!-- Premium Background Layer -->
       <div style="
             position: absolute;
             inset: 0;
-            background:
-              radial-gradient(
-                circle at 20% 30%,
-                rgba(200, 16, 46, 0.06),
-                transparent 50%
-              ),
-              radial-gradient(
-                circle at 80% 70%,
-                rgba(255, 210, 0, 0.08),
-                transparent 50%
-              );
+            background: 
+              radial-gradient(circle at 10% 10%, rgba(200, 16, 46, 0.05) 0%, transparent 40%),
+              radial-gradient(circle at 90% 90%, rgba(255, 210, 0, 0.08) 0%, transparent 40%),
+              linear-gradient(135deg, #f8f6f2 0%, #eeebe5 100%);
+            z-index: 0;
           "></div>
+      
+      <!-- Decorative Elements -->
+      <div style="
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: var(--red);
+            opacity: 0.03;
+            border-radius: 50%;
+            filter: blur(80px);
+          "></div>
+
+      <div class="chrome-corner tl" data-i18n="hd3.guests.cornerLeft"></div>
+      <div class="chrome-corner tr" data-i18n="hd3.guests.cornerRight"></div>
 
       <div class="slide-pad" style="padding: 64px 96px; position: relative">
         <div style="
@@ -2830,229 +2839,63 @@
               gap: 24px;
               flex: 1;
             ">
-          <!-- Đ/c Hiếu -->
-          <div style="display: flex; flex-direction: column">
-            <div style="
-                  aspect-ratio: 4/5;
-                  background: var(--white);
-                  border: 2px solid var(--ink);
-                  position: relative;
-                  overflow: hidden;
-                  flex: 1;
-                ">
-              <div style="
-                    position: absolute;
-                    inset: 0;
-                    background: linear-gradient(
-                      135deg,
-                      rgba(200, 16, 46, 0.12),
-                      rgba(200, 16, 46, 0.04)
-                    );
-                  "></div>
-              <img src="uploads/profile-placeholder.png" style="
-                    position: absolute;
-                    inset: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    opacity: 0.8;
-                  " alt="Placeholder">
-              <div style="
-                    position: absolute;
-                    top: 14px;
-                    left: 14px;
-                    background: var(--red);
-                    color: var(--white);
-                    padding: 5px 12px;
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 12px;
-                    letter-spacing: 0.15em;
-                  ">
+          <!-- Đ/c Đức Nhâm -->
+          <div class="auto-anim-item" style="display: flex; flex-direction: column; background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 15px 45px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
+            <div style="aspect-ratio: 4/5; position: relative; overflow: hidden;">
+              <img src="uploads/profile-placeholder.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" alt="Speaker">
+              <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.6));"></div>
+              <div style="position: absolute; top: 16px; left: 16px; background: var(--red); color: var(--white); padding: 6px 14px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; border-radius: 4px; box-shadow: 0 4px 10px rgba(200, 16, 46, 0.3);">
                 <span data-i18n="hd3.guests.cards.g1.badge"></span>
               </div>
-              <div style="
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    padding: 14px;
-                    background: linear-gradient(
-                      transparent,
-                      rgba(0, 0, 0, 0.7)
-                    );
-                  "></div>
             </div>
-            <div style="padding: 20px 0 0">
-              <h3 data-i18n="hd3.guests.cards.g1.name" style="margin: 0 0 4px; font-size: 28px; font-weight: 700"></h3>
-              <div class="body" data-i18n="hd3.guests.cards.g1.role" style="opacity: 0.65; margin: 0; font-size: 18px">
-              </div>
+            <div style="padding: 24px; background: var(--white);">
+              <h3 data-i18n="hd3.guests.cards.g1.name" style="margin: 0 0 6px; font-size: 28px; font-weight: 800; color: var(--ink); letter-spacing: -0.02em;"></h3>
+              <div class="body" data-i18n="hd3.guests.cards.g1.role" style="opacity: 0.6; margin: 0; font-size: 18px; font-weight: 500; color: var(--ink);"></div>
             </div>
           </div>
 
-          <!-- Đ/c Trường -->
-          <div style="display: flex; flex-direction: column">
-            <div style="
-                  aspect-ratio: 4/5;
-                  background: var(--white);
-                  border: 2px solid var(--ink);
-                  position: relative;
-                  overflow: hidden;
-                  flex: 1;
-                ">
-              <div style="
-                    position: absolute;
-                    inset: 0;
-                    background: linear-gradient(
-                      135deg,
-                      rgba(255, 210, 0, 0.18),
-                      rgba(255, 210, 0, 0.06)
-                    );
-                  "></div>
-              <img src="uploads/profile-placeholder.png" style="
-                    position: absolute;
-                    inset: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    opacity: 0.8;
-                  " alt="Placeholder">
-              <div style="
-                    position: absolute;
-                    top: 14px;
-                    left: 14px;
-                    background: var(--ink);
-                    color: var(--gold);
-                    padding: 5px 12px;
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 12px;
-                    letter-spacing: 0.15em;
-                  ">
+          <!-- Đ/c Văn Trường -->
+          <div class="auto-anim-item" style="display: flex; flex-direction: column; background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 15px 45px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
+            <div style="aspect-ratio: 4/5; position: relative; overflow: hidden;">
+              <img src="uploads/profile-placeholder.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" alt="Speaker">
+              <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.6));"></div>
+              <div style="position: absolute; top: 16px; left: 16px; background: var(--gold); color: var(--ink); padding: 6px 14px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; border-radius: 4px; box-shadow: 0 4px 10px rgba(255, 210, 0, 0.3);">
                 <span data-i18n="hd3.guests.cards.g2.badge"></span>
               </div>
-              <div style="
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    padding: 14px;
-                    background: linear-gradient(
-                      transparent,
-                      rgba(0, 0, 0, 0.7)
-                    );
-                  "></div>
             </div>
-            <div style="padding: 20px 0 0">
-              <h3 data-i18n="hd3.guests.cards.g2.name" style="margin: 0 0 4px; font-size: 28px; font-weight: 700"></h3>
-              <div class="body" data-i18n="hd3.guests.cards.g2.role" style="opacity: 0.65; margin: 0; font-size: 18px">
-              </div>
+            <div style="padding: 24px; background: var(--white);">
+              <h3 data-i18n="hd3.guests.cards.g2.name" style="margin: 0 0 6px; font-size: 28px; font-weight: 800; color: var(--ink); letter-spacing: -0.02em;"></h3>
+              <div class="body" data-i18n="hd3.guests.cards.g2.role" style="opacity: 0.6; margin: 0; font-size: 18px; font-weight: 500; color: var(--ink);"></div>
             </div>
           </div>
 
-          <!-- Đ/c Thanh -->
-          <div style="display: flex; flex-direction: column">
-            <div style="
-                  aspect-ratio: 4/5;
-                  background: var(--white);
-                  border: 2px solid var(--ink);
-                  position: relative;
-                  overflow: hidden;
-                  flex: 1;
-                ">
-              <div style="
-                    position: absolute;
-                    inset: 0;
-                    background: linear-gradient(
-                      135deg,
-                      rgba(200, 16, 46, 0.12),
-                      rgba(255, 210, 0, 0.06)
-                    );
-                  "></div>
-              <img src="uploads/profile-placeholder.png" style="
-                    position: absolute;
-                    inset: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    opacity: 0.8;
-                  " alt="Placeholder">
-              <div style="
-                    position: absolute;
-                    top: 14px;
-                    left: 14px;
-                    background: var(--red);
-                    color: var(--white);
-                    padding: 5px 12px;
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 12px;
-                    letter-spacing: 0.15em;
-                  ">
+          <!-- Đ/c Nhựt Thanh -->
+          <div class="auto-anim-item" style="display: flex; flex-direction: column; background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 15px 45px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
+            <div style="aspect-ratio: 4/5; position: relative; overflow: hidden;">
+              <img src="uploads/profile-placeholder.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" alt="Speaker">
+              <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.6));"></div>
+              <div style="position: absolute; top: 16px; left: 16px; background: var(--red); color: var(--white); padding: 6px 14px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; border-radius: 4px; box-shadow: 0 4px 10px rgba(200, 16, 46, 0.3);">
                 <span data-i18n="hd3.guests.cards.g3.badge"></span>
               </div>
-              <div style="
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    padding: 14px;
-                    background: linear-gradient(
-                      transparent,
-                      rgba(0, 0, 0, 0.7)
-                    );
-                  "></div>
             </div>
-            <div style="padding: 20px 0 0">
-              <h3 data-i18n="hd3.guests.cards.g3.name" style="margin: 0 0 4px; font-size: 28px; font-weight: 700"></h3>
-              <div class="body" data-i18n="hd3.guests.cards.g3.role" style="opacity: 0.65; margin: 0; font-size: 18px">
-              </div>
+            <div style="padding: 24px; background: var(--white);">
+              <h3 data-i18n="hd3.guests.cards.g3.name" style="margin: 0 0 6px; font-size: 28px; font-weight: 800; color: var(--ink); letter-spacing: -0.02em;"></h3>
+              <div class="body" data-i18n="hd3.guests.cards.g3.role" style="opacity: 0.6; margin: 0; font-size: 18px; font-weight: 500; color: var(--ink);"></div>
             </div>
           </div>
 
           <!-- Đ/c Ngọc Khanh - MC -->
-          <div style="display: flex; flex-direction: column">
-            <div style="
-                  aspect-ratio: 4/5;
-                  background: var(--ink);
-                  color: var(--white);
-                  border: 2px solid var(--ink);
-                  position: relative;
-                  overflow: hidden;
-                  flex: 1;
-                ">
-              <div style="
-                    position: absolute;
-                    inset: 0;
-                    background: linear-gradient(
-                      135deg,
-                      rgba(255, 210, 0, 0.18),
-                      rgba(0, 0, 0, 0)
-                    );
-                  "></div>
-              <img src="uploads/profile-placeholder.png" style="
-                    position: absolute;
-                    inset: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    opacity: 0.8;
-                  " alt="Placeholder">
-              <div style="
-                    position: absolute;
-                    top: 14px;
-                    left: 14px;
-                    background: var(--gold);
-                    color: var(--ink);
-                    padding: 5px 12px;
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 12px;
-                    letter-spacing: 0.15em;
-                  ">
+          <div class="auto-anim-item" style="display: flex; flex-direction: column; background: var(--ink); border-radius: 16px; overflow: hidden; box-shadow: 0 15px 45px rgba(0,0,0,0.2); border: 1px solid rgba(255,210,0,0.2);">
+            <div style="aspect-ratio: 4/5; position: relative; overflow: hidden;">
+              <img src="uploads/profile-placeholder.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" alt="MC">
+              <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.8));"></div>
+              <div style="position: absolute; top: 16px; left: 16px; background: var(--gold); color: var(--ink); padding: 6px 14px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 800; letter-spacing: 0.1em; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.4);">
                 <span data-i18n="hd3.guests.cards.mc.badge"></span>
               </div>
             </div>
-            <div style="padding: 20px 0 0">
-              <h3 data-i18n="hd3.guests.cards.mc.name" style="margin: 0 0 4px; font-size: 28px; font-weight: 700"></h3>
-              <div class="body" data-i18n="hd3.guests.cards.mc.role" style="opacity: 0.65; margin: 0; font-size: 18px">
-              </div>
+            <div style="padding: 24px; background: var(--ink);">
+              <h3 data-i18n="hd3.guests.cards.mc.name" style="margin: 0 0 4px; font-size: 28px; font-weight: 800; color: var(--gold); letter-spacing: -0.02em;"></h3>
+              <div class="body" data-i18n="hd3.guests.cards.mc.role" style="opacity: 0.7; margin: 0; font-size: 17px; font-weight: 500; color: var(--gold);"></div>
             </div>
           </div>
         </div>
