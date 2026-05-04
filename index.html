@@ -1233,74 +1233,83 @@
             z-index: 0;
           "></div>
 
-      <div class="slide-pad" style="padding: 80px 80px 48px; position: relative; z-index: 5;">
-        <div class="anim-fade-up d-1" style="margin-bottom: 32px;">
-          <div class="eyebrow" data-i18n="hd1.barem.eyebrow" style="margin-bottom: 8px; font-size: 24px;"></div>
-          <h2 class="title-xl" style="margin: 0; font-size: 88px; line-height: 1.05; color: var(--ink);">
+      <div class="slide-pad" style="padding: 60px 80px; position: relative; z-index: 5;">
+        <!-- Page Header -->
+        <div class="anim-fade-up d-1" style="margin-bottom: 40px; text-align: center;">
+          <div class="eyebrow" data-i18n="hd1.barem.eyebrow" style="margin-bottom: 12px; font-size: 26px; color: var(--red); font-weight: 800; letter-spacing: 0.2em;"></div>
+          <h2 class="title-xl" style="margin: 0; font-size: 96px; line-height: 1; color: var(--ink); text-transform: uppercase;">
             BAREM TÍNH <span style="color: var(--red)">ĐIỂM CHI TIẾT</span>
           </h2>
         </div>
 
-        <div class="anim-fade-up d-3">
-          <table style="width: 100%; border-collapse: separate; border-spacing: 0; border: 2px solid var(--ink); background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1);">
-            <thead>
-              <tr style="background: var(--ink); color: var(--gold);">
-                <th style="padding: 24px; text-align: left; font-size: 24px; border-bottom: 2px solid var(--gold); letter-spacing: 0.1em;">TRƯỜNG HỢP / HÀNH ĐỘNG</th>
-                <th style="padding: 24px; text-align: center; font-size: 24px; border-bottom: 2px solid var(--gold); letter-spacing: 0.1em; width: 280px;">ĐỘI DỰ ĐOÁN</th>
-                <th style="padding: 24px; text-align: center; font-size: 24px; border-bottom: 2px solid var(--gold); letter-spacing: 0.1em; width: 340px;">ĐỘI CHỦ NHÀ</th>
-              </tr>
-            </thead>
-            <tbody style="font-size: 26px; font-weight: 700; color: var(--ink);">
-              <tr style="border-bottom: 1px solid var(--line);">
-                <td style="padding: 20px 24px; border-bottom: 1px solid var(--line);">1 đội đoán trúng mốc K1</td>
-                <td style="padding: 20px 24px; text-align: center; border-bottom: 1px solid var(--line); color: var(--red); font-size: 32px;">+30đ</td>
-                <td style="padding: 20px 24px; text-align: center; border-bottom: 1px solid var(--line); color: var(--red);">
-                  <div style="font-size: 32px;">-10đ</div>
-                  <div style="font-size: 16px; opacity: 0.7; font-weight: 500;">(Keywords quá lộ liễu)</div>
-                </td>
-              </tr>
-              <tr style="background: #fcfbf8;">
-                <td style="padding: 20px 24px; border-bottom: 1px solid var(--line);">1 trong các đội đoán trúng K2–K5</td>
-                <td style="padding: 20px 24px; text-align: center; border-bottom: 1px solid var(--line); color: var(--red); font-size: 32px;">+25đ &rarr; +10đ</td>
-                <td style="padding: 20px 24px; text-align: center; border-bottom: 1px solid var(--line); color: var(--gold-deep);">
-                  <div style="font-size: 32px;">+25đ &rarr; +10đ</div>
-                  <div style="font-size: 16px; opacity: 0.7; font-weight: 500;">(Tinh tế - Theo mốc đoán)</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding: 20px 24px; border-bottom: 1px solid var(--line);">Cả 2 đội cùng đoán trúng</td>
-                <td style="padding: 20px 24px; text-align: center; border-bottom: 1px solid var(--line); font-size: 24px; opacity: 0.8;">Theo mốc tương ứng</td>
-                <td style="padding: 20px 24px; text-align: center; border-bottom: 1px solid var(--line); color: var(--gold-deep);">
-                  <div style="font-size: 32px;">+10đ</div>
-                  <div style="font-size: 16px; opacity: 0.7; font-weight: 500;">(An ủi - Gợi ý hơi dễ)</div>
-                </td>
-              </tr>
-              <tr style="background: #fcfbf8;">
-                <td style="padding: 20px 24px; border-bottom: 1px solid var(--line);">Không đội nào đoán trúng</td>
-                <td style="padding: 20px 24px; text-align: center; border-bottom: 1px solid var(--line); opacity: 0.3;">—</td>
-                <td style="padding: 20px 24px; text-align: center; border-bottom: 1px solid var(--line); color: var(--red);">
-                  <div style="font-size: 32px;">-10đ</div>
-                  <div style="font-size: 16px; opacity: 0.7; font-weight: 500;">(Keywords quá khó/ảo)</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding: 20px 24px; border-bottom: 1px solid var(--line);">Đoán sai (Bug giả)</td>
-                <td style="padding: 20px 24px; text-align: center; border-bottom: 1px solid var(--line); color: var(--red);">
-                  <div style="font-size: 32px;">-5đ</div>
-                  <div style="font-size: 16px; opacity: 0.7; font-weight: 500;">(Mỗi lần đoán sai)</div>
-                </td>
-                <td style="padding: 20px 24px; text-align: center; border-bottom: 1px solid var(--line); opacity: 0.3;">—</td>
-              </tr>
-              <tr style="background: var(--ink); color: white;">
-                <td style="padding: 24px; border-radius: 0 0 0 16px;">Inspect F12 - Soi & Sửa</td>
-                <td style="padding: 24px; text-align: center; color: var(--gold); font-size: 32px;">+10đ</td>
-                <td style="padding: 24px; text-align: center; color: var(--red); border-radius: 0 0 16px 0;">
-                  <div style="font-size: 32px;">-10đ</div>
-                  <div style="font-size: 16px; opacity: 0.8; font-weight: 500;">(Cướp điểm nếu phản biện đúng)</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- Table Container -->
+        <div class="anim-fade-up d-3" style="max-width: 1600px; margin: 0 auto;">
+          <!-- Table Header -->
+          <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 20px; padding: 0 32px 16px; opacity: 0.6;">
+            <div class="mono-tag" style="font-size: 18px; font-weight: 800; letter-spacing: 0.1em;">TRƯỜNG HỢP / HÀNH ĐỘNG</div>
+            <div class="mono-tag" style="font-size: 18px; font-weight: 800; letter-spacing: 0.1em; text-align: center;">ĐỘI DỰ ĐOÁN</div>
+            <div class="mono-tag" style="font-size: 18px; font-weight: 800; letter-spacing: 0.1em; text-align: center;">ĐỘI CHỦ NHÀ</div>
+          </div>
+
+          <!-- Table Rows -->
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <!-- Row 1 -->
+            <div class="anim-fade-up d-4" style="display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 20px; align-items: center; background: white; padding: 24px 32px; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.04); border-left: 12px solid var(--red);">
+              <div style="font-size: 26px; font-weight: 700; color: var(--ink);">1 đội đoán trúng mốc K1</div>
+              <div style="text-align: center; color: var(--red); font-family: var(--font-serif); font-weight: 900; font-size: 48px;">+30đ</div>
+              <div style="text-align: center;">
+                <span style="color: var(--red); font-family: var(--font-serif); font-weight: 900; font-size: 32px;">-10đ</span>
+                <div style="font-size: 16px; font-weight: 600; opacity: 0.5; margin-top: 4px;">(Keywords quá lộ liễu)</div>
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="anim-fade-up d-5" style="display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 20px; align-items: center; background: white; padding: 24px 32px; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.04); border-left: 12px solid var(--gold);">
+              <div style="font-size: 26px; font-weight: 700; color: var(--ink);">1 trong các đội đoán trúng K2–K5</div>
+              <div style="text-align: center; color: var(--red); font-family: var(--font-serif); font-weight: 900; font-size: 40px;">+25đ &rarr; +10đ</div>
+              <div style="text-align: center;">
+                <span style="color: var(--gold-deep); font-family: var(--font-serif); font-weight: 900; font-size: 32px;">+25đ &rarr; +10đ</span>
+                <div style="font-size: 16px; font-weight: 600; opacity: 0.5; margin-top: 4px;">(Tinh tế - Theo mốc đoán)</div>
+              </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="anim-fade-up d-6" style="display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 20px; align-items: center; background: white; padding: 24px 32px; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.04); border-left: 12px solid var(--gold);">
+              <div style="font-size: 26px; font-weight: 700; color: var(--ink);">Cả 2 đội cùng đoán trúng</div>
+              <div style="text-align: center; font-size: 22px; font-weight: 600; opacity: 0.6;">Theo mốc tương ứng</div>
+              <div style="text-align: center;">
+                <span style="color: var(--gold-deep); font-family: var(--font-serif); font-weight: 900; font-size: 32px;">+10đ</span>
+                <div style="font-size: 16px; font-weight: 600; opacity: 0.5; margin-top: 4px;">(An ủi - Gợi ý hơi dễ)</div>
+              </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="anim-fade-up d-7" style="display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 20px; align-items: center; background: white; padding: 24px 32px; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.04); border-left: 12px solid var(--red);">
+              <div style="font-size: 26px; font-weight: 700; color: var(--ink);">Không đội nào đoán trúng</div>
+              <div style="text-align: center; opacity: 0.2; font-size: 40px;">—</div>
+              <div style="text-align: center;">
+                <span style="color: var(--red); font-family: var(--font-serif); font-weight: 900; font-size: 32px;">-10đ</span>
+                <div style="font-size: 16px; font-weight: 600; opacity: 0.5; margin-top: 4px;">(Keywords quá khó/ảo)</div>
+              </div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="anim-fade-up d-8" style="display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 20px; align-items: center; background: #fff5f5; padding: 24px 32px; border-radius: 20px; box-shadow: 0 8px 25px rgba(200, 16, 46, 0.08); border: 2px solid var(--red);">
+              <div style="font-size: 26px; font-weight: 800; color: var(--red);">Đoán sai (Bug giả)</div>
+              <div style="text-align: center; color: var(--red); font-family: var(--font-serif); font-weight: 900; font-size: 48px;">-5đ</div>
+              <div style="text-align: center; opacity: 0.2; font-size: 40px;">—</div>
+            </div>
+
+            <!-- Row 6 -->
+            <div class="anim-fade-up d-9" style="display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 20px; align-items: center; background: var(--ink); color: white; padding: 28px 32px; border-radius: 24px; box-shadow: 0 15px 40px rgba(0,0,0,0.2); position: relative; overflow: hidden;">
+              <div style="font-size: 28px; font-weight: 900; color: var(--gold); letter-spacing: 0.05em;">Inspect F12 - Soi & Sửa</div>
+              <div style="text-align: center; color: var(--gold); font-family: var(--font-serif); font-weight: 900; font-size: 48px;">+10đ</div>
+              <div style="text-align: center;">
+                <span style="color: var(--red); font-family: var(--font-serif); font-weight: 900; font-size: 36px;">-10đ</span>
+                <div style="font-size: 16px; font-weight: 600; opacity: 0.7; margin-top: 4px; color: var(--white);">(Cướp điểm nếu phản biện đúng)</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
