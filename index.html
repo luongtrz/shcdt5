@@ -3288,21 +3288,33 @@
                 font-family: var(--font-serif);
                 font-weight: 900;
                 font-size: 180px;
-                line-height: 0.9;
+                line-height: 0.85;
                 letter-spacing: -0.04em;
                 margin: 0;
                 color: var(--white);
                 text-shadow: 0 10px 30px rgba(0,0,0,0.5);
               "></h1>
+        </div>
 
-          <div data-i18n="hd3.background.slogan" style="
-                margin-top: 40px;
+        <!-- Huge Centered Slogan -->
+        <div style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 100%;
+              text-align: center;
+              z-index: 1;
+              pointer-events: none;
+            ">
+          <div class="anim-fade-up d-4" data-i18n="hd3.background.slogan" style="
                 font-family: var(--font-serif);
                 font-style: italic;
-                font-size: 60px;
+                font-size: 140px;
                 color: var(--gold);
-                text-shadow: 0 0 30px rgba(255, 210, 0, 0.4);
-                letter-spacing: 0.02em;
+                text-shadow: 0 0 50px rgba(255, 210, 0, 0.6);
+                letter-spacing: 0.1em;
+                opacity: 0.9;
               "></div>
         </div>
 
@@ -3428,8 +3440,32 @@
                 color: var(--white);
                 text-shadow: 0 10px 30px rgba(0,0,0,0.5);
               "></h1>
+
+          <!-- Huge Centered Slogan -->
+          <div style="
+                position: absolute;
+                top: 50%;
+                left: 55%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                text-align: center;
+                z-index: 1;
+                pointer-events: none;
+              ">
+            <div class="anim-fade-up d-4" data-i18n="hd3.sharing.slogan" style="
+                  font-family: var(--font-serif);
+                  font-style: italic;
+                  font-size: 140px;
+                  color: var(--gold);
+                  text-shadow: 0 0 50px rgba(255, 210, 0, 0.4);
+                  letter-spacing: 0.1em;
+                  opacity: 0.4;
+                "></div>
+          </div>
           
           <div style="
+                position: relative;
+                z-index: 5;
                 display: flex;
                 flex-direction: column;
                 gap: 32px;
@@ -3446,26 +3482,6 @@
             <div class="anim-fade-up d-5" style="display: flex; align-items: center; gap: 24px;">
               <div style="width: 14px; height: 14px; background: var(--gold); transform: rotate(45deg); box-shadow: 0 0 15px var(--gold);"></div>
               <div style="font-size: 42px; font-weight: 700; color: var(--white); text-shadow: 0 4px 10px rgba(0,0,0,0.3);" data-i18n="hd3.sharing.items.2"></div>
-            </div>
-          </div>
-
-          <!-- Slogan Highlight -->
-          <div class="anim-fade-up d-6" style="
-                padding: 30px 60px;
-                background: rgba(255,255,255,0.05);
-                border: 1px solid rgba(255,210,0,0.5);
-                display: inline-block;
-                backdrop-filter: blur(15px);
-                border-radius: 12px;
-              ">
-            <div data-i18n="hd3.sharing.slogan" style="
-                  font-family: var(--font-serif);
-                  font-style: italic;
-                  font-size: 48px;
-                  color: var(--gold);
-                  text-shadow: 0 0 25px rgba(255, 210, 0, 0.4);
-                  letter-spacing: 0.05em;
-                "></div>
           </div>
         </div>
       </div>
