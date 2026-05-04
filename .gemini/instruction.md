@@ -89,4 +89,8 @@
 3. **Kiểm tra**: Đảm bảo giao diện không còn khung bao quanh nhưng vẫn giữ được các thành phần nội dung chính.
 4. **Git**: Thực hiện commit toàn bộ thay đổi từ root directory.
 
-
+### Kết quả thực hiện (2026-05-04)
+- Đã xóa bỏ hoàn toàn hệ thống khung viền `.party-frame` trong `styles.css`.
+- Đã loại bỏ tất cả các thẻ DIV trang trí liên quan đến `party-frame` (bao gồm các góc và ngôi sao) trong file `index.html`.
+- Giao diện hiện tại đã thoáng đãng hơn, không còn khung viền bao quanh các slide.
+- Đã thực hiện commit toàn bộ thay đổi từ root directory.

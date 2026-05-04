@@ -69,62 +69,6 @@ deck-stage > section {
 .chrome-corner.bl { bottom: 48px; left: 64px; }
 .chrome-corner.br { bottom: 48px; right: 64px; }
 
-/* ============= PARTY BORDER SYSTEM ============= */
-.party-frame {
-  position: absolute;
-  inset: 32px;
-  pointer-events: none;
-  z-index: 100;
-  border: 2px solid var(--gold);
-}
-
-.party-frame::before {
-  content: '';
-  position: absolute;
-  inset: -12px;
-  border: 1px solid var(--red);
-  opacity: 0.6;
-}
-
-.party-frame::after {
-  content: '';
-  position: absolute;
-  inset: 4px;
-  border: 1px solid var(--gold);
-  opacity: 0.3;
-}
-
-.party-frame .corner-ornament {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border: 2px solid var(--gold);
-  z-index: 101;
-}
-
-.party-frame .corner-ornament.tl { top: -10px; left: -10px; border-right: none; border-bottom: none; }
-.party-frame .corner-ornament.tr { top: -10px; right: -10px; border-left: none; border-bottom: none; }
-.party-frame .corner-ornament.bl { bottom: -10px; left: -10px; border-right: none; border-top: none; }
-.party-frame .corner-ornament.br { bottom: -10px; right: -10px; border-left: none; border-top: none; }
-
-.party-frame .corner-star {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  background: var(--gold);
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  z-index: 102;
-  filter: drop-shadow(0 0 8px rgba(255, 210, 0, 0.4));
-}
-
-[data-deck-active] .party-frame .corner-star {
-  animation: a-spin-in 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-}
-
-.party-frame .corner-star.tl { top: -22px; left: -22px; animation-delay: 0.6s !important; }
-.party-frame .corner-star.tr { top: -22px; right: -22px; animation-delay: 0.7s !important; }
-.party-frame .corner-star.bl { bottom: -22px; left: -22px; animation-delay: 0.8s !important; }
-.party-frame .corner-star.br { bottom: -22px; right: -22px; animation-delay: 0.9s !important; }
 
 /* ============= DECORATIVE ELEMENTS ============= */
 .anim-side-bar {
