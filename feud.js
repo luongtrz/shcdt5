@@ -15,7 +15,7 @@
           border-radius: 4px;
         ">
           <div style="font-family: var(--font-serif); font-weight:900; font-size: 80px; line-height:1; color: var(--gold); text-shadow: 2px 2px 0 var(--ink);">${rank}</div>
-          <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.3em; color: var(--gold); opacity: 0.8; font-weight:700;">REVEAL DATA</div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.3em; color: var(--gold); opacity: 0.8; font-weight:700;">REVEAL DATA</div>
           <div style="font-family: var(--font-serif); font-weight:900; font-size: 42px; color: var(--gold); text-shadow: 1px 1px 0 var(--ink);">+${points}</div>
         </div>
         <div class="feud-front" style="
@@ -28,8 +28,8 @@
           overflow: hidden;
         ">
           <div style="background: var(--ink); color: var(--gold); font-family: var(--font-serif); font-weight:900; font-size: 64px; height:100%; display:flex; align-items:center; justify-content:center; border-right: 2px solid var(--line);">${rank}</div>
-          <div style="padding: 0 32px; font-family: var(--font-sans); font-size: 28px; font-weight:700; color: var(--ink); line-height:1.25; letter-spacing: -0.01em;">${text}</div>
-          <div style="background: linear-gradient(to bottom, var(--gold), #e6be00); height:100%; display:flex; align-items:center; justify-content:center; font-family: var(--font-serif); font-weight:900; font-size: 40px; color: var(--ink); border-left: 2px solid var(--line); shadow: inset 2px 0 10px rgba(0,0,0,0.05);">${points}</div>
+          <div style="padding: 0 32px; font-family: var(--font-sans); font-size: 38px; font-weight:700; color: var(--ink); line-height:1.2; letter-spacing: -0.01em;">${text}</div>
+          <div style="background: linear-gradient(to bottom, var(--gold), #e6be00); height:100%; display:flex; align-items:center; justify-content:center; font-family: var(--font-serif); font-weight:900; font-size: 48px; color: var(--ink); border-left: 2px solid var(--line); shadow: inset 2px 0 10px rgba(0,0,0,0.05);">${points}</div>
         </div>
       </div>
     `;

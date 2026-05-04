@@ -51,12 +51,12 @@
             display:flex; flex-direction:column;
           ">
             <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-              <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.15em; color: var(--red); font-weight:700;">${kw.type.toUpperCase()}</div>
-              <div style="font-family: var(--font-serif); font-weight:900; font-size: 28px; color: var(--gold); background: var(--ink); padding: 4px 12px;">+${points}</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 16px; letter-spacing: 0.15em; color: var(--red); font-weight:700;">${kw.type.toUpperCase()}</div>
+              <div style="font-family: var(--font-serif); font-weight:900; font-size: 32px; color: var(--gold); background: var(--ink); padding: 4px 12px;">+${points}</div>
             </div>
-            <div style="flex:1; display:flex; align-items:center; padding: 16px 0; font-family: var(--font-serif); font-style: italic; font-size: 30px; line-height: 1.25; color: var(--ink);">${kw.text}</div>
+            <div style="flex:1; display:flex; align-items:center; padding: 16px 0; font-family: var(--font-serif); font-style: italic; font-size: 38px; line-height: 1.2; color: var(--ink);">${kw.text}</div>
             <div style="display:flex; justify-content:flex-end; padding-top: 12px; border-top: 1px solid var(--line);">
-              <div style="font-family: var(--font-serif); font-weight:900; font-size: 36px; color: var(--red);">${i+1}</div>
+              <div style="font-family: var(--font-serif); font-weight:900; font-size: 42px; color: var(--red);">${i+1}</div>
             </div>
           </div>
         </div>

@@ -154,10 +154,10 @@
               <div style="width:28px; height:28px; background:var(--red); clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);"></div>
               <div class="mono-tag" style="color: var(--red); font-weight:700;">Câu ${qNum} · ${data.title}</div>
             </div>
-            <h2 class="title-md" style="margin:0 0 24px; font-size:44px; line-height:1.15;">
+            <h2 class="title-md" style="margin:0 0 24px; font-size:52px; line-height:1.15;">
               ${formattedQuestion}
             </h2>
-            <p class="body" style="opacity:0.65; margin:0; font-size:22px;">${data.note}</p>
+            <p class="body" style="opacity:0.65; margin:0; font-size:28px;">${data.note}</p>
           </div>
           <div class="quiz-grid">
             ${['A', 'B', 'C', 'D'].map(opt => `

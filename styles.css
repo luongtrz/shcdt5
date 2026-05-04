@@ -71,7 +71,7 @@ deck-stage > section {
 .eyebrow {
   font-family: var(--font-sans);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 26px;
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--red);
@@ -98,31 +98,31 @@ deck-stage > section {
 .title-lg {
   font-family: var(--font-serif);
   font-weight: 800;
-  font-size: 84px;
+  font-size: 96px;
   line-height: 1.02;
   letter-spacing: -0.015em;
 }
 .title-md {
   font-family: var(--font-serif);
   font-weight: 700;
-  font-size: 56px;
+  font-size: 68px;
   line-height: 1.1;
 }
 .body-lg {
   font-family: var(--font-sans);
   font-weight: 400;
-  font-size: 32px;
+  font-size: 42px;
   line-height: 1.45;
 }
 .body {
   font-family: var(--font-sans);
   font-weight: 400;
-  font-size: 26px;
+  font-size: 34px;
   line-height: 1.5;
 }
 .mono-tag {
   font-family: 'JetBrains Mono', 'Courier New', monospace;
-  font-size: 18px;
+  font-size: 24px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
