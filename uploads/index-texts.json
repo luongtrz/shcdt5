@@ -345,17 +345,17 @@
         "target": {
           "icon": "🎯",
           "title": "Mục tiêu",
-          "desc": "Đoán trúng đáp án Top 1 — phổ biến nhất từ khảo sát."
+          "descHtml": "Đoán trúng đáp án <strong>Top 1</strong> — phổ biến nhất từ khảo sát."
         },
         "time": {
           "icon": "⏱",
           "title": "Thời gian",
-          "descHtml": "<strong>60 giây</strong> suy nghĩ — ghi 1 đáp án duy nhất lên bảng."
+          "descHtml": "<strong>60 giây</strong> suy nghĩ — ghi <strong>1 đáp án duy nhất</strong> lên bảng."
         },
         "method": {
           "icon": "🙋",
           "title": "Cách thức",
-          "descHtml": "Hết 60s, 3 đội <strong>đồng loạt giơ bảng</strong>. MC lật mở kết quả."
+          "descHtml": "Hết <strong>60s</strong>, 3 đội <strong>đồng loạt giơ bảng</strong>. MC lật mở kết quả."
         }
       },
       "scoring": {
