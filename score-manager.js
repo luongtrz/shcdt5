@@ -136,16 +136,17 @@
         border-radius: 8px;
         transition: all 0.1s;
       }
+      .btn-score.plus { color: var(--gold); }
+      .btn-score.minus { color: var(--gold); opacity: 0.8; }
+      
       .btn-score:hover {
-        background: var(--gold);
-        color: var(--red);
-        border-color: var(--gold);
+        background: var(--gold) !important;
+        color: var(--ink) !important;
+        border-color: var(--gold) !important;
       }
       .btn-score:active {
         transform: translateY(2px);
       }
-      .btn-score.plus { color: var(--gold); }
-      .btn-score.minus { color: var(--gold); opacity: 0.8; }
       
       .score-panel-header {
         display: flex;

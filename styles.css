@@ -185,7 +185,7 @@ deck-stage > section {
 }
 .btn-score-legacy:hover {
   background: var(--gold) !important;
-  color: var(--red) !important;
+  color: var(--ink) !important;
   border-color: var(--gold) !important;
 }
 
