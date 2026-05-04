@@ -1480,10 +1480,9 @@
 
           <!-- Right: Instructions & Timer (High-Visibility Scale) -->
           <div style="display: flex; flex-direction: column; gap: 24px;">
-            <!-- Timer Card (Integrated with timers.js) -->
-            <div class="anim-fade-up d-4 timer-card" data-duration="600" style="background: var(--ink); color: white; padding: 24px 32px; border-radius: 20px; text-align: center; box-shadow: 0 15px 30px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
-              <div style="position: absolute; top: 0; left: 0; width: 100%; height: 6px; background: var(--red);"></div>
-              <div style="font-size: 14px; font-weight: 800; letter-spacing: 0.2em; opacity: 0.6; margin-bottom: 4px; text-transform: uppercase;">TIMER</div>
+            <!-- Timer Card (Floating Style) -->
+            <div class="anim-fade-up d-4 timer-card" data-duration="600" style="position: relative; text-align: center;">
+              <div style="font-size: 14px; font-weight: 800; letter-spacing: 0.2em; opacity: 0.6; margin-bottom: 4px; text-transform: uppercase; color: white;">TIMER</div>
               <div style="display: flex; align-items: center; justify-content: center; gap: 32px; margin-top: 8px;">
                 <!-- SVG Timer -->
                 <div style="position: relative; width: 360px; height: 360px; display: flex; align-items: center; justify-content: center;">
