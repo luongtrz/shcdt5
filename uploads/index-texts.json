@@ -245,7 +245,7 @@
     "setup": {
       "cornerLeft": "HOẠT ĐỘNG 01 · THIẾT LẬP",
       "cornerRight": "PHASE 1B · TIỀN KỲ",
-      "eyebrow": "Thiết lập hồ sơ \"Target Bug\"",
+      "eyebrow": "\b",
       "titleHtml": "HỒ SƠ TỰ SOI · <em style=\"color:var(--red); font-style:italic;\">HIDDEN DIXIT</em>",
       "instruction": {
         "tag": "HƯỚNG DẪN XÂY DỰNG KEYWORDS",
