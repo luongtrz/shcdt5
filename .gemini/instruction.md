@@ -238,3 +238,9 @@
 - Làm nổi bật slogan "Tĩnh để Soi · Động để Sáng" ở vị trí eyebrow với kích thước lớn hơn và hiệu ứng phát sáng nhẹ.
 - Tinh chỉnh kích thước chữ trong thẻ khách mời để phù hợp với bố cục 4 người.
 - Đã thực hiện commit toàn bộ thay đổi.
+
+### Kết quả thực hiện (2026-05-04)
+- Đã tách riêng và làm nổi bật slogan "Tĩnh để Soi · Động để Sáng" với kích thước lớn (48px), font Serif Italic và hiệu ứng phát sáng vàng.
+- Cập nhật eyebrow thành "SINH HOẠT CHUYÊN ĐỀ THÁNG 5" để giữ cấu trúc slide trang trọng.
+- Duy trì bố cục 4 người (3 khách mời + 1 MC) đồng bộ.
+- Đã thực hiện commit toàn bộ thay đổi.
