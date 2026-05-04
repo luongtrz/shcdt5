@@ -195,3 +195,17 @@
 - Bố trí 3 thẻ hiển thị hình ảnh và thông tin của 3 diễn giả chính (`g1`, `g2`, `g3`) theo dạng lưới 3 cột.
 - Thẻ khách mời sử dụng hiệu ứng kính (`backdrop-filter`) và viền vàng để nổi bật trên nền đỏ.
 - Đã thực hiện commit toàn bộ thay đổi.
+
+---
+
+## Di chuyển Slide Background Tọa đàm (2026-05-04)
+
+### Mục tiêu
+- Di chuyển slide "Background Toa Dam" (`31.5`) từ vị trí hiện tại (sau Phase 2) lên vị trí ngay sau slide "Thành phần diễn giả" (Slide 29).
+- Đảm bảo luồng trình bày logic: Giới thiệu diễn giả -> Background chung cho tọa đàm -> Các phase chi tiết.
+
+### Kế hoạch thực hiện
+1. **Giao diện (`index.html`)**:
+   - Xóa bỏ khối mã của slide `31.5` tại vị trí cũ (khoảng dòng 3706).
+   - Chèn lại khối mã này vào ngay sau section của slide 29 (khoảng dòng 3221).
+2. **Git**: Thực hiện commit toàn bộ thay đổi.
