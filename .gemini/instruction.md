@@ -209,3 +209,25 @@
    - Xóa bỏ khối mã của slide `31.5` tại vị trí cũ (khoảng dòng 3706).
    - Chèn lại khối mã này vào ngay sau section của slide 29 (khoảng dòng 3221).
 2. **Git**: Thực hiện commit toàn bộ thay đổi.
+
+### Kết quả thực hiện (2026-05-04)
+- Đã di chuyển slide "31.5 HD3 Background Tọa đàm" lên vị trí mới: ngay sau slide "Thành phần diễn giả" (Slide 29) và trước slide "Phase 1: Giải mã hồ sơ" (Slide 30).
+- Đã xóa khối mã của slide này tại vị trí cũ (sau Phase 2).
+- Luồng trình bày hiện tại: Giới thiệu 4 khách mời -> Slide background chung (hiển thị 3 khách mời chính) -> Bắt đầu các giai đoạn tọa đàm.
+- Đã thực hiện commit toàn bộ thay đổi.
+
+---
+
+## Bổ sung MC và Slogan vào Slide Background Tọa đàm (2026-05-04)
+
+### Mục tiêu
+- Thêm thành viên thứ 4 (MC) vào slide background tọa đàm.
+- Bổ sung slogan "Tĩnh để Soi, Động để Sáng" vào slide để tăng tính thông điệp.
+- Duy trì bố cục đồng nhất với phong cách Cover.
+
+### Kế hoạch thực hiện
+1. **Giao diện (`index.html`)**:
+   - Cập nhật lưới hiển thị khách mời từ 3 cột thành 4 cột (`grid-template-columns: repeat(4, 1fr)`).
+   - Thêm thẻ thứ 4 hiển thị thông tin MC (lấy từ `hd3.guests.cards.mc`).
+   - Thêm dòng slogan "Tĩnh để Soi, Động để Sáng" vào vị trí phù hợp (ví dụ: ngay dưới tiêu đề hoặc thay thế vị trí eyebrow).
+2. **Git**: Thực hiện commit toàn bộ thay đổi.
