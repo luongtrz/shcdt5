@@ -53,23 +53,43 @@
       .score-toggle {
         background: var(--red);
         color: var(--gold);
-        border: 2px solid var(--gold);
-        padding: 12px 24px;
+        padding: 12px 18px;
         border-radius: 40px;
+        border: 2px solid var(--gold);
         cursor: pointer;
         font-weight: 800;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
         font-size: 14px;
         box-shadow: 0 10px 20px rgba(200, 16, 46, 0.3);
         display: flex;
         align-items: center;
+        gap: 0;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .score-toggle.collapsed {
+        padding: 12px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+      }
+      .score-summary-content {
+        display: flex;
+        align-items: center;
         gap: 12px;
+        margin-left: 10px;
         transition: all 0.3s;
+        opacity: 1;
+      }
+      .score-toggle.collapsed .score-summary-content {
+        margin-left: 0;
+        width: 0;
+        opacity: 0;
+        pointer-events: none;
       }
       .score-toggle:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        transform: translateY(-2px) scale(1.02);
       }
       .score-panel {
         display: none;
@@ -181,15 +201,15 @@
     dashboard.className = 'score-dashboard';
     
     dashboard.innerHTML = `
-      <button class="score-toggle" id="score-toggle-btn" title="Click để quản lý điểm số">
-        <span style="display:flex; gap: 12px; align-items:center;">
-          <span style="font-size: 18px; margin-right: 4px">🏆</span>
+      <button class="score-toggle" id="score-toggle-btn" title="Click đúp để thu gọn, Click đơn để mở bảng điểm">
+        <span id="trophy-icon" style="font-size: 22px; cursor: pointer;">🏆</span>
+        <div class="score-summary-content" id="score-summary-box">
           <span>A: <span id="summary-a">${scores.a}</span></span>
           <span style="opacity: 0.4">|</span>
           <span>B: <span id="summary-b">${scores.b}</span></span>
           <span style="opacity: 0.4">|</span>
           <span>C: <span id="summary-c">${scores.c}</span></span>
-        </span>
+        </div>
       </button>
       <div class="score-panel" id="score-panel-box">
         <div class="score-panel-header">
@@ -268,7 +288,12 @@
 
     toggleBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      // If was dragging, don't toggle
+      // If clicked on trophy icon, toggle collapse
+      if (e.target.id === 'trophy-icon') {
+        toggleBtn.classList.toggle('collapsed');
+        return;
+      }
+      // If was dragging, don't toggle panel
       if (Math.abs(offset.x - (e.clientX - dashboard.getBoundingClientRect().left)) < 2) {
          togglePanel();
       }
