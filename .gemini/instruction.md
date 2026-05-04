@@ -188,4 +188,10 @@
    - Thêm một container chứa 3 thẻ khách mời (`g1`, `g2`, `g3`) ở phía dưới tiêu đề.
    - Sử dụng layout card tương tự như slide 29 nhưng tinh chỉnh để phù hợp với nền đỏ (ví dụ: dùng border vàng hoặc nền trắng nhẹ).
 2. **Ngôn ngữ (`uploads/index-texts.json`)**: Đảm bảo các key cho metadata và thông tin khách mời được sử dụng đúng.
-3. **Git**: Thực hiện commit toàn bộ thay đổi.
+### Kết quả thực hiện (2026-05-04)
+- Đã cập nhật slide "31.5 HD3 Background Tọa đàm" với bố cục tương tự slide Cover (slide đầu tiên).
+- Sử dụng nền đỏ (`var(--red)`), hai thanh chắn vàng trên-dưới và ngôi sao vàng xoay đặc trưng.
+- Đã thêm metadata row ở phía trên slide cho đồng nhất với phong cách Cover.
+- Bố trí 3 thẻ hiển thị hình ảnh và thông tin của 3 diễn giả chính (`g1`, `g2`, `g3`) theo dạng lưới 3 cột.
+- Thẻ khách mời sử dụng hiệu ứng kính (`backdrop-filter`) và viền vàng để nổi bật trên nền đỏ.
+- Đã thực hiện commit toàn bộ thay đổi.
