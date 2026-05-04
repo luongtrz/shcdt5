@@ -243,6 +243,6 @@
 - Đã tạo slide mới "31.6 HD3 Khách mời chia sẻ" ngay sau slide background tọa đàm.
 - Slide chia sẻ bao gồm nội dung: Ba lĩnh vực cốt lõi, tinh thần tự soi và bài học kinh nghiệm bản thân.
 - Đã tích hợp slogan "Tĩnh để Soi · Động để Sáng" nổi bật trên cả slide Background và slide Chia sẻ.
-- Thêm thông điệp "Học tập và làm theo tư tưởng, đạo đức Hồ Chí Minh" vào phần badge trên đầu các slide tọa đàm để tăng tính trang trọng.
-- Duy trì bố cục 4 người (diễn giả + MC) đồng bộ.
+- Đã cập nhật phông chữ cho thông điệp "Học tập và làm theo tư tưởng, đạo đức Hồ Chí Minh" sang phông Serif Italic (`var(--font-serif)`), màu vàng gold và tăng kích thước để đồng bộ với các thành phần tiêu đề.
+- Chỉnh sửa eyebrow thành font Sans với độ mờ nhẹ để nhường sự nổi bật cho thông điệp chính.
 - Đã thực hiện commit toàn bộ thay đổi.
