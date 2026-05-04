@@ -323,7 +323,7 @@
     }
   },
   "cover": {
-    "topLeft": "Sinh hoạt Chuyên đề · Chỉ thị 05-CT/TW",
+    "topLeft": "Sinh hoạt Chuyên đề · Chỉ thị 05-CT/TW<br><span style=\"font-size: 0.85em; font-family: var(--font-serif); font-style: italic; opacity: 0.7; letter-spacing: 0.1em; text-transform: none;\">Tự soi mình theo gương Bác.</span>",
     "topRight": "Tháng 5 · 2026",
     "badge": "Học tập và làm theo tư tưởng, đạo đức Hồ Chí Minh",
     "titleHtml": "Tự soi mình<br><em style=\"font-style:italic; color: var(--gold);\">theo gương Bác.</em>",
