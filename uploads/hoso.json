@@ -1,0 +1,35 @@
+{
+  "hd3": {
+    "part1": {
+      "headingHtml": "Giải mã<br><em style=\"color: var(--red); font-style:italic;\">hồ sơ ẩn danh.</em>",
+      "descHtml": "Mỗi đội bốc thăm 1 hồ sơ ẩn danh và trả lời: <em>\"Nếu là người trong câu chuyện, đội bạn sẽ áp dụng nguyên tắc tự soi, tự sửa như thế nào để vượt qua khủng hoảng?\"</em>"
+    },
+    "part2": {
+      "desc": "BTC lật mở hồ sơ — khách mời chia sẻ câu chuyện thật, cách họ vượt qua, và bài học rút ra. Khách mời nhận xét phần trình bày của các đội.",
+      "headingHtml": "Lật mở<br><em style=\"color:var(--red); font-style:italic;\">hồ sơ.</em>",
+      "cards": {
+        "card1": {
+          "badge": "HỒ SƠ · 01",
+          "letter": "A",
+          "name": "Đ/c Đức Nhâm",
+          "desc": "Câu chuyện ẩn danh về một khoảnh khắc bị \"đè bẹp\" trong học tập — và hành trình tự soi để vượt qua.",
+          "tag": "HỌC TẬP"
+        },
+        "card2": {
+          "badge": "HỒ SƠ · 02",
+          "letter": "B",
+          "name": "Đ/c Văn Trường",
+          "desc": "Câu chuyện về sai lầm trong tổ chức hoạt động, áp lực thành tích — và bài học khiêm tốn từ tập thể.",
+          "tag": "NGOẠI KHOÁ"
+        },
+        "card3": {
+          "badge": "HỒ SƠ · 03",
+          "letter": "C",
+          "name": "Đ/c Nhựt Thanh",
+          "desc": "Câu chuyện về một quyết định sai lầm trong cuộc sống — và hành trình \"tự sửa\" qua sinh hoạt chi bộ.",
+          "tag": "CUỘC SỐNG"
+        }
+      }
+    }
+  }
+}

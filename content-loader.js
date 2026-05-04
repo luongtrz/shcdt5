@@ -73,17 +73,37 @@
     });
   };
 
-  fetch(CONTENT_URL)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}`);
+  function mergeDeep(target, ...sources) {
+    if (!sources.length) return target;
+    const source = sources.shift();
+
+    if (isObject(target) && isObject(source)) {
+      for (const key in source) {
+        if (isObject(source[key])) {
+          if (!target[key]) Object.assign(target, { [key]: {} });
+          mergeDeep(target[key], source[key]);
+        } else {
+          Object.assign(target, { [key]: source[key] });
+        }
       }
-      return response.json();
-    })
-    .then((texts) => {
-      applyTranslations(texts);
+    }
+    return mergeDeep(target, ...sources);
+  }
+
+  function isObject(item) {
+    return (item && typeof item === 'object' && !Array.isArray(item));
+  }
+
+  Promise.all([
+    fetch('uploads/index-texts.json').then(res => res.json()),
+    fetch('uploads/feud.json').then(res => res.ok ? res.json() : {}),
+    fetch('uploads/hoso.json').then(res => res.ok ? res.json() : {})
+  ])
+    .then(([mainTexts, feudTexts, hosoTexts]) => {
+      const mergedTexts = mergeDeep({}, mainTexts, feudTexts, hosoTexts);
+      applyTranslations(mergedTexts);
     })
     .catch((error) => {
-      console.warn('[content-loader] Failed to load translation file. Using placeholders.', error);
+      console.warn('[content-loader] Failed to load translation files. Using placeholders.', error);
     });
 })();

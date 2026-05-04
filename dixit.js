@@ -7,43 +7,12 @@
   const POINTS = [30, 25, 20, 15, 10];
 
   // Profile mẫu — người dẫn có thể thay (theo tài liệu HD1: K1 nhận xét chung, K2 ưu, K3 nhược, K4 ẩn ưu/khác, K5 ẩn nhược)
-  const rounds = [
-    {
-      label: "ROUND 01",
-      keywords: [
-        { type: "K1 · Nhận xét chung", text: "Người luôn xuất hiện sau ánh đèn." },
-        { type: "K2 · Ưu điểm", text: "Lắng nghe nhiều hơn nói." },
-        { type: "K3 · Nhược điểm", text: "Hay nhận việc rồi… ôm trọn." },
-        { type: "K4 · Ẩn ưu", text: "“API luôn trả 200 OK.”" },
-        { type: "K5 · Ẩn nhược", text: "“Overload RAM vì gánh tạ.”" }
-      ]
-    },
-    {
-      label: "ROUND 02",
-      keywords: [
-        { type: "K1 · Nhận xét chung", text: "Một ngọn nến trong góc thư viện." },
-        { type: "K2 · Ưu điểm", text: "Kỷ luật. Ghi chép từng buổi sinh hoạt." },
-        { type: "K3 · Nhược điểm", text: "Ngại lên tiếng khi đông người." },
-        { type: "K4 · Ẩn ưu", text: "“Mode: silent · Status: active.”" },
-        { type: "K5 · Ẩn nhược", text: "“Mất Ping với cộng đồng.”" }
-      ]
-    },
-    {
-      label: "ROUND 03",
-      keywords: [
-        { type: "K1 · Nhận xét chung", text: "Người nhớ ngày sinh nhật của cả lớp." },
-        { type: "K2 · Ưu điểm", text: "Ấm áp. Kết nối những con người xa lạ." },
-        { type: "K3 · Nhược điểm", text: "Đôi khi cả nể, khó từ chối." },
-        { type: "K4 · Ẩn ưu", text: "“Customer service: 24/7.”" },
-        { type: "K5 · Ẩn nhược", text: "“Yes-man.exe đang chạy.”" }
-      ]
-    }
-  ];
-
+  let rounds = [];
   let currentRound = 0;
   const scores = { a: 0, b: 0, c: 0 };
 
   function render() {
+    if (!rounds.length) return;
     const r = rounds[currentRound];
     document.getElementById('round-num').textContent = currentRound + 1;
     board.innerHTML = '';
@@ -120,6 +89,7 @@
   }
 
   window.cycleRound = () => {
+    if (!rounds.length) return;
     currentRound = (currentRound + 1) % rounds.length;
     render();
   };
@@ -131,5 +101,11 @@
     document.getElementById('score-' + team).textContent = scores[team];
   };
 
-  render();
+  fetch('uploads/dixit.json')
+    .then(res => res.json())
+    .then(data => {
+      rounds = data.dixit.rounds;
+      render();
+    })
+    .catch(err => console.error('[dixit] Failed to load rounds data:', err));
 })();

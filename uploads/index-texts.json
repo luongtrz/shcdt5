@@ -237,48 +237,7 @@
       "cornerLeftHtml": "HOẠT ĐỘNG 01 · ROUND <span id=\"round-num\">1</span>"
     }
   },
-  "feud": {
-    "round1": {
-      "item1": "Lạm dụng AI / copy code không hiểu bản chất — 'Đệ tử ChatGPT'",
-      "item2": "Không hỏi khi không hiểu — sợ bị đánh giá là 'gà'",
-      "item3": "Học vẹt syntax mà không nắm được tư duy thuật toán",
-      "item4": "Không đọc kỹ log/error, sửa bug theo cảm tính",
-      "item5": "Chạy deadline nên bỏ qua kiểm thử / case biên",
-      "item6": "Ngại review code, làm một mình đến lúc vỡ"
-    },
-    "round2": {
-      "item1": "Đọc / code thực hành mỗi ngày — dù chỉ 30 phút",
-      "item2": "Cập nhật xu hướng công nghệ qua tech news / GitHub trending",
-      "item3": "Refactor / review lại code cũ — học từ chính lỗi sai của mình",
-      "item4": "Làm mini-project đều đặn để giữ nhịp kỹ năng",
-      "item5": "Ghi chép kỹ thuật sau mỗi buổi học / thực hành",
-      "item6": "Ôn lại nền tảng (DSA, OS, DB) theo lịch cố định"
-    },
-    "round3": {
-      "item1": "Đạo code — copy không xin phép, không ghi nguồn (Academic dishonesty)",
-      "item2": "Lạm dụng tài khoản / quyền truy cập tập thể cho mục đích cá nhân",
-      "item3": "Bán / chia sẻ dữ liệu, source code nội bộ ra ngoài",
-      "item4": "Làm giả số liệu / benchmark trong báo cáo kỹ thuật",
-      "item5": "Dùng tài nguyên lab/server chung cho mục đích cá nhân",
-      "item6": "Nhận công sức nhóm thành thành tích riêng"
-    },
-    "round4": {
-      "item1": "Chủ động code review / pair programming — học từ đồng đội",
-      "item2": "Sẵn sàng chia sẻ tài liệu, cheat-sheet — không 'gatekeep' kiến thức",
-      "item3": "Lắng nghe ý kiến trái chiều, không bảo thủ với code/giải pháp của mình",
-      "item4": "Chủ động hỗ trợ teammate khi kẹt bug",
-      "item5": "Thống nhất coding convention trước khi làm",
-      "item6": "Nhận feedback thẳng thắn, sửa nhĐ/c, không tự ái"
-    },
-    "round5": {
-      "item1": "Tiên phong",
-      "item2": "Bản lĩnh",
-      "item3": "Tử tế",
-      "item4": "Kỷ luật",
-      "item5": "Sáng tạo",
-      "item6": "Phụng sự"
-    }
-  },
+
   "cover": {
     "topLeft": "Sinh hoạt Chuyên đề · Chỉ thị 05-CT/TW",
     "topRight": "Tháng 5 · 2026",
@@ -532,39 +491,12 @@
         "desc": "Thuyết trình phán đoán",
         "label": "02:00",
         "display": "02:00"
-      },
-      "headingHtml": "Giải mã<br><em style=\"color: var(--red); font-style:italic;\">hồ sơ ẩn danh.</em>",
-      "descHtml": "Mỗi đội bốc thăm 1 hồ sơ ẩn danh và trả lời: <em>\"Nếu là người trong câu chuyện, đội bạn sẽ áp dụng nguyên tắc tự soi, tự sửa như thế nào để vượt qua khủng hoảng?\"</em>"
+      }
     },
     "part2": {
       "cornerLeft": "HOẠT ĐỘNG 03 · PHẦN 02",
       "cornerRight": "8–10 PHÚT",
-      "eyebrow": "Phần 02 (~8–10 phút)",
-      "desc": "BTC lật mở hồ sơ — khách mời chia sẻ câu chuyện thật, cách họ vượt qua, và bài học rút ra. Khách mời nhận xét phần trình bày của các đội.",
-      "cards": {
-        "card1": {
-          "badge": "HỒ SƠ · 01",
-          "letter": "A",
-          "name": "Đ/c Đức Nhâm",
-          "desc": "Câu chuyện ẩn danh về một khoảnh khắc bị \"đè bẹp\" trong học tập — và hành trình tự soi để vượt qua.",
-          "tag": "HỌC TẬP"
-        },
-        "card2": {
-          "badge": "HỒ SƠ · 02",
-          "letter": "B",
-          "name": "Đ/c Văn Trường",
-          "desc": "Câu chuyện về sai lầm trong tổ chức hoạt động, áp lực thành tích — và bài học khiêm tốn từ tập thể.",
-          "tag": "NGOẠI KHOÁ"
-        },
-        "card3": {
-          "badge": "HỒ SƠ · 03",
-          "letter": "C",
-          "name": "Đ/c Nhựt Thanh",
-          "desc": "Câu chuyện về một quyết định sai lầm trong cuộc sống — và hành trình \"tự sửa\" qua sinh hoạt chi bộ.",
-          "tag": "CUỘC SỐNG"
-        }
-      },
-      "headingHtml": "Lật mở<br><em style=\"color:var(--red); font-style:italic;\">hồ sơ.</em>"
+      "eyebrow": "Phần 02 (~8–10 phút)"
     },
     "part3": {
       "cornerLeft": "PHẦN 03 · ĐỐI THOẠI",
