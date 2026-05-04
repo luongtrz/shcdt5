@@ -71,41 +71,28 @@
       }
       .score-panel {
         display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 500px;
-        padding: 40px;
-        border-radius: 32px;
+        position: absolute;
+        top: calc(100% + 12px);
+        right: 0;
+        width: 440px;
+        padding: 32px;
+        border-radius: 20px;
         background: var(--red);
         color: var(--gold);
-        border: 4px solid var(--gold);
-        box-shadow: 0 50px 100px rgba(0,0,0,0.5);
+        border: 2px solid var(--gold);
+        box-shadow: 0 30px 60px rgba(0,0,0,0.4), inset 0 0 20px rgba(255,210,0,0.1);
         flex-direction: column;
-        gap: 32px;
+        gap: 24px;
         z-index: 10001;
+        transform-origin: top right;
       }
-      .score-backdrop {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        z-index: 10000;
-      }
-      .score-panel.active, .score-backdrop.active {
-        display: flex;
-      }
-      .score-backdrop.active { display: block; }
-
       .score-panel.active {
-        animation: modalFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        display: flex;
+        animation: panelSlideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       }
-      @keyframes modalFadeIn {
-        from { opacity: 0; transform: translate(-50%, -60%) scale(0.9); }
-        to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+      @keyframes panelSlideDown {
+        from { opacity: 0; transform: translateY(-10px) scale(0.95); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
       }
       .team-row {
         display: flex;
@@ -192,19 +179,18 @@
     dashboard.innerHTML = `
       <button class="score-toggle" id="score-toggle-btn" title="Click để quản lý điểm số">
         <span style="display:flex; gap: 12px; align-items:center;">
-          <span style="font-size: 18px; margin-right: 8px">🏆</span>
+          <span style="font-size: 18px; margin-right: 4px">🏆</span>
           <span>A: <span id="summary-a">${scores.a}</span></span>
-          <span style="opacity: 0.3">|</span>
+          <span style="opacity: 0.4">|</span>
           <span>B: <span id="summary-b">${scores.b}</span></span>
-          <span style="opacity: 0.3">|</span>
+          <span style="opacity: 0.4">|</span>
           <span>C: <span id="summary-c">${scores.c}</span></span>
         </span>
       </button>
-      <div class="score-backdrop" id="score-modal-backdrop"></div>
       <div class="score-panel" id="score-panel-box">
         <div class="score-panel-header">
-          <div class="score-panel-title">Quản lý Điểm số</div>
-          <button class="btn-reset-scores" id="btn-reset-all">Reset All</button>
+          <div class="score-panel-title">Bảng Tổng Điểm</div>
+          <button class="btn-reset-scores" id="btn-reset-all">Reset</button>
         </div>
         ${TEAMS.map(team => `
           <div class="team-row">
@@ -225,28 +211,36 @@
 
     // Event Listeners
     const panel = document.getElementById('score-panel-box');
-    const backdrop = document.getElementById('score-modal-backdrop');
     const toggleBtn = document.getElementById('score-toggle-btn');
     
-    function toggleModal(show) {
-      if (show) {
-        panel.classList.add('active');
-        backdrop.classList.add('active');
-      } else {
-        panel.classList.remove('active');
-        backdrop.classList.remove('active');
-      }
+    function togglePanel(show) {
+      if (show === undefined) show = panel.style.display !== 'flex';
+      panel.style.display = show ? 'flex' : 'none';
+      if (show) panel.classList.add('active');
     }
 
-    toggleBtn.addEventListener('click', () => toggleModal(true));
-    backdrop.addEventListener('click', () => toggleModal(false));
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      togglePanel();
+    });
+
+    // Close panel when clicking outside
+    document.addEventListener('mousedown', (e) => {
+      if (!dashboard.contains(e.target)) {
+        panel.style.display = 'none';
+        panel.classList.remove('active');
+      }
+    });
 
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') toggleModal(false);
+      if (e.key === 'Escape') {
+        panel.style.display = 'none';
+        panel.classList.remove('active');
+      }
       if (e.key === 's' && (e.ctrlKey || e.metaKey)) {
         e.preventDefault();
-        toggleModal(true);
+        togglePanel(true);
       }
     });
 
