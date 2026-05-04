@@ -4,26 +4,32 @@
 (function () {
   function buildCellMarkup(rank, text, points) {
     return `
-      <div class="feud-inner" style="position:relative; width:100%; height:100%; transform-style:preserve-3d; transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);">
+      <div class="feud-inner" style="position:relative; width:100%; height:100%; transform-style:preserve-3d; transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);">
         <div class="feud-back" style="
           position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
           transform: rotateY(0deg);
-          background: var(--red); color: var(--white); border: 2px solid var(--ink);
-          display:flex; align-items:center; justify-content:space-between; padding: 0 40px;
+          background: linear-gradient(135deg, var(--red) 0%, #a00d24 100%);
+          color: var(--white); border: 3px solid var(--ink);
+          display:flex; align-items:center; justify-content:space-between; padding: 0 50px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.15), inset 0 0 40px rgba(0,0,0,0.1);
+          border-radius: 4px;
         ">
-          <div style="font-family: var(--font-serif); font-weight:900; font-size: 70px; line-height:1; color: var(--gold);">${rank}</div>
-          <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.15em; color: var(--gold); opacity: 0.75;">CLICK ĐỂ LẬT</div>
-          <div style="font-family: var(--font-serif); font-weight:900; font-size: 38px; color: var(--gold);">+${points}đ</div>
+          <div style="font-family: var(--font-serif); font-weight:900; font-size: 80px; line-height:1; color: var(--gold); text-shadow: 2px 2px 0 var(--ink);">${rank}</div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.3em; color: var(--gold); opacity: 0.8; font-weight:700;">REVEAL DATA</div>
+          <div style="font-family: var(--font-serif); font-weight:900; font-size: 42px; color: var(--gold); text-shadow: 1px 1px 0 var(--ink);">+${points}</div>
         </div>
         <div class="feud-front" style="
           position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
           transform: rotateY(180deg);
-          background: var(--white); border: 2px solid var(--ink);
-          display: grid; grid-template-columns: 90px 1fr 120px; align-items:center;
+          background: var(--white); border: 3px solid var(--ink);
+          display: grid; grid-template-columns: 110px 1fr 140px; align-items:center;
+          box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+          border-radius: 4px;
+          overflow: hidden;
         ">
-          <div style="background: var(--ink); color: var(--gold); font-family: var(--font-serif); font-weight:900; font-size: 56px; height:100%; display:flex; align-items:center; justify-content:center;">${rank}</div>
-          <div style="padding: 0 20px; font-family: var(--font-sans); font-size: 24px; font-weight:600; color: var(--ink); line-height:1.2;">${text}</div>
-          <div style="background: var(--gold); height:100%; display:flex; align-items:center; justify-content:center; font-family: var(--font-serif); font-weight:900; font-size: 30px; color: var(--ink);">+${points}đ</div>
+          <div style="background: var(--ink); color: var(--gold); font-family: var(--font-serif); font-weight:900; font-size: 64px; height:100%; display:flex; align-items:center; justify-content:center; border-right: 2px solid var(--line);">${rank}</div>
+          <div style="padding: 0 32px; font-family: var(--font-sans); font-size: 28px; font-weight:700; color: var(--ink); line-height:1.25; letter-spacing: -0.01em;">${text}</div>
+          <div style="background: linear-gradient(to bottom, var(--gold), #e6be00); height:100%; display:flex; align-items:center; justify-content:center; font-family: var(--font-serif); font-weight:900; font-size: 40px; color: var(--ink); border-left: 2px solid var(--line); shadow: inset 2px 0 10px rgba(0,0,0,0.05);">${points}</div>
         </div>
       </div>
     `;

@@ -51,3 +51,23 @@
 - Toàn bộ nội dung "mềm" đã được đưa ra các file JSON riêng biệt trong thư mục `uploads/`.
 - File `index.html` và `index-texts.json` trở nên gọn gàng hơn.
 
+---
+
+## Nâng cấp Giao diện Game FEUD (2026-05-04)
+
+### Mục tiêu
+- Chuyển đổi số lượng đáp án từ 6 xuống còn **4 đáp án** cho mỗi vòng.
+- Đại tu giao diện (UI) để trở nên sang trọng, hiện đại và "premium" hơn theo yêu cầu của người dùng.
+- Tối ưu hóa bố cục lưới (grid) cho 4 đáp án.
+
+### Kế hoạch thực hiện
+1.  **Cấu hình (`feud.json`)**: Cắt giảm dữ liệu `item5`, `item6` trong tất cả các vòng chơi.
+2.  **Giao diện (`index.html`)**:
+    - Thay đổi grid từ 2x3 sang 2x2.
+    - Tăng kích thước các `feud-cell` để tạo sự nổi bật.
+    - Áp dụng các hiệu ứng thị giác hiện đại (gradients, glassmorphism, shadow).
+    - Cải thiện phần hiển thị câu hỏi và timer để đồng bộ với thiết kế mới.
+3.  **Logic (`feud.js`)**: Đảm bảo các hàm khởi tạo hoạt động tốt với bố cục mới.
+4.  **Git**: Lưu lại lịch sử commit sau khi hoàn thành.
+
+

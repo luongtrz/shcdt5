@@ -159,6 +159,27 @@ deck-stage > section {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Premium Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+.premium-shadow {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, #FFD200 0%, #E5B800 100%);
+}
+
+.gradient-red {
+  background: linear-gradient(135deg, #C8102E 0%, #8B0A1F 100%);
+}
+
 /* For deck-stage: ensure print works */
 @media print {
   body { background: white; }

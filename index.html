@@ -2026,116 +2026,117 @@
         <div style="
               display: grid;
               grid-template-columns: 1fr 1fr;
-              grid-template-rows: repeat(3, 88px);
-              grid-auto-flow: column;
-              gap: 10px 18px;
+              grid-template-rows: repeat(2, 120px);
+              gap: 24px 32px;
               flex: 1;
-              max-width: 1600px;
-              margin: 0 auto;
+              max-width: 1400px;
+              margin: 40px auto;
               width: 100%;
             ">
           <div class="feud-cell" data-rank="1" data-points="30"
             data-i18n-attr="data-text:feud.round1.item1;title:feud.round1.item1"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="2" data-points="20" data-i18n-attr="data-text:feud.round1.item2"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="3" data-points="10" data-i18n-attr="data-text:feud.round1.item3"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="4" data-points="8" data-i18n-attr="data-text:feud.round1.item4"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
-          <div class="feud-cell" data-rank="5" data-points="6" data-i18n-attr="data-text:feud.round1.item5"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
-          <div class="feud-cell" data-rank="6" data-points="4" data-i18n-attr="data-text:feud.round1.item6"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
         </div>
 
         <div style="
               display: flex;
-              gap: 48px;
+              gap: 64px;
               justify-content: center;
               align-items: center;
-              margin-top: 32px;
+              margin-top: 60px;
             ">
-          <div class="timer-card" data-duration="60" style="
+          <div class="timer-card glass-panel" data-duration="60" style="
                 display: flex;
-                gap: 16px;
+                gap: 24px;
                 align-items: center;
-                background: var(--white);
+                padding: 16px 32px;
+                border-radius: 16px;
                 border: 2px solid var(--ink);
-                padding: 8px 16px;
               ">
             <div class="timer-display" style="
                   font-family: &quot;JetBrains Mono&quot;, monospace;
-                  font-weight: 700;
-                  font-size: 32px;
+                  font-weight: 800;
+                  font-size: 40px;
                   color: var(--ink);
-                  width: 110px;
+                  width: 130px;
                   text-align: center;
                 ">
               01:00
             </div>
-            <div style="display: flex; gap: 8px">
-              <button class="timer-start" data-i18n="controls.start" style="
-                    padding: 8px 12px;
+            <div style="display: flex; gap: 12px">
+              <button class="timer-start gradient-red" data-i18n="controls.start" style="
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
-                    background: var(--ink);
                     color: var(--white);
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
               <button class="timer-pause" data-i18n="controls.stop" style="
-                    padding: 8px 12px;
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
                     background: transparent;
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
-              <button class="timer-reset" data-i18n="controls.reset" style="
-                    padding: 8px 12px;
+              <button class="timer-reset gradient-gold" data-i18n="controls.reset" style="
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
-                    background: var(--gold);
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
             </div>
           </div>
           <div style="
                 width: 2px;
-                height: 40px;
+                height: 60px;
                 background: var(--ink);
                 opacity: 0.2;
               "></div>
-          <div style="display: flex; gap: 24px">
+          <div style="display: flex; gap: 32px">
             <button class="feud-reset" data-i18n="controls.resetBoard" style="
-                  padding: 12px 24px;
+                  padding: 16px 32px;
                   border: 2px solid var(--ink);
                   background: var(--white);
-                  font-weight: 600;
+                  font-weight: 700;
                   cursor: pointer;
                   letter-spacing: 0.1em;
                   text-transform: uppercase;
-                  font-size: 14px;
-                "></button>
-            <button class="feud-all" data-i18n="controls.revealAll" style="
-                  padding: 12px 24px;
+                  font-size: 16px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 0 var(--ink);
+                  transition: all 0.1s;
+                " onmousedown="this.style.transform='translateY(2px)';this.style.boxShadow='0 2px 0 var(--ink)'" onmouseup="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 0 var(--ink)'"></button>
+            <button class="feud-all gradient-red" data-i18n="controls.revealAll" style="
+                  padding: 16px 32px;
                   border: 2px solid var(--ink);
-                  background: var(--ink);
                   color: var(--white);
-                  font-weight: 600;
+                  font-weight: 700;
                   cursor: pointer;
                   letter-spacing: 0.1em;
                   text-transform: uppercase;
-                  font-size: 14px;
-                "></button>
+                  font-size: 16px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 0 var(--ink);
+                  transition: all 0.1s;
+                " onmousedown="this.style.transform='translateY(2px)';this.style.boxShadow='0 2px 0 var(--ink)'" onmouseup="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 0 var(--ink)'"></button>
           </div>
         </div>
 
@@ -2172,115 +2173,116 @@
         <div style="
               display: grid;
               grid-template-columns: 1fr 1fr;
-              grid-template-rows: repeat(3, 88px);
-              grid-auto-flow: column;
-              gap: 10px 18px;
+              grid-template-rows: repeat(2, 120px);
+              gap: 24px 32px;
               flex: 1;
-              max-width: 1600px;
-              margin: 0 auto;
+              max-width: 1400px;
+              margin: 40px auto;
               width: 100%;
             ">
           <div class="feud-cell" data-rank="1" data-points="30" data-i18n-attr="data-text:feud.round2.item1"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="2" data-points="20" data-i18n-attr="data-text:feud.round2.item2"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="3" data-points="10" data-i18n-attr="data-text:feud.round2.item3"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="4" data-points="8" data-i18n-attr="data-text:feud.round2.item4"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
-          <div class="feud-cell" data-rank="5" data-points="6" data-i18n-attr="data-text:feud.round2.item5"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
-          <div class="feud-cell" data-rank="6" data-points="4" data-i18n-attr="data-text:feud.round2.item6"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
         </div>
 
         <div style="
               display: flex;
-              gap: 48px;
+              gap: 64px;
               justify-content: center;
               align-items: center;
-              margin-top: 32px;
+              margin-top: 60px;
             ">
-          <div class="timer-card" data-duration="60" style="
+          <div class="timer-card glass-panel" data-duration="60" style="
                 display: flex;
-                gap: 16px;
+                gap: 24px;
                 align-items: center;
-                background: var(--white);
+                padding: 16px 32px;
+                border-radius: 16px;
                 border: 2px solid var(--ink);
-                padding: 8px 16px;
               ">
             <div class="timer-display" style="
                   font-family: &quot;JetBrains Mono&quot;, monospace;
-                  font-weight: 700;
-                  font-size: 32px;
+                  font-weight: 800;
+                  font-size: 40px;
                   color: var(--ink);
-                  width: 110px;
+                  width: 130px;
                   text-align: center;
                 ">
               01:00
             </div>
-            <div style="display: flex; gap: 8px">
-              <button class="timer-start" data-i18n="controls.start" style="
-                    padding: 8px 12px;
+            <div style="display: flex; gap: 12px">
+              <button class="timer-start gradient-red" data-i18n="controls.start" style="
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
-                    background: var(--ink);
                     color: var(--white);
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
               <button class="timer-pause" data-i18n="controls.stop" style="
-                    padding: 8px 12px;
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
                     background: transparent;
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
-              <button class="timer-reset" data-i18n="controls.reset" style="
-                    padding: 8px 12px;
+              <button class="timer-reset gradient-gold" data-i18n="controls.reset" style="
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
-                    background: var(--gold);
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
             </div>
           </div>
           <div style="
                 width: 2px;
-                height: 40px;
+                height: 60px;
                 background: var(--ink);
                 opacity: 0.2;
               "></div>
-          <div style="display: flex; gap: 24px">
+          <div style="display: flex; gap: 32px">
             <button class="feud-reset" data-i18n="controls.resetBoard" style="
-                  padding: 12px 24px;
+                  padding: 16px 32px;
                   border: 2px solid var(--ink);
                   background: var(--white);
-                  font-weight: 600;
+                  font-weight: 700;
                   cursor: pointer;
                   letter-spacing: 0.1em;
                   text-transform: uppercase;
-                  font-size: 14px;
-                "></button>
-            <button class="feud-all" data-i18n="controls.revealAll" style="
-                  padding: 12px 24px;
+                  font-size: 16px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 0 var(--ink);
+                  transition: all 0.1s;
+                " onmousedown="this.style.transform='translateY(2px)';this.style.boxShadow='0 2px 0 var(--ink)'" onmouseup="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 0 var(--ink)'"></button>
+            <button class="feud-all gradient-red" data-i18n="controls.revealAll" style="
+                  padding: 16px 32px;
                   border: 2px solid var(--ink);
-                  background: var(--ink);
                   color: var(--white);
-                  font-weight: 600;
+                  font-weight: 700;
                   cursor: pointer;
                   letter-spacing: 0.1em;
                   text-transform: uppercase;
-                  font-size: 14px;
-                "></button>
+                  font-size: 16px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 0 var(--ink);
+                  transition: all 0.1s;
+                " onmousedown="this.style.transform='translateY(2px)';this.style.boxShadow='0 2px 0 var(--ink)'" onmouseup="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 0 var(--ink)'"></button>
           </div>
         </div>
 
@@ -2317,115 +2319,116 @@
         <div style="
               display: grid;
               grid-template-columns: 1fr 1fr;
-              grid-template-rows: repeat(3, 88px);
-              grid-auto-flow: column;
-              gap: 10px 18px;
+              grid-template-rows: repeat(2, 120px);
+              gap: 24px 32px;
               flex: 1;
-              max-width: 1600px;
-              margin: 0 auto;
+              max-width: 1400px;
+              margin: 40px auto;
               width: 100%;
             ">
           <div class="feud-cell" data-rank="1" data-points="30" data-i18n-attr="data-text:feud.round3.item1"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="2" data-points="20" data-i18n-attr="data-text:feud.round3.item2"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="3" data-points="10" data-i18n-attr="data-text:feud.round3.item3"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="4" data-points="8" data-i18n-attr="data-text:feud.round3.item4"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
-          <div class="feud-cell" data-rank="5" data-points="6" data-i18n-attr="data-text:feud.round3.item5"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
-          <div class="feud-cell" data-rank="6" data-points="4" data-i18n-attr="data-text:feud.round3.item6"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
         </div>
 
         <div style="
               display: flex;
-              gap: 48px;
+              gap: 64px;
               justify-content: center;
               align-items: center;
-              margin-top: 32px;
+              margin-top: 60px;
             ">
-          <div class="timer-card" data-duration="60" style="
+          <div class="timer-card glass-panel" data-duration="60" style="
                 display: flex;
-                gap: 16px;
+                gap: 24px;
                 align-items: center;
-                background: var(--white);
+                padding: 16px 32px;
+                border-radius: 16px;
                 border: 2px solid var(--ink);
-                padding: 8px 16px;
               ">
             <div class="timer-display" style="
                   font-family: &quot;JetBrains Mono&quot;, monospace;
-                  font-weight: 700;
-                  font-size: 32px;
+                  font-weight: 800;
+                  font-size: 40px;
                   color: var(--ink);
-                  width: 110px;
+                  width: 130px;
                   text-align: center;
                 ">
               01:00
             </div>
-            <div style="display: flex; gap: 8px">
-              <button class="timer-start" data-i18n="controls.start" style="
-                    padding: 8px 12px;
+            <div style="display: flex; gap: 12px">
+              <button class="timer-start gradient-red" data-i18n="controls.start" style="
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
-                    background: var(--ink);
                     color: var(--white);
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
               <button class="timer-pause" data-i18n="controls.stop" style="
-                    padding: 8px 12px;
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
                     background: transparent;
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
-              <button class="timer-reset" data-i18n="controls.reset" style="
-                    padding: 8px 12px;
+              <button class="timer-reset gradient-gold" data-i18n="controls.reset" style="
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
-                    background: var(--gold);
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
             </div>
           </div>
           <div style="
                 width: 2px;
-                height: 40px;
+                height: 60px;
                 background: var(--ink);
                 opacity: 0.2;
               "></div>
-          <div style="display: flex; gap: 24px">
+          <div style="display: flex; gap: 32px">
             <button class="feud-reset" data-i18n="controls.resetBoard" style="
-                  padding: 12px 24px;
+                  padding: 16px 32px;
                   border: 2px solid var(--ink);
                   background: var(--white);
-                  font-weight: 600;
+                  font-weight: 700;
                   cursor: pointer;
                   letter-spacing: 0.1em;
                   text-transform: uppercase;
-                  font-size: 14px;
-                "></button>
-            <button class="feud-all" data-i18n="controls.revealAll" style="
-                  padding: 12px 24px;
+                  font-size: 16px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 0 var(--ink);
+                  transition: all 0.1s;
+                " onmousedown="this.style.transform='translateY(2px)';this.style.boxShadow='0 2px 0 var(--ink)'" onmouseup="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 0 var(--ink)'"></button>
+            <button class="feud-all gradient-red" data-i18n="controls.revealAll" style="
+                  padding: 16px 32px;
                   border: 2px solid var(--ink);
-                  background: var(--ink);
                   color: var(--white);
-                  font-weight: 600;
+                  font-weight: 700;
                   cursor: pointer;
                   letter-spacing: 0.1em;
                   text-transform: uppercase;
-                  font-size: 14px;
-                "></button>
+                  font-size: 16px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 0 var(--ink);
+                  transition: all 0.1s;
+                " onmousedown="this.style.transform='translateY(2px)';this.style.boxShadow='0 2px 0 var(--ink)'" onmouseup="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 0 var(--ink)'"></button>
           </div>
         </div>
 
@@ -2462,115 +2465,116 @@
         <div style="
               display: grid;
               grid-template-columns: 1fr 1fr;
-              grid-template-rows: repeat(3, 88px);
-              grid-auto-flow: column;
-              gap: 10px 18px;
+              grid-template-rows: repeat(2, 120px);
+              gap: 24px 32px;
               flex: 1;
-              max-width: 1600px;
-              margin: 0 auto;
+              max-width: 1400px;
+              margin: 40px auto;
               width: 100%;
             ">
           <div class="feud-cell" data-rank="1" data-points="30" data-i18n-attr="data-text:feud.round4.item1"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="2" data-points="20" data-i18n-attr="data-text:feud.round4.item2"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="3" data-points="10" data-i18n-attr="data-text:feud.round4.item3"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="4" data-points="8" data-i18n-attr="data-text:feud.round4.item4"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
-          <div class="feud-cell" data-rank="5" data-points="6" data-i18n-attr="data-text:feud.round4.item5"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
-          <div class="feud-cell" data-rank="6" data-points="4" data-i18n-attr="data-text:feud.round4.item6"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
         </div>
 
         <div style="
               display: flex;
-              gap: 48px;
+              gap: 64px;
               justify-content: center;
               align-items: center;
-              margin-top: 32px;
+              margin-top: 60px;
             ">
-          <div class="timer-card" data-duration="60" style="
+          <div class="timer-card glass-panel" data-duration="60" style="
                 display: flex;
-                gap: 16px;
+                gap: 24px;
                 align-items: center;
-                background: var(--white);
+                padding: 16px 32px;
+                border-radius: 16px;
                 border: 2px solid var(--ink);
-                padding: 8px 16px;
               ">
             <div class="timer-display" style="
                   font-family: &quot;JetBrains Mono&quot;, monospace;
-                  font-weight: 700;
-                  font-size: 32px;
+                  font-weight: 800;
+                  font-size: 40px;
                   color: var(--ink);
-                  width: 110px;
+                  width: 130px;
                   text-align: center;
                 ">
               01:00
             </div>
-            <div style="display: flex; gap: 8px">
-              <button class="timer-start" data-i18n="controls.start" style="
-                    padding: 8px 12px;
+            <div style="display: flex; gap: 12px">
+              <button class="timer-start gradient-red" data-i18n="controls.start" style="
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
-                    background: var(--ink);
                     color: var(--white);
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
               <button class="timer-pause" data-i18n="controls.stop" style="
-                    padding: 8px 12px;
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
                     background: transparent;
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
-              <button class="timer-reset" data-i18n="controls.reset" style="
-                    padding: 8px 12px;
+              <button class="timer-reset gradient-gold" data-i18n="controls.reset" style="
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
-                    background: var(--gold);
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
             </div>
           </div>
           <div style="
                 width: 2px;
-                height: 40px;
+                height: 60px;
                 background: var(--ink);
                 opacity: 0.2;
               "></div>
-          <div style="display: flex; gap: 24px">
+          <div style="display: flex; gap: 32px">
             <button class="feud-reset" data-i18n="controls.resetBoard" style="
-                  padding: 12px 24px;
+                  padding: 16px 32px;
                   border: 2px solid var(--ink);
                   background: var(--white);
-                  font-weight: 600;
+                  font-weight: 700;
                   cursor: pointer;
                   letter-spacing: 0.1em;
                   text-transform: uppercase;
-                  font-size: 14px;
-                "></button>
-            <button class="feud-all" data-i18n="controls.revealAll" style="
-                  padding: 12px 24px;
+                  font-size: 16px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 0 var(--ink);
+                  transition: all 0.1s;
+                " onmousedown="this.style.transform='translateY(2px)';this.style.boxShadow='0 2px 0 var(--ink)'" onmouseup="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 0 var(--ink)'"></button>
+            <button class="feud-all gradient-red" data-i18n="controls.revealAll" style="
+                  padding: 16px 32px;
                   border: 2px solid var(--ink);
-                  background: var(--ink);
                   color: var(--white);
-                  font-weight: 600;
+                  font-weight: 700;
                   cursor: pointer;
                   letter-spacing: 0.1em;
                   text-transform: uppercase;
-                  font-size: 14px;
-                "></button>
+                  font-size: 16px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 0 var(--ink);
+                  transition: all 0.1s;
+                " onmousedown="this.style.transform='translateY(2px)';this.style.boxShadow='0 2px 0 var(--ink)'" onmouseup="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 0 var(--ink)'"></button>
           </div>
         </div>
 
@@ -2607,115 +2611,116 @@
         <div style="
               display: grid;
               grid-template-columns: 1fr 1fr;
-              grid-template-rows: repeat(3, 88px);
-              grid-auto-flow: column;
-              gap: 10px 18px;
+              grid-template-rows: repeat(2, 120px);
+              gap: 24px 32px;
               flex: 1;
-              max-width: 1600px;
-              margin: 0 auto;
+              max-width: 1400px;
+              margin: 40px auto;
               width: 100%;
             ">
           <div class="feud-cell" data-rank="1" data-points="30" data-i18n-attr="data-text:feud.round5.item1"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="2" data-points="20" data-i18n-attr="data-text:feud.round5.item2"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="3" data-points="10" data-i18n-attr="data-text:feud.round5.item3"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
           <div class="feud-cell" data-rank="4" data-points="8" data-i18n-attr="data-text:feud.round5.item4"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
-          <div class="feud-cell" data-rank="5" data-points="6" data-i18n-attr="data-text:feud.round5.item5"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
-          <div class="feud-cell" data-rank="6" data-points="4" data-i18n-attr="data-text:feud.round5.item6"
-            style="cursor: pointer; height: 88px; perspective: 1200px"></div>
+            style="cursor: pointer; height: 120px; perspective: 1200px"></div>
         </div>
 
         <div style="
               display: flex;
-              gap: 48px;
+              gap: 64px;
               justify-content: center;
               align-items: center;
-              margin-top: 32px;
+              margin-top: 60px;
             ">
-          <div class="timer-card" data-duration="60" style="
+          <div class="timer-card glass-panel" data-duration="60" style="
                 display: flex;
-                gap: 16px;
+                gap: 24px;
                 align-items: center;
-                background: var(--white);
+                padding: 16px 32px;
+                border-radius: 16px;
                 border: 2px solid var(--ink);
-                padding: 8px 16px;
               ">
             <div class="timer-display" style="
                   font-family: &quot;JetBrains Mono&quot;, monospace;
-                  font-weight: 700;
-                  font-size: 32px;
+                  font-weight: 800;
+                  font-size: 40px;
                   color: var(--ink);
-                  width: 110px;
+                  width: 130px;
                   text-align: center;
                 ">
               01:00
             </div>
-            <div style="display: flex; gap: 8px">
-              <button class="timer-start" data-i18n="controls.start" style="
-                    padding: 8px 12px;
+            <div style="display: flex; gap: 12px">
+              <button class="timer-start gradient-red" data-i18n="controls.start" style="
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
-                    background: var(--ink);
                     color: var(--white);
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
               <button class="timer-pause" data-i18n="controls.stop" style="
-                    padding: 8px 12px;
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
                     background: transparent;
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
-              <button class="timer-reset" data-i18n="controls.reset" style="
-                    padding: 8px 12px;
+              <button class="timer-reset gradient-gold" data-i18n="controls.reset" style="
+                    padding: 12px 20px;
                     border: 2px solid var(--ink);
-                    background: var(--gold);
-                    font-weight: 600;
-                    font-size: 12px;
+                    font-weight: 700;
+                    font-size: 14px;
                     cursor: pointer;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
+                    border-radius: 8px;
                   "></button>
             </div>
           </div>
           <div style="
                 width: 2px;
-                height: 40px;
+                height: 60px;
                 background: var(--ink);
                 opacity: 0.2;
               "></div>
-          <div style="display: flex; gap: 24px">
+          <div style="display: flex; gap: 32px">
             <button class="feud-reset" data-i18n="controls.resetBoard" style="
-                  padding: 12px 24px;
+                  padding: 16px 32px;
                   border: 2px solid var(--ink);
                   background: var(--white);
-                  font-weight: 600;
+                  font-weight: 700;
                   cursor: pointer;
                   letter-spacing: 0.1em;
                   text-transform: uppercase;
-                  font-size: 14px;
-                "></button>
-            <button class="feud-all" data-i18n="controls.revealAll" style="
-                  padding: 12px 24px;
+                  font-size: 16px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 0 var(--ink);
+                  transition: all 0.1s;
+                " onmousedown="this.style.transform='translateY(2px)';this.style.boxShadow='0 2px 0 var(--ink)'" onmouseup="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 0 var(--ink)'"></button>
+            <button class="feud-all gradient-red" data-i18n="controls.revealAll" style="
+                  padding: 16px 32px;
                   border: 2px solid var(--ink);
-                  background: var(--ink);
                   color: var(--white);
-                  font-weight: 600;
+                  font-weight: 700;
                   cursor: pointer;
                   letter-spacing: 0.1em;
                   text-transform: uppercase;
-                  font-size: 14px;
-                "></button>
+                  font-size: 16px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 0 var(--ink);
+                  transition: all 0.1s;
+                " onmousedown="this.style.transform='translateY(2px)';this.style.boxShadow='0 2px 0 var(--ink)'" onmouseup="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 0 var(--ink)'"></button>
           </div>
         </div>
 
