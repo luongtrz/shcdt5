@@ -601,7 +601,13 @@
         "desc": "Đội thi tranh luận trực tiếp",
         "display": "02:00"
       },
-      "headingHtml": "Đối thoại<br><em style=\"color: var(--gold); font-style:italic; font-family: var(--font-serif);\">phản biện.</em>"
+      "headingHtml": "Đối thoại<br><em style=\"color: var(--gold); font-style:italic; font-family: var(--font-serif);\">phản biện.</em>",
+      "background": {
+        "eyebrow": "Tĩnh để Soi · Động để Sáng",
+        "titleHtml": "<span style=\"font-family: var(--font-sans); font-weight: 800;\">Tọa đàm</span> <em style=\"font-family: var(--font-serif); font-style: italic; color: var(--gold);\">Đối thoại</em>",
+        "subtitle": "Đảng viên sinh viên rèn đức, luyện tài, trưởng thành.",
+        "screenLabel": "31.5 HD3 Background Tọa đàm"
+      }
     },
     "criteria": {
       "cornerLeft": "HOẠT ĐỘNG 03 · TIÊU CHÍ ĐÁNH GIÁ",
