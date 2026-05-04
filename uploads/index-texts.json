@@ -226,7 +226,7 @@
         },
         "card3": {
           "tag": "03",
-          "title": "Tinh thần Đ/c",
+          "title": "Tinh thần Đồng chí",
           "desc": "Thắt chặt đoàn kết, giúp đảng viên khép kín cảm nhận được năng lượng tích cực từ chi bộ."
         }
       },
@@ -237,7 +237,6 @@
       "cornerLeftHtml": "HOẠT ĐỘNG 01 · ROUND <span id=\"round-num\">1</span>"
     }
   },
-
   "cover": {
     "topLeft": "Sinh hoạt Chuyên đề · Chỉ thị 05-CT/TW",
     "topRight": "Tháng 5 · 2026",
@@ -376,7 +375,11 @@
           "points": "+10đ",
           "descHtml": "Trúng <strong>Top 3</strong>"
         },
-        "noteHtml": "Top 4: điểm phụ <strong style=\"color: var(--gold);\">+5đ</strong>.",
+        "top4": {
+          "rank": "4",
+          "points": "+5đ",
+          "descHtml": "Trúng <strong>Top 4</strong>"
+        },
         "footerHtml": "MC lấy đáp án <strong style=\"color:var(--gold);\">Top 1</strong> điền vào \"Bảng chuẩn mực chung\" sau mỗi vòng."
       },
       "titleHtml": "Một câu hỏi.<br>Bốn đáp án phổ biến nhất."
@@ -399,7 +402,7 @@
     "round4": {
       "cornerLeft": "HOẠT ĐỘNG 02 · VÒNG 04/05",
       "eyebrow": "Vòng 04 · Đồng đội — Chống chủ nghĩa cá nhân",
-      "takeawayHtml": "<strong>Hành động đúc kết:</strong> Xoá bỏ kiêu ngạo của những \"cái chén cạn\" (toxic tech-bros), xây dựng tinh thần Đ/c rộng mở để cả đội cùng thành công."
+      "takeawayHtml": "<strong>Hành động đúc kết:</strong> Xoá bỏ kiêu ngạo của những \"cái chén cạn\" (toxic tech-bros), xây dựng tinh thần Đồng chí rộng mở để cả đội cùng thành công."
     },
     "round5": {
       "cornerLeft": "HOẠT ĐỘNG 02 · VÒNG 05/05",

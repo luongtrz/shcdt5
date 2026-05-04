@@ -1844,13 +1844,34 @@
                 </div>
               </div>
               <div style="
-                    padding: 10px 8px 0;
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 16px;
-                    letter-spacing: 0.06em;
-                    color: rgba(255, 255, 255, 0.75);
+                    display: grid;
+                    grid-template-columns: 100px 1fr 130px;
+                    align-items: center;
+                    gap: 24px;
+                    padding: 20px 24px;
+                    background: rgba(255, 255, 255, 0.03);
+                    border-left: 6px solid rgba(255, 210, 0, 0.2);
                   ">
-                <span data-i18n-html="hd2.rules.scoring.noteHtml"></span>
+                <div style="
+                      font-family: var(--font-serif);
+                      font-weight: 900;
+                      font-size: 56px;
+                      color: rgba(255, 210, 0, 0.4);
+                      line-height: 1;
+                    ">
+                  <span data-i18n="hd2.rules.scoring.top4.rank"></span>
+                </div>
+                <div class="body" data-i18n-html="hd2.rules.scoring.top4.descHtml"
+                  style="font-weight: 600; font-size: 22px"></div>
+                <div style="
+                      font-family: var(--font-serif);
+                      font-weight: 900;
+                      font-size: 44px;
+                      color: rgba(255, 210, 0, 0.4);
+                      text-align: right;
+                    ">
+                  <span data-i18n="hd2.rules.scoring.top4.points"></span>
+                </div>
               </div>
             </div>
             <div style="
