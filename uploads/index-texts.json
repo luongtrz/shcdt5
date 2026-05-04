@@ -47,6 +47,50 @@
         "mechanism": "Cơ chế \"phản biện\" để tránh đưa ra từ khóa quá \"ảo\"."
       }
     },
+    "dictionary": {
+      "cornerLeft": "HOẠT ĐỘNG 01 · GỢI Ý TỪ KHÓA",
+      "cornerRight": "IT SLANG DICTIONARY",
+      "eyebrow": "Từ điển gợi ý",
+      "heading": "GỢI Ý TỪ KHÓA <em style=\"color:var(--red); font-style:italic;\">IT SLANG</em>",
+      "cols": {
+        "mốc": "MỐC",
+        "keyword": "KEYWORD",
+        "meaning": "ẨN Ý - NỘI DUNG HIỂN THỊ",
+        "category": "PHÂN LOẠI & LĨNH VỰC"
+      },
+      "rows": [
+        {
+          "mốc": "K1",
+          "keyword": "Frontend thân thiện",
+          "meaning": "Hoạt bát, giao diện người dùng (User-friendly) nhưng cần rèn luyện thêm \"Backend\" (chiều sâu nội tâm).",
+          "category": "Lối sống & Kỹ năng"
+        },
+        {
+          "mốc": "K2",
+          "keyword": "Thuật toán O(1)",
+          "meaning": "<strong>Ưu điểm:</strong> Tư duy logic cực nhanh, xử lý công việc với hiệu suất tối ưu và chính xác.",
+          "category": "Học thuật & Nghiên cứu"
+        },
+        {
+          "mốc": "K3",
+          "keyword": "Chuyên gia nén mìn",
+          "meaning": "<strong>Nhược điểm:</strong> Thói quen \"nén\" mọi task vào phút chót, hay nộp bài sát nút deadline 11h59.",
+          "category": "Kỷ luật & Trách nhiệm"
+        },
+        {
+          "mốc": "K4",
+          "keyword": "Tư duy Open-source",
+          "meaning": "<strong>Ưu điểm:</strong> Luôn sẵn lòng giúp đỡ, chia sẻ tài liệu và code cho đồng chí, đồng đội.",
+          "category": "Đạo đức & Đoàn kết"
+        },
+        {
+          "mốc": "K5",
+          "keyword": "Action Not Found",
+          "meaning": "<strong>Nhược điểm:</strong> Lý thuyết suông (Error 404), nghị quyết thuộc lòng nhưng thực hành còn né tránh.",
+          "category": "Công tác Đảng"
+        }
+      ]
+    },
     "overview": {
       "cornerLeft": "HOẠT ĐỘNG 01 · TỔNG QUAN",
       "cornerRight": "LUẬT CƠ BẢN",
