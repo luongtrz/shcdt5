@@ -139,6 +139,7 @@
       .btn-score:hover {
         background: var(--gold);
         color: var(--red);
+        border-color: var(--gold);
       }
       .btn-score:active {
         transform: translateY(2px);

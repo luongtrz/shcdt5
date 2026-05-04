@@ -180,6 +180,15 @@ deck-stage > section {
   background: linear-gradient(135deg, #C8102E 0%, #8B0A1F 100%);
 }
 
+.btn-score-legacy {
+  transition: all 0.2s;
+}
+.btn-score-legacy:hover {
+  background: var(--gold) !important;
+  color: var(--red) !important;
+  border-color: var(--gold) !important;
+}
+
 /* For deck-stage: ensure print works */
 @media print {
   body { background: white; }
