@@ -88,7 +88,7 @@
       { rank: 1, points: 30, text: 'Tiên phong' },
       { rank: 2, points: 20, text: 'Bản lĩnh' },
       { rank: 3, points: 10, text: 'Tử tế' },
-      { rank: 4, points: 8, text: 'Kỷ luật' },
+      { rank: 4, points: 5, text: 'Kỷ luật' },
       { rank: 5, points: 6, text: 'Trách nhiệm' },
       { rank: 6, points: 4, text: 'Khiêm tốn' }
     ];
@@ -128,9 +128,20 @@
     }
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
+  window.addEventListener('i18n:loaded', () => {
+    // Re-init everything to ensure translations are applied to wired cells
+    document.querySelectorAll('.feud-cell').forEach(cell => {
+      delete cell.dataset.feudWired;
+    });
     init();
+  });
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.i18nLoaded) init();
+      else document.addEventListener('DOMContentLoaded', init); // Wait for content loader
+    });
+  } else {
+    if (window.i18nLoaded) init();
   }
 })();

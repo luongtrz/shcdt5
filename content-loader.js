@@ -101,7 +101,10 @@
   ])
     .then(([mainTexts, feudTexts, hosoTexts]) => {
       const mergedTexts = mergeDeep({}, mainTexts, feudTexts, hosoTexts);
+      window.i18nTexts = mergedTexts;
+      window.i18nLoaded = true;
       applyTranslations(mergedTexts);
+      window.dispatchEvent(new CustomEvent('i18n:loaded', { detail: { texts: mergedTexts } }));
     })
     .catch((error) => {
       console.warn('[content-loader] Failed to load translation files. Using placeholders.', error);
