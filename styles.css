@@ -58,14 +58,37 @@ deck-stage > section {
 .chrome-corner.bl { bottom: 48px; left: 64px; }
 .chrome-corner.br { bottom: 48px; right: 64px; }
 
-.gold-bar {
+/* ============= PARTY BORDER SYSTEM ============= */
+.party-frame {
   position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  border: 16px solid var(--red);
+}
+
+.party-frame::after {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border: 2px solid var(--gold);
+  opacity: 0.8;
+}
+
+.party-frame .corner-star {
+  position: absolute;
+  width: 50px;
+  height: 50px;
   background: var(--gold);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  z-index: 101;
+  filter: drop-shadow(0 0 10px rgba(255, 210, 0, 0.4));
 }
-.red-bar {
-  position: absolute;
-  background: var(--red);
-}
+
+.party-frame .corner-star.tl { top: -20px; left: -20px; }
+.party-frame .corner-star.tr { top: -20px; right: -20px; }
+.party-frame .corner-star.bl { bottom: -20px; left: -20px; }
+.party-frame .corner-star.br { bottom: -20px; right: -20px; }
 
 /* ============= TYPOGRAPHY ============= */
 .eyebrow {
