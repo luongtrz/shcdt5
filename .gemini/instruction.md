@@ -21,3 +21,33 @@
 - Đã bỏ qua các thẻ tiêu đề trò chơi (`hd1.gameBoard.heading` và từ `hd2.round1.questionHtml` đến `hd2.round5.questionHtml`).
 - Làm sạch file `index.html` (loại bỏ text cứng bên trong thẻ HTML cho những phần đã được chuyển sang JSON) và format lại code bằng Prettier.
 - Đã thực hiện `git init` (nếu chưa có), `git add .` và `git commit` từ thư mục gốc để lưu lại toàn bộ lịch sử chỉnh sửa.
+
+---
+
+## Tách Câu hỏi & Đáp án ra file JSON riêng (2026-05-04)
+
+### Mục tiêu
+- Tách toàn bộ nội dung câu hỏi và đáp án ra khỏi `index-texts.json`, `index.html` và các file JavaScript (`dixit.js`).
+- Đồng bộ cơ chế với `khoidong.json`.
+
+### Các thay đổi đã thực hiện
+
+1.  **Cấu trúc dữ liệu mới (uploads/)**:
+    - `feud.json`: Chứa câu hỏi FEUD (lấy từ HTML) và 6 đáp án mỗi vòng (lấy từ `index-texts.json`).
+    - `dixit.json`: Chứa danh sách các keywords và vòng chơi của game DIXIT (lấy từ `dixit.js`).
+    - `hoso.json`: Chứa các "Hồ sơ ẩn danh" và nội dung dẫn dắt của Hoạt động 3 (lấy từ `index-texts.json`).
+
+2.  **Content Loader (`content-loader.js`)**:
+    - Nâng cấp hàm `fetch` để tải đồng thời nhiều file JSON (`index-texts.json`, `feud.json`, `hoso.json`).
+    - Triển khai hàm `mergeDeep` để gộp các object dữ liệu lại thành một bộ dictionary duy nhất.
+
+3.  **Dọn dẹp Giao diện (`index.html`)**:
+    - Loại bỏ hoàn toàn phần text câu hỏi FEUD bị hardcode.
+
+4.  **Refactor Logic Game (`dixit.js`)**:
+    - Logic `fetch('uploads/dixit.json')` để lấy dữ liệu động khi khởi tạo game.
+
+### Kết quả
+- Toàn bộ nội dung "mềm" đã được đưa ra các file JSON riêng biệt trong thư mục `uploads/`.
+- File `index.html` và `index-texts.json` trở nên gọn gàng hơn.
+
