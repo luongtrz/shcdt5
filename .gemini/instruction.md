@@ -70,4 +70,23 @@
 3.  **Logic (`feud.js`)**: Đảm bảo các hàm khởi tạo hoạt động tốt với bố cục mới.
 4.  **Git**: Lưu lại lịch sử commit sau khi hoàn thành.
 
+---
+
+## Loại bỏ khung viền trang trí Party-Frame (2026-05-04)
+
+### Mục tiêu
+- Loại bỏ khung hình chữ nhật trang trí có 2 màu đỏ và vàng bao quanh background của slide.
+- Khung này được xác định là class `.party-frame` trong CSS và được chèn trực tiếp vào nhiều slide trong HTML.
+
+### Kế hoạch thực hiện
+1. **Phân tích**: Xác định các thành phần liên quan đến khung viền đỏ-vàng bao gồm:
+   - Class `.party-frame` trong `styles.css`.
+   - Các pseudo-elements `::before` (viền đỏ) và `::after` (viền vàng).
+   - Các thành phần trang trí góc như `.corner-ornament` và `.corner-star`.
+2. **Hành động**:
+   - Xóa bỏ định nghĩa các class này trong `styles.css`.
+   - Xóa bỏ các thẻ `<div class="party-frame">` cùng nội dung bên trong của chúng trong `index.html`.
+3. **Kiểm tra**: Đảm bảo giao diện không còn khung bao quanh nhưng vẫn giữ được các thành phần nội dung chính.
+4. **Git**: Thực hiện commit toàn bộ thay đổi từ root directory.
+
 
