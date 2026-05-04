@@ -126,6 +126,27 @@ deck-stage > section {
 .party-frame .corner-star.bl { bottom: -22px; left: -22px; animation-delay: 0.8s !important; }
 .party-frame .corner-star.br { bottom: -22px; right: -22px; animation-delay: 0.9s !important; }
 
+/* ============= DECORATIVE ELEMENTS ============= */
+.anim-side-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 100%;
+  background: var(--red);
+  z-index: 10;
+  box-shadow: -4px 0 15px rgba(200, 16, 46, 0.2);
+}
+
+[data-deck-active] .anim-side-bar {
+  animation: a-side-bar-in 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes a-side-bar-in {
+  from { transform: scaleY(0); transform-origin: top; }
+  to { transform: scaleY(1); }
+}
+
 /* ============= TYPOGRAPHY ============= */
 .eyebrow {
   font-family: var(--font-sans);
