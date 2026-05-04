@@ -2794,15 +2794,24 @@
       </div>
       
       <!-- Premium Background Layer -->
-      <div style="
+      <div class="mesh-bg-anim" style="
             position: absolute;
             inset: 0;
             background: 
-              radial-gradient(circle at 10% 10%, rgba(200, 16, 46, 0.05) 0%, transparent 40%),
-              radial-gradient(circle at 90% 90%, rgba(255, 210, 0, 0.08) 0%, transparent 40%),
+              radial-gradient(circle at 10% 10%, rgba(200, 16, 46, 0.08) 0%, transparent 40%),
+              radial-gradient(circle at 90% 90%, rgba(255, 210, 0, 0.12) 0%, transparent 40%),
               linear-gradient(135deg, #f8f6f2 0%, #eeebe5 100%);
             z-index: 0;
           "></div>
+      
+      <!-- Ambient Animated Stars -->
+      <div class="ambient-twinkle" style="position: absolute; inset: 0; pointer-events: none; z-index: 1; opacity: 0.4;">
+        <div class="star-tiny loop-float" style="top: 15%; left: 10%; animation-delay: 0s;"></div>
+        <div class="star-tiny loop-twinkle" style="top: 25%; left: 85%; animation-delay: 1.2s;"></div>
+        <div class="star-tiny loop-float" style="top: 75%; left: 15%; animation-delay: 0.5s;"></div>
+        <div class="star-tiny loop-twinkle" style="top: 80%; left: 80%; animation-delay: 2s;"></div>
+        <div class="star-tiny loop-float" style="top: 45%; left: 5%; animation-delay: 1.5s;"></div>
+      </div>
       
       <!-- Decorative Elements -->
       <div style="
