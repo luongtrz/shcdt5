@@ -252,5 +252,5 @@
 - **Slogan Trung tâm**: Đưa slogan "Tĩnh để Soi · Động để Sáng" ra vị trí chính giữa slide với kích thước cực lớn (140px) và hiệu ứng phát sáng vàng mạnh mẽ.
 - **Sửa lỗi hiển thị Text**: Đã khắc phục lỗi "hot reload không thấy text" do sai cấu trúc đường dẫn JSON (`hd3.background` -> `hd3.part3.background`). Bây giờ toàn bộ tiêu đề và slogan sẽ hiển thị chính xác theo dữ liệu cấu hình.
 - **Tối giản hóa Slide Background**: Đã xóa bỏ cụm tiêu đề "Tọa đàm Đối thoại" để nhường toàn bộ không gian cho slogan "Tĩnh để Soi · Động để Sáng" ở trung tâm, giúp bố cục slide trở nên sạch sẽ, cân đối và tập trung hơn vào thông điệp chính.
-- **Typographic Layout cho Slogan**: Chuyển cấu trúc Slogan sang dạng 2 dòng sử dụng CSS Grid (`grid-template-columns: auto auto`) để đảm bảo chữ "Động" canh lề trái thẳng tắp ngay dưới chữ "Soi" đúng y hệt yêu cầu thiết kế của người dùng.
+- **Typographic Layout cho Slogan**: Đã giải quyết triệt để lỗi "bị lệch" do Grid gây ra bằng kỹ thuật `visibility: hidden` và `Flexbox`. Kỹ thuật này giúp chữ "Động" canh lề trái thẳng tắp 100% ngay dưới chữ "Soi" mà vẫn đảm bảo toàn bộ khối chữ được đặt vào chính giữa (center) màn hình trên mọi thiết bị.
 - Đã thực hiện commit toàn bộ thay đổi.
