@@ -1,0 +1,654 @@
+{
+  "meta": {
+    "title": "SHCĐ Tháng 5 · Tự soi, Tự sửa — Đảng viên sinh viên rèn đức, luyện tài"
+  },
+  "controls": {
+    "roundNext": "Round tiếp →",
+    "reset": "Reset",
+    "start": "Bắt đầu",
+    "stop": "Dừng",
+    "pause": "Tạm dừng",
+    "resetBoard": "Reset Bảng",
+    "revealAll": "Lật toàn bộ",
+    "teamA": "Đội A",
+    "teamB": "Đội B",
+    "teamC": "Đội C",
+    "plus5": "+5",
+    "plus10": "+10",
+    "minus5": "−5"
+  },
+  "hd1": {
+    "gameBoard": {
+      "phase": "Phase 1 · Lộ diện",
+      "heading": "5 từ khoá. <em style=\"color:var(--red); font-style:italic;\">1 nhân vật.</em>"
+    },
+    "title": {
+      "backdrop": "DIXIT",
+      "cornerLeft": "HOẠT ĐỘNG 01",
+      "cornerRight": "50–60 PHÚT · 3 ĐỘI",
+      "eyebrow": "Hoạt động 1 · DIXIT chuyển thể",
+      "subtitle": "Hidden DIXIT · Bug Bounty Edition",
+      "headingHtml": "Người ấy<br><em style=\"color: var(--gold);\">là ai?</em>",
+      "descHtml": "BTC đưa ra <strong style=\"color:var(--gold);\">5 từ khoá</strong> miêu tả khuyết điểm/ưu điểm của một đảng viên giấu mặt. Các đội cạnh trĐ/c dự đoán — sau khi lộ diện, tập thể cùng đề xuất giải pháp <strong style=\"color:var(--gold);\">\"Patch Bug\"</strong>."
+    },
+    "overview": {
+      "cornerLeft": "HOẠT ĐỘNG 01 · TỔNG QUAN",
+      "cornerRight": "LUẬT CƠ BẢN",
+      "eyebrow": "Tổng quan trò chơi",
+      "card1": {
+        "tag": "01 · Cơ chế \"Tự soi\"",
+        "title": "5 keywords. Một con người.",
+        "descHtml": "Đội chủ nhà chứa \"nhân vật bí ẩn\" của lượt đó. Họ cử <strong>1 MC nội bộ (Storyteller)</strong> lên sân khấu, lật mở 5 keywords + 1 mẩu chuyện bí mật. Hai đội còn lại cạnh tranh giải mã."
+      },
+      "card2": {
+        "tag": "02 · Luật Dixit",
+        "title": "Tinh tế. Vừa đủ.",
+        "descHtml": "Keyword <strong>không quá dễ</strong> (ai cũng đoán liền) cũng <strong>không quá khó</strong> (không ai đoán ra). Viết đúng độ khó mới có điểm. Khuyến khích ngôn từ IT/GenZ ẩn dụ — hài hước &amp; sáng tạo."
+      },
+      "stats": {
+        "teams": {
+          "value": "3",
+          "label": "Đội thi đấu"
+        },
+        "rounds": {
+          "value": "3–6",
+          "label": "Lượt chơi (~8'/lượt)"
+        },
+        "keywords": {
+          "value": "5",
+          "label": "Keywords/profile"
+        },
+        "phases": {
+          "value": "3",
+          "label": "Phase / lượt"
+        }
+      },
+      "titleHtml": "Một đội <em style=\"color:var(--red); font-style:italic;\">chủ nhà</em>.<br> Hai đội <em style=\"color:var(--red); font-style:italic;\">lộ diện</em>."
+    },
+    "profile": {
+      "cornerLeft": "HOẠT ĐỘNG 01 · CHUẨN BỊ PROFILE",
+      "cornerRight": "10 PHÚT (TIỀN KỲ)",
+      "eyebrow": "Cấu trúc 5 keywords",
+      "cards": {
+        "k1": {
+          "tag": "K1 · 30đ",
+          "title": "Nhận xét chung",
+          "desc": "Mốc khó đoán nhất — một câu mô tả tổng quát."
+        },
+        "k2": {
+          "tag": "K2 · 25đ",
+          "title": "1 Ưu điểm",
+          "desc": "Phẩm chất tích cực nổi bật của nhân vật."
+        },
+        "k3": {
+          "tag": "K3 · 20đ",
+          "title": "1 Nhược điểm",
+          "desc": "Khuyết điểm cần sửa — nhìn thẳng, không né."
+        },
+        "k4": {
+          "tag": "K4 · 15đ",
+          "title": "Ẩn ưu / khác",
+          "desc": "Mã hoá GenZ/IT — vd: \"API trả 200 OK\"."
+        },
+        "k5": {
+          "tag": "K5 · 10đ",
+          "title": "Ẩn nhược (chí mạng)",
+          "desc": "Mốc dễ đoán nhất — vd: \"Bóng ma 11h59\"."
+        }
+      },
+      "storyTag": "+ 1 MẨU CHUYỆN",
+      "storyDesc": "Một tình huống cụ thể minh hoạ 3 keywords gốc — không nêu tên thật.",
+      "titleHtml": "Từ <em style=\"color:var(--red); font-style:italic;\">chung chung</em> đến <em style=\"color:var(--red); font-style:italic;\">chí mạng</em>."
+    },
+    "phases": {
+      "cornerLeft": "HOẠT ĐỘNG 01 · LỘ TRÌNH 1 LƯỢT",
+      "cornerRight": "~8 PHÚT · 3 GIAI ĐOẠN",
+      "eyebrow": "Cơ chế thao tác",
+      "phase1": {
+        "badge": "PHASE 1 · 2–3'",
+        "title": "Lộ diện",
+        "desc": "Lật K1→K5 tuần tự. Sau mỗi keyword, 2 đội đoán — đúng → +điểm, sai → −5đ.",
+        "tagFlip": "FLIP",
+        "tagGuess": "GUESS"
+      },
+      "phase2": {
+        "badge": "PHASE 2 · 2'",
+        "title": "Inspect F12",
+        "code": "> bgk.review(keyword)",
+        "descHtml": "Đội đoán chọn 1 keyword của Đội chủ nhà để chất vấn. Nếu chứng minh keyword \"ảo\" → <strong style=\"color:var(--gold);\">Cướp +20đ</strong>, chủ nhà <strong style=\"color:var(--red);\">−20đ</strong>."
+      },
+      "phase3": {
+        "badge": "PHASE 3 · 3–4'",
+        "title": "Tự soi & Patch Bug",
+        "tagShare": "SHARE",
+        "tagFix": "FIX",
+        "descHtml": "Nhân vật lộ diện kể chuyện thật. 2 đội còn lại hiến kế. Nhân vật có quỹ <strong style=\"color:var(--gold);\">20đ donate</strong> tri ân giải pháp hay nhất."
+      },
+      "titleHtml": "Lộ diện · <em style=\"color:var(--red); font-style:italic;\">Inspect</em> · Patch."
+    },
+    "barem": {
+      "cornerLeft": "HOẠT ĐỘNG 01 · BAREM",
+      "cornerRight": "PHASE 1 · LẬT KEYWORD",
+      "eyebrow": "Barem Phase 1 — Lật mở Keyword",
+      "scoreTitle": "Điểm cho đội đoán đúng",
+      "scores": {
+        "k1": {
+          "label": "K1",
+          "desc": "Đoán trúng ngay sau khi lật từ khoá đầu tiên",
+          "points": "+30đ"
+        },
+        "k2": {
+          "label": "K2",
+          "desc": "Đoán trúng sau 2 keywords",
+          "points": "+25đ"
+        },
+        "k3": {
+          "label": "K3",
+          "desc": "Đoán trúng sau 3 keywords",
+          "points": "+20đ"
+        },
+        "k4": {
+          "label": "K4",
+          "desc": "Đoán trúng sau 4 keywords",
+          "points": "+15đ"
+        },
+        "k5": {
+          "label": "K5",
+          "desc": "Đoán trúng sau khi mở cả 5 keywords",
+          "points": "+10đ"
+        },
+        "wrong": {
+          "label": "SAI",
+          "desc": "Bấm chuông đoán sai",
+          "points": "−5đ"
+        }
+      },
+      "host": {
+        "tag": "Đội Chủ nhà",
+        "title": "Đồng bộ điểm",
+        "descHtml": "Nếu <strong>chỉ 1 đội</strong> đoán trúng K2–K5, Đội chủ nhà nhận điểm y hệt đội đoán trúng."
+      },
+      "consolation": {
+        "tag": "+10đ an ủi",
+        "desc": "Nếu cả 2 đội đoán trúng cùng lúc (K2–K5) — keyword tốt nhưng hơi dễ."
+      },
+      "penaltyEasy": {
+        "tag": "−10đ phạt lộ liễu",
+        "desc": "Bị đoán trúng ngay khi vừa lật K1 — keyword làm quá lộ liễu, thiếu đầu tư."
+      },
+      "penaltyFake": {
+        "tag": "−20đ phạt \"ảo\"",
+        "desc": "Mở đến K5 mà không đội nào đoán trúng — keyword viết quá ảo, sai sự thật."
+      },
+      "titleHtml": "Đoán đúng <em style=\"color:var(--red); font-style:italic;\">càng sớm</em>, điểm <em style=\"color:var(--red); font-style:italic;\">càng cao</em>."
+    },
+    "inspect": {
+      "cornerLeft": "HOẠT ĐỘNG 01 · BAREM",
+      "cornerRight": "PHASE 2 + PHASE 3",
+      "eyebrow": "Cướp cờ & Patch Bug",
+      "phase2": {
+        "tag": "PHASE 2",
+        "title": "Inspect F12 — Cướp cờ",
+        "hostLabel": "Đội chủ nhà",
+        "hostPoints": "−20đ",
+        "stealLabel": "Đội cướp điểm",
+        "stealPoints": "+20đ",
+        "descHtml": "Đội đoán có quyền chọn 1 keyword của chủ nhà và <strong style=\"color:var(--gold);\">chất vấn</strong>. Nếu thuyết phục được Chi uỷ rằng keyword là <strong>không đàng hoàng</strong> (cố tình lừa, đùa lố, không thực tế):"
+      },
+      "phase3": {
+        "tag": "PHASE 3",
+        "title": "Patch Bug — Quỹ tri ân",
+        "codeLine1": "$ donate(15đ → đội A) // khuyên hay",
+        "codeLine2": "$ donate(5đ → đội B) // ý tưởng tốt",
+        "codeLine3": "$ remaining: 0đ",
+        "descHtml": "Người \"lên thớt\" có quỹ <strong style=\"color:var(--gold);\">20đ</strong>. Dựa vào độ chân thành của giải pháp \"Tự sửa\" do 2 đội còn lại hiến kế, bạn ấy có quyền <strong>tự xé lẻ</strong> để donate."
+      },
+      "awards": {
+        "tag": "🏆 GIẢI THƯỞNG PHỤ",
+        "descHtml": "<strong>Khắc nhập Khắc xuất</strong> (Best Keywords) · <strong>Advisor Đỉnh cao</strong> (Senior Debugger)"
+      },
+      "titleHtml": "Bug Bounty.<br><em style=\"color:var(--gold); font-style:italic;\">Donate ân tình.</em>"
+    },
+    "summary": {
+      "cornerLeft": "HOẠT ĐỘNG 01 · ĐÚC KẾT",
+      "cornerRight": "SAFE-ZONE · PATCH BUG",
+      "eyebrow": "Giá trị đọng lại",
+      "cards": {
+        "card1": {
+          "tag": "01",
+          "title": "Tái định nghĩa",
+          "desc": "Kiểm điểm không phải việc nghiêm trọng — mà là không gian ghi nhận tiến bộ và khích lệ nhau."
+        },
+        "card2": {
+          "tag": "02",
+          "title": "Phơi bày Bug an toàn",
+          "desc": "Mọi người dũng cảm phơi bày Bug của mình — tin rằng đồng đội không chê cười mà sẽ giúp Patch Bug."
+        },
+        "card3": {
+          "tag": "03",
+          "title": "Tinh thần Đ/c",
+          "desc": "Thắt chặt đoàn kết, giúp đảng viên khép kín cảm nhận được năng lượng tích cực từ chi bộ."
+        }
+      },
+      "quote": "“Tự soi để sáng hơn — Tự sửa để đẹp hơn. Mỗi đảng viên là một mắt xích — không ai bị bỏ lại.”",
+      "titleHtml": "Tự soi không phải <em style=\"color:var(--red); font-style:italic;\">đấu tố</em>.<br>Là <em style=\"color:var(--red); font-style:italic;\">vùng an toàn</em> cùng nhau tiến bộ."
+    },
+    "board": {
+      "cornerLeftHtml": "HOẠT ĐỘNG 01 · ROUND <span id=\"round-num\">1</span>"
+    }
+  },
+  "feud": {
+    "round1": {
+      "item1": "Lạm dụng AI / copy code không hiểu bản chất — 'Đệ tử ChatGPT'",
+      "item2": "Không hỏi khi không hiểu — sợ bị đánh giá là 'gà'",
+      "item3": "Học vẹt syntax mà không nắm được tư duy thuật toán",
+      "item4": "Không đọc kỹ log/error, sửa bug theo cảm tính",
+      "item5": "Chạy deadline nên bỏ qua kiểm thử / case biên",
+      "item6": "Ngại review code, làm một mình đến lúc vỡ"
+    },
+    "round2": {
+      "item1": "Đọc / code thực hành mỗi ngày — dù chỉ 30 phút",
+      "item2": "Cập nhật xu hướng công nghệ qua tech news / GitHub trending",
+      "item3": "Refactor / review lại code cũ — học từ chính lỗi sai của mình",
+      "item4": "Làm mini-project đều đặn để giữ nhịp kỹ năng",
+      "item5": "Ghi chép kỹ thuật sau mỗi buổi học / thực hành",
+      "item6": "Ôn lại nền tảng (DSA, OS, DB) theo lịch cố định"
+    },
+    "round3": {
+      "item1": "Đạo code — copy không xin phép, không ghi nguồn (Academic dishonesty)",
+      "item2": "Lạm dụng tài khoản / quyền truy cập tập thể cho mục đích cá nhân",
+      "item3": "Bán / chia sẻ dữ liệu, source code nội bộ ra ngoài",
+      "item4": "Làm giả số liệu / benchmark trong báo cáo kỹ thuật",
+      "item5": "Dùng tài nguyên lab/server chung cho mục đích cá nhân",
+      "item6": "Nhận công sức nhóm thành thành tích riêng"
+    },
+    "round4": {
+      "item1": "Chủ động code review / pair programming — học từ đồng đội",
+      "item2": "Sẵn sàng chia sẻ tài liệu, cheat-sheet — không 'gatekeep' kiến thức",
+      "item3": "Lắng nghe ý kiến trái chiều, không bảo thủ với code/giải pháp của mình",
+      "item4": "Chủ động hỗ trợ teammate khi kẹt bug",
+      "item5": "Thống nhất coding convention trước khi làm",
+      "item6": "Nhận feedback thẳng thắn, sửa nhĐ/c, không tự ái"
+    },
+    "round5": {
+      "item1": "Tiên phong",
+      "item2": "Bản lĩnh",
+      "item3": "Tử tế",
+      "item4": "Kỷ luật",
+      "item5": "Sáng tạo",
+      "item6": "Phụng sự"
+    }
+  },
+  "cover": {
+    "topLeft": "Sinh hoạt Chuyên đề · Chỉ thị 05-CT/TW",
+    "topRight": "Tháng 5 · 2026",
+    "badge": "Học tập và làm theo tư tưởng, đạo đức Hồ Chí Minh",
+    "titleHtml": "Tự soi mình<br><em style=\"font-style:italic; color: var(--gold);\">theo gương Bác.</em>",
+    "introHtml": "Đảng viên sinh viên rèn đức, luyện tài, trưởng thành.<br> Một buổi sinh hoạt bốn hoạt động — <strong style=\"color:var(--gold);\">khởi động</strong>, <strong style=\"color:var(--gold);\">tự soi</strong>, <strong style=\"color:var(--gold);\">chuẩn mực</strong>, <strong style=\"color:var(--gold);\">đối thoại</strong>.",
+    "mottoHtml": "Tĩnh để Soi<br><span style=\"color: var(--gold);\">Động để Sáng</span>"
+  },
+  "agenda": {
+    "cornerLeft": "CHƯƠNG TRÌNH",
+    "cornerRight": "04 PHẦN",
+    "eyebrow": "Chương trình buổi sinh hoạt",
+    "cards": {
+      "part0": {
+        "tag": "Phần 0",
+        "duration": "~15'",
+        "title": "Khởi động",
+        "desc": "Bấm chuông trắc nghiệm 7 câu — nhận thức về \"tự soi, tự sửa\"."
+      },
+      "activity1": {
+        "tag": "Hoạt động 01",
+        "duration": "50–60'",
+        "title": "Hidden DIXIT",
+        "desc": "\"Người ấy là ai?\" — 5 keywords, 3 đội đoán, cùng nhau Patch Bug."
+      },
+      "activity2": {
+        "tag": "Hoạt động 02",
+        "duration": "15–20'",
+        "title": "Truy tìm hình mẫu",
+        "desc": "Đoán đáp án Top 1 — xây dựng chuẩn mực đạo đức chung."
+      },
+      "activity3": {
+        "tag": "Hoạt động 03",
+        "duration": "25–30'",
+        "title": "Tọa đàm",
+        "desc": "\"Tĩnh để Soi, Động để Sáng\" — đối thoại với khách mời."
+      }
+    },
+    "quote": "“Tự soi để sáng hơn — Tự sửa để đẹp hơn.”",
+    "quoteTag": "3 ĐỘI · 1 TINH THẦN",
+    "titleHtml": "Bốn phần.<br>Một hành trình <em style=\"font-style:italic; color: var(--red);\">tự soi, tự sửa</em>."
+  },
+  "khoidong": {
+    "cornerLeft": "PHẦN 0 · KHỞI ĐỘNG",
+    "cornerRight": "~15 PHÚT",
+    "eyebrow": "Hoạt động khởi động",
+    "stats": {
+      "teamCount": {
+        "value": "3",
+        "label": "Số đội thi đấu",
+        "desc": "Mỗi đội cử đại diện vào hệ thống bấm chuông"
+      },
+      "questionCount": {
+        "value": "7",
+        "label": "Câu hỏi trắc nghiệm",
+        "desc": "4 đáp án — chỉ 1 đáp án đúng theo Bác"
+      },
+      "points": {
+        "value": "+10",
+        "label": "Điểm cho mỗi câu đúng",
+        "desc": "Sai không bị trừ — chuyển quyền sang đội nhĐồng chí thứ hai"
+      }
+    },
+    "titleHtml": "Bấm chuông.<br><em style=\"color: var(--gold);\">Giành quyền.</em>",
+    "descHtml": "7 câu hỏi trắc nghiệm về <strong style=\"color:var(--gold);\">tự soi, tự sửa</strong> theo tư tưởng Hồ Chí Minh và Chỉ thị 05-CT/TW. Đội nhĐ/c chân nhất giành quyền trả lời."
+  },
+  "khoidongSummary": {
+    "cornerLeft": "KHỞI ĐỘNG · TỔNG KẾT",
+    "cornerRight": "DẪN VÀO HOẠT ĐỘNG 01",
+    "eyebrow": "Từ nhận thức sang hành động",
+    "cards": {
+      "card1": {
+        "tag": "01",
+        "title": "Hằng ngày như rửa mặt",
+        "desc": "Tự soi, tự sửa không phải thủ tục. Đó là Real-time Monitoring — kiểm thử và tối ưu hệ thống mỗi ngày."
+      },
+      "card2": {
+        "tag": "02",
+        "title": "Bài học chiếc đồng hồ",
+        "desc": "Mỗi người là một mắt xích. Không công việc nào \"thấp kém\" — chỉ có thái độ chưa đủ trách nhiệm."
+      },
+      "card3": {
+        "tag": "03",
+        "title": "Hồng & Chuyên",
+        "desc": "Rèn đức và luyện tài phải song hành — hướng tới sự trưởng thành thực chất, từ chối hình thức."
+      }
+    },
+    "ctaTag": "→ HOẠT ĐỘNG 01",
+    "titleHtml": "Rèn đức · Luyện tài ·<br><em style=\"color:var(--red); font-style:italic;\">Trưởng thành.</em>",
+    "quoteHtml": "“Tinh thần đã vững. Đã đến lúc bước vào thử thách mới — nơi đòi hỏi <strong>quyết đoán, tốc độ và sự phối hợp ăn ý</strong> hơn nữa.”"
+  },
+  "hd2": {
+    "title": {
+      "backdrop": "100",
+      "cornerLeft": "HOẠT ĐỘNG 02",
+      "cornerRight": "~20 PHÚT · 5 VÒNG",
+      "eyebrow": "Hoạt động 2 · Truy tìm hình mẫu",
+      "headingHtml": "Đoán đáp án<br><em style=\"color: var(--red); font-style:italic;\">Top 1.</em>",
+      "descHtml": "Cùng xây dựng <strong>chuẩn mực đạo đức của đảng viên sinh viên IT</strong> qua 5 vòng — mỗi vòng một câu hỏi, ba đáp án phổ biến nhất, ba đội thi đấu."
+    },
+    "rules": {
+      "cornerLeft": "HOẠT ĐỘNG 02 · TỔNG QUAN LUẬT CHƠI",
+      "cornerRight": "3 ĐỘI · 5 VÒNG",
+      "eyebrow": "Tổng quan luật chơi",
+      "items": {
+        "target": {
+          "icon": "🎯",
+          "title": "Mục tiêu",
+          "desc": "Đoán trúng đáp án Top 1 — phổ biến nhất từ khảo sát."
+        },
+        "time": {
+          "icon": "⏱",
+          "title": "Thời gian",
+          "descHtml": "<strong>60 giây</strong> suy nghĩ — ghi 1 đáp án duy nhất lên bảng."
+        },
+        "method": {
+          "icon": "🙋",
+          "title": "Cách thức",
+          "descHtml": "Hết 60s, 3 đội <strong>đồng loạt giơ bảng</strong>. MC lật mở kết quả."
+        }
+      },
+      "scoring": {
+        "tag": "🏆 BAREM ĐIỂM",
+        "top1": {
+          "rank": "1",
+          "points": "+30đ",
+          "descHtml": "Trúng <strong>Top 1</strong> (đáp án phổ biến nhất)"
+        },
+        "top2": {
+          "rank": "2",
+          "points": "+20đ",
+          "descHtml": "Trúng <strong>Top 2</strong>"
+        },
+        "top3": {
+          "rank": "3",
+          "points": "+10đ",
+          "descHtml": "Trúng <strong>Top 3</strong>"
+        },
+        "noteHtml": "Top 4–6: điểm phụ lần lượt <strong style=\"color: var(--gold);\">+8 / +6 / +4</strong>.",
+        "footerHtml": "MC lấy đáp án <strong style=\"color:var(--gold);\">Top 1</strong> điền vào \"Bảng chuẩn mực chung\" sau mỗi vòng."
+      },
+      "titleHtml": "Một câu hỏi.<br>Bốn đáp án phổ biến nhất."
+    },
+    "round1": {
+      "cornerLeft": "HOẠT ĐỘNG 02 · VÒNG 01/05",
+      "eyebrow": "Vòng 01 · Góc khuất — \"Bắt mạch, kê đơn\"",
+      "takeawayHtml": "<strong>Hành động đúc kết:</strong> Tự soi là phải trung thực nhìn nhận lỗ hổng kiến thức để kịp thời \"uống thuốc\" (học hỏi bổ sung)."
+    },
+    "round2": {
+      "cornerLeft": "HOẠT ĐỘNG 02 · VÒNG 02/05",
+      "eyebrow": "Vòng 02 · Chữ \"CẦN\" — Rèn luyện mỗi ngày",
+      "takeawayHtml": "<strong>Hành động đúc kết:</strong> Đặc thù IT thay đổi chóng mặt — không duy trì sự \"Cần\" cù như thói quen rửa mặt, kiến thức sẽ nhĐ/c chóng lỗi thời."
+    },
+    "round3": {
+      "cornerLeft": "HOẠT ĐỘNG 02 · VÒNG 03/05",
+      "eyebrow": "Vòng 03 · LIÊM / CHÍNH — RĐ/c giới đạo đức số",
+      "takeawayHtml": "<strong>Hành động đúc kết:</strong> Khi nắm trong tay hệ thống và quyền truy cập (dù nhỏ), phải giữ vững lương tâm — tôn trọng tài sản số của tập thể."
+    },
+    "round4": {
+      "cornerLeft": "HOẠT ĐỘNG 02 · VÒNG 04/05",
+      "eyebrow": "Vòng 04 · Đồng đội — Chống chủ nghĩa cá nhân",
+      "takeawayHtml": "<strong>Hành động đúc kết:</strong> Xoá bỏ kiêu ngạo của những \"cái chén cạn\" (toxic tech-bros), xây dựng tinh thần Đ/c rộng mở để cả đội cùng thành công."
+    },
+    "round5": {
+      "cornerLeft": "HOẠT ĐỘNG 02 · VÒNG 05/05",
+      "eyebrow": "Vòng 05 · Hình mẫu — Khát vọng vươn lên",
+      "noteHtml": "<strong>Lưu ý:</strong> Đáp án 6 vị trí trên là <em>gợi ý</em> — MC tự điền theo kết quả khảo sát thực tế của Chi bộ."
+    },
+    "summary": {
+      "cornerLeft": "HOẠT ĐỘNG 02 · ĐÚC KẾT",
+      "cornerRight": "NOI GƯƠNG BÁC",
+      "eyebrow": "Đúc kết · Noi gương Bác",
+      "cards": {
+        "card1": {
+          "icon": "🪞",
+          "title": "Chiến thắng \"Tự mình\"",
+          "desc": "Kẻ thù nguy hiểm nhất nằm bên trong chính ta. Tự mình không cải tạo được mình thì không thể cải tạo xã hội."
+        },
+        "card2": {
+          "icon": "💧",
+          "title": "Như \"Rửa mặt hằng ngày\"",
+          "desc": "Tự soi, tự sửa không phải làm một lần — đó là quá trình rèn luyện, tu dưỡng, tự điều chỉnh tự giác mỗi ngày suốt đời."
+        },
+        "card3": {
+          "icon": "💊",
+          "title": "Không \"Giấu bệnh\"",
+          "desc": "Một tổ chức/cá nhân giấu khuyết điểm là hỏng — như tự bỏ thuốc độc cho mình. Phải có gan thừa nhận và vạch rõ cách sửa."
+        },
+        "card4": {
+          "icon": "🌊",
+          "title": "Bao dung như \"Biển rộng\"",
+          "desc": "Tránh tự kiêu, tự mãn như \"cái chén cạn\". Phải khiêm tốn, giúp người khác tiến bộ, đặt lợi ích tập thể lên trên cá nhân."
+        }
+      },
+      "titleHtml": "Tự soi.<br>Tự sửa. <em style=\"color:var(--red); font-style:italic;\">Suốt đời.</em>"
+    }
+  },
+  "hd3": {
+    "title": {
+      "cornerLeft": "HOẠT ĐỘNG 03 · TỌA ĐÀM",
+      "cornerRight": "~30 PHÚT",
+      "eyebrow": "Chủ đề tọa đàm",
+      "desc": "Tọa đàm ba phần — giải mã hồ sơ ẩn danh, lật mở chân dung khách mời, và đối thoại phản biện trực tiếp.",
+      "headingHtml": "Tĩnh để <em style=\"color: var(--gold);\">Soi.</em><br> Động để <em style=\"color: var(--gold);\">Sáng.</em>"
+    },
+    "guests": {
+      "cornerLeft": "HOẠT ĐỘNG 03 · TỌA ĐÀM",
+      "cornerRight": "4 KHÁCH MỜI",
+      "eyebrow": "Thành phần diễn giả",
+      "cards": {
+        "g1": {
+          "photo": "[ ẢNH Đ/c Đức Nhâm ]",
+          "badge": "G·01",
+          "name": "Đ/c Đức Nhâm",
+          "role": "Diễn giả"
+        },
+        "g2": {
+          "photo": "[ ẢNH Đ/c TRƯỜNG ]",
+          "badge": "G·02",
+          "name": "Đ/c Văn Trường",
+          "role": "Diễn giả"
+        },
+        "g3": {
+          "photo": "[ ẢNH Đ/c NHỰT THANH ]",
+          "badge": "G·03",
+          "name": "Đ/c Nhựt Thanh",
+          "role": "Diễn giả"
+        },
+        "mc": {
+          "photo": "[ ẢNH MC NGỌC KHANH ]",
+          "badge": "MC",
+          "name": "Đ/c Ngọc Khanh",
+          "role": "MC · Điều phối tọa đàm"
+        }
+      },
+      "titleHtml": "<em style=\"color:var(--red); font-style:italic;\">Ba lĩnh vực.</em><br>Một tinh thần tự soi.",
+      "subtitleHtml": "Khách mời chia sẻ \"hồ sơ ẩn danh\"<br>về hành trình tự soi tự sửa của bản thân"
+    },
+    "part1": {
+      "cornerLeft": "HOẠT ĐỘNG 03 · PHẦN 01",
+      "cornerRight": "11 PHÚT · CHUẨN BỊ 1' · TRÌNH BÀY 2'",
+      "eyebrow": "Phần 01 (~11 phút)",
+      "timerPrep": {
+        "tag": "Chuẩn bị",
+        "desc": "Đọc và phân tích hồ sơ",
+        "label": "01:00",
+        "display": "01:00"
+      },
+      "timerTalk": {
+        "tag": "Trình bày",
+        "desc": "Thuyết trình phán đoán",
+        "label": "02:00",
+        "display": "02:00"
+      },
+      "headingHtml": "Giải mã<br><em style=\"color: var(--red); font-style:italic;\">hồ sơ ẩn danh.</em>",
+      "descHtml": "Mỗi đội bốc thăm 1 hồ sơ ẩn danh và trả lời: <em>\"Nếu là người trong câu chuyện, đội bạn sẽ áp dụng nguyên tắc tự soi, tự sửa như thế nào để vượt qua khủng hoảng?\"</em>"
+    },
+    "part2": {
+      "cornerLeft": "HOẠT ĐỘNG 03 · PHẦN 02",
+      "cornerRight": "8–10 PHÚT",
+      "eyebrow": "Phần 02 (~8–10 phút)",
+      "desc": "BTC lật mở hồ sơ — khách mời chia sẻ câu chuyện thật, cách họ vượt qua, và bài học rút ra. Khách mời nhận xét phần trình bày của các đội.",
+      "cards": {
+        "card1": {
+          "badge": "HỒ SƠ · 01",
+          "letter": "A",
+          "name": "Đ/c Đức Nhâm",
+          "desc": "Câu chuyện ẩn danh về một khoảnh khắc bị \"đè bẹp\" trong học tập — và hành trình tự soi để vượt qua.",
+          "tag": "HỌC TẬP"
+        },
+        "card2": {
+          "badge": "HỒ SƠ · 02",
+          "letter": "B",
+          "name": "Đ/c Văn Trường",
+          "desc": "Câu chuyện về sai lầm trong tổ chức hoạt động, áp lực thành tích — và bài học khiêm tốn từ tập thể.",
+          "tag": "NGOẠI KHOÁ"
+        },
+        "card3": {
+          "badge": "HỒ SƠ · 03",
+          "letter": "C",
+          "name": "Đ/c Nhựt Thanh",
+          "desc": "Câu chuyện về một quyết định sai lầm trong cuộc sống — và hành trình \"tự sửa\" qua sinh hoạt chi bộ.",
+          "tag": "CUỘC SỐNG"
+        }
+      },
+      "headingHtml": "Lật mở<br><em style=\"color:var(--red); font-style:italic;\">hồ sơ.</em>"
+    },
+    "part3": {
+      "cornerLeft": "PHẦN 03 · ĐỐI THOẠI",
+      "cornerRight": "PREP: 15\" · RESPONSE: 2'",
+      "eyebrow": "Hoạt động 03",
+      "desc": "Đội thi trực tiếp đối thoại, trả lời các câu hỏi hóc búa từ Chi ủy và phản biện lại các ý kiến từ khách mời.",
+      "timerPrep": {
+        "tag": "CHUẨN BỊ",
+        "desc": "Suy nghĩ & Thống nhất ý kiến",
+        "display": "00:15"
+      },
+      "timerResponse": {
+        "tag": "TRẢ LỜI & PHẢN BIỆN",
+        "desc": "Đội thi tranh luận trực tiếp",
+        "display": "02:00"
+      },
+      "headingHtml": "Đối thoại<br><em style=\"color: var(--gold); font-style:italic; font-family: var(--font-serif);\">phản biện.</em>"
+    },
+    "criteria": {
+      "cornerLeft": "HOẠT ĐỘNG 03 · TIÊU CHÍ ĐÁNH GIÁ",
+      "cornerRight": "CHI UỶ + KHÁN GIẢ",
+      "eyebrow": "Cách thức chấm điểm",
+      "committee": {
+        "title": "CHI UỶ CHẤM ĐIỂM (TỐI ĐA 80đ)",
+        "items": {
+          "item1": {
+            "title": "Nhận diện đúng vấn đề trong hồ sơ ẩn danh",
+            "note": "Nội dung thực tiễn"
+          },
+          "item2": {
+            "title": "Đề xuất phương án \"tự sửa\" khả thi, cụ thể",
+            "note": "Nội dung thực tiễn"
+          },
+          "item3": {
+            "title": "Bám sát tinh thần Chỉ thị 05-CT/TW, không sáo rỗng",
+            "note": "Nội dung thực tiễn"
+          },
+          "item4": {
+            "title": "Trình bày mạch lạc, phong thái tự tin",
+            "note": "Kỹ năng trình bày"
+          },
+          "item5": {
+            "title": "Lập luận thuyết phục",
+            "note": "Kỹ năng trình bày"
+          },
+          "item6": {
+            "title": "Trả lời đúng trọng tâm câu hỏi phản biện",
+            "note": "Xử lý tình huống"
+          },
+          "item7": {
+            "title": "Tư duy phản biện nhạy bén, lập luận chặt chẽ",
+            "note": "Xử lý tình huống"
+          }
+        }
+      },
+      "audience": {
+        "tag": "KHÁN GIẢ BÌNH CHỌN",
+        "title": "Tối đa 20đ",
+        "desc": "Mức độ truyền cảm hứng và khả năng ứng dụng thực tiễn (1–5 sao)",
+        "formula": "điểm = (Σ sao đội / Σ phiếu) × 4"
+      },
+      "total": {
+        "tag": "TỔNG ĐIỂM ĐỘI",
+        "points": "100đ",
+        "descHtml": "Tổng điểm = <strong>điểm Chi uỷ (80đ)</strong> + <strong>điểm khán giả (20đ)</strong>."
+      },
+      "titleHtml": "Chi uỷ <em style=\"color:var(--red); font-style:italic;\">+</em> Khán giả.<br>Một điểm tổng kết."
+    },
+    "vote": {
+      "cornerLeft": "HOẠT ĐỘNG 03 · BÌNH CHỌN",
+      "eyebrow": "Form bình chọn của khán giả",
+      "urlLabel": "URL",
+      "urlValue": "forms.gle/98Ai9sDSHMFCxvdp8",
+      "qrTag": "Quét tôi",
+      "qrHint": "Mở camera điện thoại",
+      "titleHtml": "Bạn ấn tượng<br>với đội nào <em style=\"color:var(--red); font-style:italic;\">nhất?</em>",
+      "descHtml": "Quét mã QR để bình chọn. Mỗi khán giả chấm <strong>1–5 sao</strong> cho mỗi đội về <strong>mức độ truyền cảm hứng</strong> và <strong>khả năng ứng dụng thực tiễn</strong>."
+    }
+  },
+  "closing": {
+    "eyebrow": "Cảm ơn",
+    "meta": "Sinh hoạt Chuyên đề · Tháng 5 · 2026",
+    "subtitle": "Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh",
+    "end": "— Hết —",
+    "titleHtml": "<em style=\"color: var(--gold); font-style:italic;\">Tự soi</em><br> để sáng hơn.<br><em style=\"color: var(--gold); font-style:italic;\">Tự sửa</em><br> để đẹp hơn."
+  }
+}
