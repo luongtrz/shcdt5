@@ -97,10 +97,11 @@
   Promise.all([
     fetch('uploads/index-texts.json').then(res => res.json()),
     fetch('uploads/feud.json').then(res => res.ok ? res.json() : {}),
-    fetch('uploads/hoso.json').then(res => res.ok ? res.json() : {})
+    fetch('uploads/hoso.json').then(res => res.ok ? res.json() : {}),
+    fetch('uploads/dixit.json').then(res => res.ok ? res.json() : {})
   ])
-    .then(([mainTexts, feudTexts, hosoTexts]) => {
-      const mergedTexts = mergeDeep({}, mainTexts, feudTexts, hosoTexts);
+    .then(([mainTexts, feudTexts, hosoTexts, dixitTexts]) => {
+      const mergedTexts = mergeDeep({}, mainTexts, feudTexts, hosoTexts, dixitTexts);
       window.i18nTexts = mergedTexts;
       window.i18nLoaded = true;
       applyTranslations(mergedTexts);

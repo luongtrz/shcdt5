@@ -105,11 +105,17 @@
     }
   };
 
-  fetch('uploads/dixit.json')
-    .then(res => res.json())
-    .then(data => {
+  function init() {
+    const data = window.i18nTexts;
+    if (data && data.dixit) {
       rounds = data.dixit.rounds;
       render();
-    })
-    .catch(err => console.error('[dixit] Failed to load rounds data:', err));
+    }
+  }
+
+  if (window.i18nLoaded) {
+    init();
+  } else {
+    window.addEventListener('i18n:loaded', init);
+  }
 })();
