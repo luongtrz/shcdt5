@@ -138,3 +138,9 @@
    - Tăng font-size từ `14px` lên khoảng `26px` - `28px`.
    - Điều chỉnh font-weight và opacity để tăng độ tương phản.
 2. **Git**: Thực hiện commit toàn bộ thay đổi.
+
+### Kết quả thực hiện (2026-05-04)
+- Đã thay đổi font chữ điểm số trên mặt sau thẻ bài DIXIT sang `var(--font-sans)` (Be Vietnam Pro) và thiết lập độ đậm `800`.
+- Đã tăng kích thước chữ điểm số từ `14px` lên `26px` để dễ quan sát từ xa.
+- Điều chỉnh khoảng cách lề (`margin-top`) để bố cục cân đối hơn sau khi tăng size chữ.
+- Đã thực hiện commit toàn bộ thay đổi.

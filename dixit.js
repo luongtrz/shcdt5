@@ -41,7 +41,7 @@
             <div style="position:absolute; top:0; left:0; right:0; height:8px; background: var(--gold);"></div>
             <div style="position:absolute; bottom:0; left:0; right:0; height:8px; background: var(--gold);"></div>
             <div style="font-family: var(--font-serif); font-weight:900; font-size: 140px; line-height:1; color: var(--gold);">K${i+1}</div>
-            <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.2em; color: var(--gold); margin-top: 12px; opacity: 0.85;">+${points} ĐIỂM</div>
+            <div style="font-family: var(--font-sans); font-weight: 800; font-size: 26px; letter-spacing: 0.05em; color: var(--gold); margin-top: 16px;">+${points} ĐIỂM</div>
           </div>
           <!-- Front (open) -->
           <div class="flip-front" style="
