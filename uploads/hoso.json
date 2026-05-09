@@ -10,21 +10,21 @@
       "cards": {
         "card1": {
           "badge": "HỒ SƠ · 01",
-          "letter": "A",
+          "letter": "PM-02",
           "name": "Đ/c Đức Nhâm",
           "desc": "Câu chuyện về hành trình tìm kiếm đam mê thật sự của bản thân trên con đường học tập, nghiên cứu.",
           "tag": "HỌC TẬP"
         },
         "card2": {
           "badge": "HỒ SƠ · 02",
-          "letter": "B",
+          "letter": "PM-01",
           "name": "Đ/c Văn Trường",
           "desc": "Câu chuyện về sai lầm trong công tác tổ chức, những áp lực vô hình từ kết quả và bài học đắt giá về tinh thần đồng đội trong làm việc tập thể.",
           "tag": "NGOẠI KHOÁ"
         },
         "card3": {
           "badge": "HỒ SƠ · 03",
-          "letter": "C",
+          "letter": "PM-03",
           "name": "Đ/c Nhựt Thanh",
           "desc": "Câu chuyện về cách quản lý cảm xúc và giữ gìn thái độ bình tĩnh trong áp lực.",
           "tag": "CUỘC SỐNG"

@@ -148,12 +148,12 @@
         },
         "k4": {
           "tag": "K4 · 15đ",
-          "title": "Ẩn ưu / khác",
+          "title": "Ưu điểm",
           "desc": "Mã hoá GenZ/IT — vd: \"API trả 200 OK\"."
         },
         "k5": {
           "tag": "K5 · 10đ",
-          "title": "Ẩn nhược (chí mạng)",
+          "title": "Khuyết điểm",
           "desc": "Mốc dễ đoán nhất — vd: \"Bóng ma 11h59\"."
         }
       },
@@ -382,11 +382,11 @@
       "points": {
         "value": "+10",
         "label": "Điểm cho mỗi câu đúng",
-        "desc": "Sai không bị trừ — chuyển quyền sang đội nhĐồng chí thứ hai"
+        "desc": "Sai không bị trừ — chuyển quyền sang đội khác"
       }
     },
     "titleHtml": "Bấm chuông.<br><em style=\"color: var(--gold);\">Giành quyền.</em>",
-    "descHtml": "7 câu hỏi trắc nghiệm về <strong style=\"color:var(--gold);\">tự soi, tự sửa</strong> theo tư tưởng Hồ Chí Minh và Chỉ thị 05-CT/TW. Đội nhĐ/c chân nhất giành quyền trả lời."
+    "descHtml": "7 câu hỏi trắc nghiệm về <strong style=\"color:var(--gold);\">tự soi, tự sửa</strong> theo tư tưởng Hồ Chí Minh và Chỉ thị 05-CT/TW. Đội nhanh tay nhất giành quyền trả lời."
   },
   "khoidongSummary": {
     "cornerLeft": "KHỞI ĐỘNG · TỔNG KẾT",
@@ -581,13 +581,13 @@
     },
     "part3": {
       "cornerLeft": "PHẦN 03 · ĐỐI THOẠI",
-      "cornerRight": "PREP: 15\" · RESPONSE: 2'",
+      "cornerRight": "PREP: 30\" · RESPONSE: 2'",
       "eyebrow": "Hoạt động 03",
       "desc": "Đội thi trực tiếp đối thoại, trả lời các câu hỏi hóc búa từ Chi ủy và phản biện lại các ý kiến từ khách mời.",
       "timerPrep": {
         "tag": "CHUẨN BỊ",
         "desc": "Suy nghĩ & Thống nhất ý kiến",
-        "display": "00:15"
+        "display": "00:30"
       },
       "timerResponse": {
         "tag": "TRẢ LỜI & PHẢN BIỆN",
