@@ -654,7 +654,7 @@
         "tag": "KHÁN GIẢ BÌNH CHỌN",
         "title": "Tối đa 20đ",
         "desc": "Mức độ truyền cảm hứng và khả năng ứng dụng thực tiễn (1–5 sao)",
-        "formula": "điểm = (Σ sao đội / Σ phiếu) × 4"
+        "formula": "điểm = (Σ sao của đội / Σ phiếu) × 4"
       },
       "total": {
         "tag": "TỔNG ĐIỂM ĐỘI",
@@ -667,7 +667,7 @@
       "cornerLeft": "HOẠT ĐỘNG 03 · BÌNH CHỌN",
       "eyebrow": "Form bình chọn của khán giả",
       "urlLabel": "URL",
-      "urlValue": "forms.gle/98Ai9sDSHMFCxvdp8",
+      "urlValue": "forms.gle/vvf5FMKVk5MeBXAs7",
       "qrTag": "Quét tôi",
       "qrHint": "Mở camera điện thoại",
       "titleHtml": "Bạn ấn tượng<br>với đội nào <em style=\"color:var(--red); font-style:italic;\">nhất?</em>",
