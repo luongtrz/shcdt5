@@ -2,7 +2,7 @@
   "hd3": {
     "part1": {
       "headingHtml": "Giải mã<br><em style=\"color: var(--red); font-style:italic;\">hồ sơ ẩn danh.</em>",
-      "descHtml": "Mỗi đội bốc thăm 1 hồ sơ ẩn danh và trả lời: <em>\"Nếu là người trong câu chuyện, đội bạn sẽ áp dụng nguyên tắc tự soi, tự sửa như thế nào để vượt qua khủng hoảng?\"</em>"
+      "descHtml": "Mỗi đội bốc thăm 1 hồ sơ ẩn danh và trả lời câu hỏi được nêu ra trong hồ sơ</em>"
     },
     "part2": {
       "desc": "BTC lật mở hồ sơ — khách mời chia sẻ câu chuyện thật, cách họ vượt qua, và bài học rút ra. Khách mời nhận xét phần trình bày của các đội.",
