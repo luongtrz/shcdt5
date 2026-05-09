@@ -33,6 +33,39 @@
           { "type": "K4 · Ẩn ưu", "text": "“Customer service: 24/7.”" },
           { "type": "K5 · Ẩn nhược", "text": "“Yes-man.exe đang chạy.”" }
         ]
+      },
+      {
+        "label": "ROUND 04",
+        "character": "Đ/c Lê Văn Connector",
+        "keywords": [
+          { "type": "K1 · Nhận xét chung", "text": "Người nhớ ngày sinh nhật của cả lớp." },
+          { "type": "K2 · Ưu điểm", "text": "Ấm áp. Kết nối những con người xa lạ." },
+          { "type": "K3 · Nhược điểm", "text": "Đôi khi cả nể, khó từ chối." },
+          { "type": "K4 · Ẩn ưu", "text": "“Customer service: 24/7.”" },
+          { "type": "K5 · Ẩn nhược", "text": "“Yes-man.exe đang chạy.”" }
+        ]
+      },
+      {
+        "label": "ROUND 05",
+        "character": "Đ/c Lê Văn Connector",
+        "keywords": [
+          { "type": "K1 · Nhận xét chung", "text": "Người nhớ ngày sinh nhật của cả lớp." },
+          { "type": "K2 · Ưu điểm", "text": "Ấm áp. Kết nối những con người xa lạ." },
+          { "type": "K3 · Nhược điểm", "text": "Đôi khi cả nể, khó từ chối." },
+          { "type": "K4 · Ẩn ưu", "text": "“Customer service: 24/7.”" },
+          { "type": "K5 · Ẩn nhược", "text": "“Yes-man.exe đang chạy.”" }
+        ]
+      },
+      {
+        "label": "ROUND 06",
+        "character": "Đ/c Lê Văn",
+        "keywords": [
+          { "type": "K1 · Nhận xét chung", "text": "Người nhớ ngày sinh nhật của cả lớp." },
+          { "type": "K2 · Ưu điểm", "text": "Ấm áp. Kết nối những con người xa lạ." },
+          { "type": "K3 · Nhược điểm", "text": "Đôi khi cả nể, khó từ chối." },
+          { "type": "K4 · Ẩn ưu", "text": "“Customer service: 24/7.”" },
+          { "type": "K5 · Ẩn nhược", "text": "“Yes-man.exe đang chạy.”" }
+        ]
       }
     ]
   }
