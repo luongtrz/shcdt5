@@ -18,54 +18,54 @@
   },
   "feud": {
     "round1": {
-      "item1": "Lạm dụng AI / copy code không hiểu bản chất — 'Đệ tử ChatGPT'",
-      "amount1": 35,
-      "item2": "Không hỏi khi không hiểu — sợ bị đánh giá là 'gà'",
-      "amount2": 25,
-      "item3": "Học vẹt syntax mà không nắm được tư duy thuật toán",
-      "amount3": 15,
-      "item4": "Không đọc kỹ log/error, sửa bug theo cảm tính",
-      "amount4": 10
+      "item1": "Không dám hỏi, ngại hỏi khi không hiểu bài hoặc yêu cầu",
+      "amount1": "38%",
+      "item2": "Lạm dụng AI, dùng AI giải bài mà không tự suy nghĩ",
+      "amount2": "31%",
+      "item3": "Sao chép code, bài của người khác nhưng không hiểu bản chất",
+      "amount3": "19%",
+      "item4": "Viết code chạy tạm, giấu lỗi và bỏ qua kiểm soát chất lượng",
+      "amount4": "12%"
     },
     "round2": {
-      "item1": "Đọc / code thực hành mỗi ngày — dù chỉ 30 phút",
-      "amount1": 40,
-      "item2": "Cập nhật xu hướng công nghệ qua tech news / GitHub trending",
-      "amount2": 20,
-      "item3": "Refactor / review lại code cũ — học từ chính lỗi sai của mình",
-      "amount3": 15,
-      "item4": "Làm mini-project đều đặn để giữ nhịp kỹ năng",
-      "amount4": 10
+      "item1": "Cập nhật tin tức, công nghệ và xu hướng mới",
+      "amount1": "47%",
+      "item2": "Tự học, đọc tài liệu và trau dồi kiến thức liên tục",
+      "amount2": "30%",
+      "item3": "Thực hành code, làm mini-project cá nhân đều đặn",
+      "amount3": "17%",
+      "item4": "Cải thiện và rèn luyện ngoại ngữ / Tiếng Anh",
+      "amount4": "6%"
     },
     "round3": {
-      "item1": "Đạo code — copy không xin phép, không ghi nguồn (Academic dishonesty)",
-      "amount1": 30,
-      "item2": "Lạm dụng tài khoản / quyền truy cập tập thể cho mục đích cá nhân",
-      "amount2": 25,
-      "item3": "Bán / chia sẻ dữ liệu, source code nội bộ ra ngoài",
-      "amount3": 20,
-      "item4": "Làm giả số liệu / benchmark trong báo cáo kỹ thuật",
-      "amount4": 15
+      "item1": "Đánh cắp, dùng dữ liệu/tài nguyên công ty cho mục đích cá nhân",
+      "amount1": "39%",
+      "item2": "Đạo văn, gian lận, sao chép code/đồ án của người khác",
+      "amount2": "26%",
+      "item3": "Lấy ý tưởng, dự án của nhóm làm của riêng để trục lợi",
+      "amount3": "22%",
+      "item4": "Mua bán, chia sẻ tài khoản cấp chung trái phép",
+      "amount4": "13%"
     },
     "round4": {
-      "item1": "Chủ động code review / pair programming — học từ đồng đội",
-      "amount1": 35,
-      "item2": "Sẵn sàng chia sẻ tài liệu, cheat-sheet — không 'gatekeep' kiến thức",
-      "amount2": 30,
-      "item3": "Lắng nghe ý kiến trái chiều, không bảo thủ với code/giải pháp của mình",
-      "amount3": 20,
-      "item4": "Chủ động hỗ trợ teammate khi kẹt bug",
-      "amount4": 10
+      "item1": "Tích cực lắng nghe, tôn trọng và tiếp thu ý kiến người khác",
+      "amount1": "46%",
+      "item2": "Giữ thái độ cầu tiến, ham học hỏi và cởi mở",
+      "amount2": "25%",
+      "item3": "Đặt mục tiêu và lợi ích chung của nhóm lên trên cá nhân",
+      "amount3": "17%",
+      "item4": "Khiêm tốn, biết nhìn nhận khuyết điểm và sẵn sàng nhận sai",
+      "amount4": "12%"
     },
     "round5": {
-      "item1": "Tiên phong",
-      "amount1": 45,
-      "item2": "Bản lĩnh",
-      "amount2": 30,
-      "item3": "Tử tế",
-      "amount3": 15,
-      "item4": "Kỷ luật",
-      "amount4": 10
+      "item1": "Cầu tiến / Tiến bộ",
+      "amount1": "36%",
+      "item2": "Năng động / Năng nổ",
+      "amount2": "27%",
+      "item3": "Toàn diện",
+      "amount3": "19%",
+      "item4": "Trách nhiệm",
+      "amount4": "18%"
     }
   }
 }
