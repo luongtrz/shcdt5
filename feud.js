@@ -2,7 +2,7 @@
 // 1) Multi-slide (.feud-slide chứa nhiều .feud-cell)
 // 2) Legacy board (#feud-board với nút onclick resetFeud/revealAllFeud)
 (function () {
-  function buildCellMarkup(rank, text, points) {
+  function buildCellMarkup(rank, text, points, amount) {
     return `
       <div class="feud-inner" style="position:relative; width:100%; height:100%; transform-style:preserve-3d; transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);">
         <div class="feud-back" style="
@@ -29,7 +29,7 @@
         ">
           <div style="background: var(--ink); color: var(--gold); font-family: var(--font-serif); font-weight:900; font-size: 52px; height:100%; display:flex; align-items:center; justify-content:center; border-right: 2px solid var(--line);">${rank}</div>
           <div style="padding: 0 24px; font-family: var(--font-sans); font-size: 30px; font-weight:700; color: var(--ink); line-height:1.15; letter-spacing: -0.01em; display: flex; align-items: center; height: 100%;">${text}</div>
-          <div style="background: linear-gradient(to bottom, var(--gold), #e6be00); height:100%; display:flex; align-items:center; justify-content:center; font-family: var(--font-serif); font-weight:900; font-size: 42px; color: var(--ink); border-left: 2px solid var(--line); shadow: inset 2px 0 10px rgba(0,0,0,0.05);">${points}</div>
+          <div style="background: linear-gradient(to bottom, var(--gold), #e6be00); height:100%; display:flex; align-items:center; justify-content:center; font-family: var(--font-serif); font-weight:900; font-size: 42px; color: var(--ink); border-left: 2px solid var(--line); shadow: inset 2px 0 10px rgba(0,0,0,0.05);">${amount}</div>
         </div>
       </div>
     `;
@@ -46,8 +46,9 @@
     cell.dataset.feudWired = 'true';
     const rank = cell.dataset.rank;
     const text = cell.dataset.text || '';
-    const points = cell.dataset.points;
-    cell.innerHTML = buildCellMarkup(rank, text, points);
+    const points = cell.dataset.points || '0';
+    const amount = cell.dataset.amount || '0';
+    cell.innerHTML = buildCellMarkup(rank, text, points, amount);
     setCellRevealed(cell, false);
 
     cell.addEventListener('click', () => {
