@@ -19,33 +19,53 @@
   "feud": {
     "round1": {
       "item1": "Lạm dụng AI / copy code không hiểu bản chất — 'Đệ tử ChatGPT'",
+      "amount1": 35,
       "item2": "Không hỏi khi không hiểu — sợ bị đánh giá là 'gà'",
+      "amount2": 25,
       "item3": "Học vẹt syntax mà không nắm được tư duy thuật toán",
-      "item4": "Không đọc kỹ log/error, sửa bug theo cảm tính"
+      "amount3": 15,
+      "item4": "Không đọc kỹ log/error, sửa bug theo cảm tính",
+      "amount4": 10
     },
     "round2": {
       "item1": "Đọc / code thực hành mỗi ngày — dù chỉ 30 phút",
+      "amount1": 40,
       "item2": "Cập nhật xu hướng công nghệ qua tech news / GitHub trending",
+      "amount2": 20,
       "item3": "Refactor / review lại code cũ — học từ chính lỗi sai của mình",
-      "item4": "Làm mini-project đều đặn để giữ nhịp kỹ năng"
+      "amount3": 15,
+      "item4": "Làm mini-project đều đặn để giữ nhịp kỹ năng",
+      "amount4": 10
     },
     "round3": {
       "item1": "Đạo code — copy không xin phép, không ghi nguồn (Academic dishonesty)",
+      "amount1": 30,
       "item2": "Lạm dụng tài khoản / quyền truy cập tập thể cho mục đích cá nhân",
+      "amount2": 25,
       "item3": "Bán / chia sẻ dữ liệu, source code nội bộ ra ngoài",
-      "item4": "Làm giả số liệu / benchmark trong báo cáo kỹ thuật"
+      "amount3": 20,
+      "item4": "Làm giả số liệu / benchmark trong báo cáo kỹ thuật",
+      "amount4": 15
     },
     "round4": {
       "item1": "Chủ động code review / pair programming — học từ đồng đội",
+      "amount1": 35,
       "item2": "Sẵn sàng chia sẻ tài liệu, cheat-sheet — không 'gatekeep' kiến thức",
+      "amount2": 30,
       "item3": "Lắng nghe ý kiến trái chiều, không bảo thủ với code/giải pháp của mình",
-      "item4": "Chủ động hỗ trợ teammate khi kẹt bug"
+      "amount3": 20,
+      "item4": "Chủ động hỗ trợ teammate khi kẹt bug",
+      "amount4": 10
     },
     "round5": {
       "item1": "Tiên phong",
+      "amount1": 45,
       "item2": "Bản lĩnh",
+      "amount2": 30,
       "item3": "Tử tế",
-      "item4": "Kỷ luật"
+      "amount3": 15,
+      "item4": "Kỷ luật",
+      "amount4": 10
     }
   }
 }
