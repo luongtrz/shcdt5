@@ -2,14 +2,14 @@
   {
     "id": 1,
     "title": "Bản chất của việc \"Tự soi, tự sửa\"",
-    "question": "Để nhấn mạnh tính thường xuyên và sự cần thiết của việc \"tự soi, tự sửa\", Bác Hồ đã ví von hoạt động này với hình ảnh sinh hoạt đời thường nào của mỗi con người?",
+    "question": "Để nhấn mạnh tính thường xuyên của việc \"tự soi, tự sửa\", Bác Hồ đã ví von hoạt động này với hình ảnh sinh hoạt đời thường nào?",
     "note": "",
     "correct": "B",
     "options": {
-      "A": "Giống như việc soi gương để tự chỉnh đốn trang phục, giúp mỗi người tự nhận diện những vết nhơ trên khuôn mặt và quần áo để kịp thời tẩy rửa, giữ gìn tư cách Đảng viên.",
-      "B": "Giống như việc rửa mặt hằng ngày, nếu không thực hiện thường xuyên thì những thói hư tật xấu sẽ bám vào làm tha hóa đạo đức.",
-      "C": "Giống như việc mài ngọc hằng ngày, vì ngọc càng mài càng sáng, vàng càng luyện càng trong, giúp Đảng viên ngày càng hoàn thiện bản chất cách mạng.",
-      "D": "Giống như việc người làm vườn thường xuyên nhổ cỏ dại, giúp cho những bông hoa đạo đức trong tâm hồn người Đảng viên luôn tươi tốt và tỏa hương."
+      "A": "Soi gương để tự chỉnh đốn trang phục và nhận diện vết nhơ.",
+      "B": "Rửa mặt hằng ngày để ngăn chặn thói hư tật xấu bám vào đạo đức.",
+      "C": "Mài ngọc, luyện vàng hằng ngày để hoàn thiện bản chất cách mạng.",
+      "D": "Nhổ cỏ dại thường xuyên để tâm hồn luôn tươi tốt."
     }
   },
   {
@@ -19,10 +19,10 @@
     "note": "",
     "correct": "C",
     "options": {
-      "A": "Là phương thức tối ưu để xây dựng văn hóa minh bạch và thượng tôn kỷ luật, giúp tổ chức chuẩn hóa mọi quy trình quản lý và củng cố niềm tin tuyệt đối từ quần chúng bằng những kết quả thực chứng.",
-      "B": "Là nền tảng để thiết lập môi trường \"phản hồi hai chiều\" tích cực, giúp cá nhân giải tỏa các xung đột tâm lý nội tại và tạo ra sự gắn kết, đồng thuận cao nhất trong mọi quyết định của tập thể.",
-      "C": "Bởi bản chất của nó là cuộc đấu tranh trực diện với cái tôi cá nhân và chủ nghĩa vị kỷ — nơi con người dễ bao biện cho lỗi lầm của mình hơn là dũng cảm thừa nhận để thay đổi.",
-      "D": "Là giải pháp kỹ thuật cần thiết để \"gỡ lỗi\" các tư duy cũ kỹ, đảm bảo cá nhân luôn vận hành đúng quỹ đạo logic của tổ chức và không làm gián đoạn tiến độ công việc chung."
+      "A": "Là cách tối ưu để minh bạch hóa quy trình quản lý và củng cố niềm tin.",
+      "B": "Là nền tảng tạo môi trường phản hồi hai chiều và gắn kết tập thể.",
+      "C": "Vì đây là cuộc đấu tranh trực diện với cái tôi vị kỷ, đòi hỏi sự dũng cảm thừa nhận lỗi lầm",
+      "D": "Là giải pháp kỹ thuật để \"gỡ lỗi\" tư duy cũ, đảm bảo vận hành đúng quỹ đạo tổ chức"
     }
   },
   {
@@ -32,10 +32,10 @@
     "note": "",
     "correct": "B",
     "options": {
-      "A": "Phải khéo léo, tế nhị và chọn thời điểm thích hợp để không làm ảnh hưởng đến tâm lý, uy tín cá nhân của người được góp ý trước mặt tập thể.",
-      "B": "Phải dựa trên tinh thần thân ái, giúp đỡ nhau cùng tiến bộ, tránh việc lợi dụng phê bình để công kích cá nhân, gây mất đoàn kết nội bộ.",
-      "C": "Phải ưu tiên việc chuẩn hóa các tiêu chí đánh giá dựa trên hiệu suất thực tế và tư duy logic, nhằm tách biệt hoàn toàn giữa cảm xúc cá nhân với trách nhiệm công vụ để đảm bảo tính khách quan, khoa học.",
-      "D": "Phải thực hiện một cách công khai gắn liền với các mốc thi đua cụ thể, tạo ra môi trường \"áp lực tích cực\" để buộc mỗi cá nhân phải liên tục so sánh, đối chiếu và nâng cấp bản thân theo các tiêu chuẩn cao nhất của tập thể."
+      "A": "Phải khéo léo, tế nhị để tránh làm ảnh hưởng đến uy tín cá nhân của người được góp ý.",
+      "B": "Dựa trên tinh thần thân ái, giúp nhau cùng tiến bộ, tránh lợi dụng để công kích, gây mất đoàn kết.",
+      "C": "Ưu tiên các tiêu chí đánh giá khách quan dựa trên hiệu suất công việc và tư duy logic.",
+      "D": "Thực hiện công khai gắn với các mốc thi đua để tạo áp lực giúp cá nhân liên tục nâng cấp bản thân."
     }
   },
   {
