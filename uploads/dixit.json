@@ -3,68 +3,158 @@
     "rounds": [
       {
         "label": "ROUND 01",
-        "character": "Đ/c Nguyễn Văn Backend",
+        "character": "Đ/c Chung Gia Khánh",
         "keywords": [
-          { "type": "K1 · Nhận xét chung", "text": "Người luôn xuất hiện sau ánh đèn." },
-          { "type": "K2 · Ưu điểm", "text": "Lắng nghe nhiều hơn nói." },
-          { "type": "K3 · Nhược điểm", "text": "Hay nhận việc rồi… ôm trọn." },
-          { "type": "K4 · Ẩn ưu", "text": "“API luôn trả 200 OK.”" },
-          { "type": "K5 · Ẩn nhược", "text": "“Overload RAM vì gánh tạ.”" }
+          {
+            "type": "K1 · Nhận xét chung",
+            "text": "4 mắt"
+          },
+          {
+            "type": "K2 · Ưu điểm",
+            "text": "Nói nhiều"
+          },
+          {
+            "type": "K3 · Nhược điểm",
+            "text": "Giải ba"
+          },
+          {
+            "type": "K4 · Ẩn ưu",
+            "text": "“frontend doreamon.”"
+          },
+          {
+            "type": "K5 · Ẩn nhược",
+            "text": "“Tổ phần mềm.”"
+          }
         ]
       },
       {
         "label": "ROUND 02",
-        "character": "Đ/c Trần Thị Secret",
+        "character": "Đ/c Tăng Thị Vân",
         "keywords": [
-          { "type": "K1 · Nhận xét chung", "text": "Một ngọn nến trong góc thư viện." },
-          { "type": "K2 · Ưu điểm", "text": "Kỷ luật. Ghi chép từng buổi sinh hoạt." },
-          { "type": "K3 · Nhược điểm", "text": "Ngại lên tiếng khi đông người." },
-          { "type": "K4 · Ẩn ưu", "text": "“Mode: silent · Status: active.”" },
-          { "type": "K5 · Ẩn nhược", "text": "“Mất Ping với cộng đồng.”" }
+          {
+            "type": "K1 · Nhận xét chung",
+            "text": "Make with TailwindCSS"
+          },
+          {
+            "type": "K2 · Ưu điểm",
+            "text": "backend with view."
+          },
+          {
+            "type": "K3 · Nhược điểm",
+            "text": "FASTAPI."
+          },
+          {
+            "type": "K4 · Ẩn ưu",
+            "text": "“Code with ClaudeCode”"
+          },
+          {
+            "type": "K5 · Ẩn nhược",
+            "text": "Cloudflare."
+          }
         ]
       },
       {
         "label": "ROUND 03",
-        "character": "Đ/c Lê Văn Connector",
+        "character": "Đ/c Trần Lê Bảo Duy",
         "keywords": [
-          { "type": "K1 · Nhận xét chung", "text": "Người nhớ ngày sinh nhật của cả lớp." },
-          { "type": "K2 · Ưu điểm", "text": "Ấm áp. Kết nối những con người xa lạ." },
-          { "type": "K3 · Nhược điểm", "text": "Đôi khi cả nể, khó từ chối." },
-          { "type": "K4 · Ẩn ưu", "text": "“Customer service: 24/7.”" },
-          { "type": "K5 · Ẩn nhược", "text": "“Yes-man.exe đang chạy.”" }
+          {
+            "type": "K1 · Nhận xét chung",
+            "text": "Đáng yêu."
+          },
+          {
+            "type": "K2 · Ưu điểm",
+            "text": "Hàng cận date."
+          },
+          {
+            "type": "K3 · Nhược điểm",
+            "text": "Test không cover được hệ thống."
+          },
+          {
+            "type": "K4 · Ẩn ưu",
+            "text": "Hư webcam"
+          },
+          {
+            "type": "K5 · Ẩn nhược",
+            "text": "Limit context window"
+          }
         ]
       },
       {
         "label": "ROUND 04",
         "character": "Đ/c Lê Văn Connector",
         "keywords": [
-          { "type": "K1 · Nhận xét chung", "text": "Người nhớ ngày sinh nhật của cả lớp." },
-          { "type": "K2 · Ưu điểm", "text": "Ấm áp. Kết nối những con người xa lạ." },
-          { "type": "K3 · Nhược điểm", "text": "Đôi khi cả nể, khó từ chối." },
-          { "type": "K4 · Ẩn ưu", "text": "“Customer service: 24/7.”" },
-          { "type": "K5 · Ẩn nhược", "text": "“Yes-man.exe đang chạy.”" }
+          {
+            "type": "K1 · Nhận xét chung",
+            "text": "Người nhớ ngày sinh nhật của cả lớp."
+          },
+          {
+            "type": "K2 · Ưu điểm",
+            "text": "Ấm áp. Kết nối những con người xa lạ."
+          },
+          {
+            "type": "K3 · Nhược điểm",
+            "text": "Đôi khi cả nể, khó từ chối."
+          },
+          {
+            "type": "K4 · Ẩn ưu",
+            "text": "“Customer service: 24/7.”"
+          },
+          {
+            "type": "K5 · Ẩn nhược",
+            "text": "“Yes-man.exe đang chạy.”"
+          }
         ]
       },
       {
         "label": "ROUND 05",
         "character": "Đ/c Lê Văn Connector",
         "keywords": [
-          { "type": "K1 · Nhận xét chung", "text": "Người nhớ ngày sinh nhật của cả lớp." },
-          { "type": "K2 · Ưu điểm", "text": "Ấm áp. Kết nối những con người xa lạ." },
-          { "type": "K3 · Nhược điểm", "text": "Đôi khi cả nể, khó từ chối." },
-          { "type": "K4 · Ẩn ưu", "text": "“Customer service: 24/7.”" },
-          { "type": "K5 · Ẩn nhược", "text": "“Yes-man.exe đang chạy.”" }
+          {
+            "type": "K1 · Nhận xét chung",
+            "text": "Người nhớ ngày sinh nhật của cả lớp."
+          },
+          {
+            "type": "K2 · Ưu điểm",
+            "text": "Ấm áp. Kết nối những con người xa lạ."
+          },
+          {
+            "type": "K3 · Nhược điểm",
+            "text": "Đôi khi cả nể, khó từ chối."
+          },
+          {
+            "type": "K4 · Ẩn ưu",
+            "text": "“Customer service: 24/7.”"
+          },
+          {
+            "type": "K5 · Ẩn nhược",
+            "text": "“Yes-man.exe đang chạy.”"
+          }
         ]
       },
       {
         "label": "ROUND 06",
         "character": "Đ/c Lê Văn",
         "keywords": [
-          { "type": "K1 · Nhận xét chung", "text": "Người nhớ ngày sinh nhật của cả lớp." },
-          { "type": "K2 · Ưu điểm", "text": "Ấm áp. Kết nối những con người xa lạ." },
-          { "type": "K3 · Nhược điểm", "text": "Đôi khi cả nể, khó từ chối." },
-          { "type": "K4 · Ẩn ưu", "text": "“Customer service: 24/7.”" },
-          { "type": "K5 · Ẩn nhược", "text": "“Yes-man.exe đang chạy.”" }
+          {
+            "type": "K1 · Nhận xét chung",
+            "text": "Người nhớ ngày sinh nhật của cả lớp."
+          },
+          {
+            "type": "K2 · Ưu điểm",
+            "text": "Ấm áp. Kết nối những con người xa lạ."
+          },
+          {
+            "type": "K3 · Nhược điểm",
+            "text": "Đôi khi cả nể, khó từ chối."
+          },
+          {
+            "type": "K4 · Ẩn ưu",
+            "text": "“Customer service: 24/7.”"
+          },
+          {
+            "type": "K5 · Ẩn nhược",
+            "text": "“Yes-man.exe đang chạy.”"
+          }
         ]
       }
     ]
